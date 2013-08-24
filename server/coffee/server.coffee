@@ -1,4 +1,5 @@
-
+Box2D = require './libs/Box2dWeb-2.1.a.3.js'
+Sim = require './simulation.js'
 
 Array::remove = (item)->
   indx = @indexOf(item)
@@ -14,36 +15,14 @@ getID = ()->
 	return IDcounter
 
 
-
-class Player
-	constructor: ()->
-		@ID = getID()
-		@x = randint(500)
-		@y = randint(500)
-		@name = 'anon'
-	status: ()->
-		return {x:@x, y:@y}
-	state: ()->
-		return {ID:@ID, x:@x, y:@y}
-
-
-class Game
-	constructor: ()->
-		@players = []
-	broadcast: (message)->
-		for p in @players
-			p.connection.send message
-
-
-game = new Game()
+game = Sim.game
+Player = Sim.Player
+console.log Player
 
 WebSocketServer = require("ws").Server
-wss = new WebSocketServer(port: 8080)
+wss = new WebSocketServer(port: 8079)
 wss.on "connection", (ws) ->
-	ws.player = new Player()
-	ws.player.connection = ws
-	game.players.push ws.player
-	game.broadcast(JSON.stringify({connect:ws.player.state()}))
+	game.new_connection(ws)
 	ws.on "message", (message) ->
 		message = JSON.parse(message)
 		if typeof message is 'object'
@@ -51,16 +30,23 @@ wss.on "connection", (ws) ->
 				ws.player.name = message.name
 			if message.chat?
 				console.log 'chat', message.chat
-				game.broadcast(JSON.stringify({'chat':message.chat, 'who':ws.player.ID}))
-				ws.player.name = message.name
-		console.log "received: %s", message
+				game.broadcast({'chat':message.chat, 'who':ws.player.ID})
+			if message.keydown?
+				ws.player.keydown(message.keydown)
+			if message.keyup?
+				ws.player.keyup(message.keyup)
+
+		#console.log "received: %s", message
 
 	ws.on "close", (message) ->
 		game.players.remove ws.player
-		for p in game.players
-			p.connection.send(JSON.stringify({disconnect:ws.player.ID}))
+		game.broadcast {disconnect:ws.player.ID}
 
-	ws.send JSON.stringify({debrief:game.players.map (p)->p.state()})
+
+	ws.on 'error', (error)->
+    	console.log('Client #%d error: %s', ws.player.ID, error.message)
+
+	ws.player.send {debrief:game.players.map (p)->p.state()}
 
 
 #static server
@@ -90,3 +76,5 @@ http.createServer((req, res) ->
 
 ).listen port
 console.log "node-static running at http://localhost:%d", port
+
+
