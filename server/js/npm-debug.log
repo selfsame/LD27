@@ -1,0 +1,1981 @@
+info it worked if it ends with ok
+verbose cli [ 'C:\\Program Files (x86)\\nodejs\\\\node.exe',
+verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+verbose cli   'install',
+verbose cli   'express' ]
+info using npm@1.1.16
+info using node@v0.6.15
+verbose C:\Program Files (x86)\nodejs\\node.exe node symlink
+verbose config file C:\Users\jplur\.npmrc
+verbose config file C:\Program Files (x86)\nodejs\etc\npmrc
+verbose config file C:\Program Files (x86)\nodejs\node_modules\npm\npmrc
+verbose caching C:\Users\jplur\Desktop\ld\LD27\server\node_modules\node-static\package.json
+verbose has bindings.gyp [ undefined,
+verbose has bindings.gyp   { file: 'C:\\Users\\jplur\\Desktop\\ld\\LD27\\server\\node_modules\\ws\\package.json',
+verbose has bindings.gyp     wscript: false,
+verbose has bindings.gyp     gypfile: true,
+verbose has bindings.gyp     contributors: false,
+verbose has bindings.gyp     serverjs: false } ]
+verbose caching C:\Users\jplur\Desktop\ld\LD27\server\node_modules\ws\package.json
+verbose cache add [ 'express', null ]
+silly cache add: name, spec, args [ undefined, 'express', [ 'express', null ] ]
+verbose parsed url { pathname: 'express', path: 'express', href: 'express' }
+verbose addNamed [ 'express', '' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'express', '', false ]
+verbose raw, before any munging express
+verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+verbose url resolved https://registry.npmjs.org/express
+verbose etag "AY33ZW2X5JQOP3A9SWIOSPVRO"
+http GET https://registry.npmjs.org/express
+http 200 https://registry.npmjs.org/express
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+silly get cb     etag: '"BXVF7WOHOAUNZ5KW8L5XY4DKD"',
+silly get cb     date: 'Sat, 24 Aug 2013 14:51:27 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '400988' } ]
+silly name, range, hasData 2 [ 'express', '', true ]
+silly versions [ 'express',
+silly versions   [ '0.14.0',
+silly versions     '0.14.1',
+silly versions     '1.0.0',
+silly versions     '1.0.1',
+silly versions     '1.0.2',
+silly versions     '1.0.3',
+silly versions     '1.0.4',
+silly versions     '1.0.5',
+silly versions     '1.0.6',
+silly versions     '1.0.7',
+silly versions     '2.5.0',
+silly versions     '2.5.1',
+silly versions     '2.5.2',
+silly versions     '2.5.3',
+silly versions     '2.5.4',
+silly versions     '2.5.5',
+silly versions     '2.5.6',
+silly versions     '2.5.7',
+silly versions     '2.5.8',
+silly versions     '2.5.9',
+silly versions     '2.5.10',
+silly versions     '2.5.11',
+silly versions     '3.0.0',
+silly versions     '3.0.1',
+silly versions     '3.0.2',
+silly versions     '3.0.3',
+silly versions     '3.0.4',
+silly versions     '3.0.5',
+silly versions     '3.0.6',
+silly versions     '3.1.0',
+silly versions     '3.1.1',
+silly versions     '3.1.2',
+silly versions     '3.2.0',
+silly versions     '3.2.1',
+silly versions     '3.2.2',
+silly versions     '3.2.3',
+silly versions     '3.2.4',
+silly versions     '3.2.5',
+silly versions     '3.2.6',
+silly versions     '3.3.0',
+silly versions     '3.3.1',
+silly versions     '3.3.2',
+silly versions     '3.3.3',
+silly versions     '3.3.4',
+silly versions     '3.3.5',
+silly versions     '1.0.0-beta',
+silly versions     '1.0.0-beta2',
+silly versions     '1.0.0-rc',
+silly versions     '1.0.0-rc2',
+silly versions     '1.0.0-rc3',
+silly versions     '1.0.0-rc4',
+silly versions     '3.0.0-alpha1',
+silly versions     '3.0.0-alpha2',
+silly versions     '3.0.0-alpha3',
+silly versions     '3.0.0-alpha4',
+silly versions     '3.0.0-alpha5',
+silly versions     '3.0.0-beta1',
+silly versions     '3.0.0-beta2',
+silly versions     '3.0.0-beta3',
+silly versions     '3.0.0-beta4',
+silly versions     '3.0.0-beta6',
+silly versions     '3.0.0-beta7',
+silly versions     '3.0.0-rc1',
+silly versions     '3.0.0-rc2',
+silly versions     '3.0.0-rc3',
+silly versions     '3.0.0-rc4',
+silly versions     '3.0.0-rc5' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.24-win32-ia32-6.1.7601',
+verbose bin dist   { shasum: '3fd077660c9ccae4710fcfb326290a01d1e72566',
+verbose bin dist     tarball: 'http://registry.npmjs.org/express/-/express-3.3.5.tgz' } ]
+verbose addRemoteTarball [ 'https://registry.npmjs.org/express/-/express-3.3.5.tgz',
+verbose addRemoteTarball   '3fd077660c9ccae4710fcfb326290a01d1e72566' ]
+verbose fetch to C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355880595-0.8072964595630765\tmp.tgz
+http GET https://registry.npmjs.org/express/-/express-3.3.5.tgz
+http 200 https://registry.npmjs.org/express/-/express-3.3.5.tgz
+silly updated sha bytes 36285
+info shasum 3fd077660c9ccae4710fcfb326290a01d1e72566
+info shasum C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355880595-0.8072964595630765\tmp.tgz
+verbose unpack C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355880595-0.8072964595630765\tmp.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly extracting entry .npmignore
+silly extracting entry LICENSE
+silly extracting entry index.js
+silly extracting entry test.js
+silly extracting entry .travis.yml
+silly extracting entry History.md
+silly extracting entry Makefile
+silly extracting entry bin/express
+silly extracting entry Readme.md
+silly extracting entry lib/application.js
+silly extracting entry lib/express.js
+silly extracting entry lib/middleware.js
+silly extracting entry lib/request.js
+silly extracting entry lib/response.js
+silly extracting entry lib/utils.js
+silly extracting entry lib/view.js
+silly extracting entry lib/router/index.js
+silly extracting entry lib/router/route.js
+verbose caching C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355880595-0.8072964595630765\package\package.json
+verbose loadDefaults express@3.3.5
+verbose from cache C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355880595-0.8072964595630765\package\package.json
+verbose tar.pack [ 'C:\\Users\\jplur\\AppData\\Roaming\\npm-cache\\express\\3.3.5\\package.tgz',
+verbose tar.pack   'C:\\Users\\jplur\\AppData\\Local\\Temp\\npm-1377355880595\\1377355880595-0.8072964595630765\\package' ]
+verbose tarball C:\Users\jplur\AppData\Roaming\npm-cache\express\3.3.5\package.tgz
+verbose folder C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355880595-0.8072964595630765\package
+verbose unpack C:\Users\jplur\AppData\Roaming\npm-cache\express\3.3.5\package.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly modified mode [ 'package.json', 438, 420 ]
+silly extracting entry .npmignore
+silly modified mode [ '.npmignore', 438, 420 ]
+silly extracting entry LICENSE
+silly modified mode [ 'LICENSE', 438, 420 ]
+silly extracting entry index.js
+silly modified mode [ 'index.js', 438, 420 ]
+silly extracting entry test.js
+silly modified mode [ 'test.js', 438, 420 ]
+silly extracting entry .travis.yml
+silly modified mode [ '.travis.yml', 438, 420 ]
+silly extracting entry History.md
+silly modified mode [ 'History.md', 438, 420 ]
+silly extracting entry Makefile
+silly modified mode [ 'Makefile', 438, 420 ]
+silly extracting entry bin/express
+silly modified mode [ 'bin/express', 438, 420 ]
+silly extracting entry Readme.md
+silly modified mode [ 'Readme.md', 438, 420 ]
+silly extracting entry lib/application.js
+silly modified mode [ 'lib/application.js', 438, 420 ]
+silly extracting entry lib/express.js
+silly modified mode [ 'lib/express.js', 438, 420 ]
+silly extracting entry lib/middleware.js
+silly modified mode [ 'lib/middleware.js', 438, 420 ]
+silly extracting entry lib/request.js
+silly modified mode [ 'lib/request.js', 438, 420 ]
+silly extracting entry lib/response.js
+silly modified mode [ 'lib/response.js', 438, 420 ]
+silly extracting entry lib/utils.js
+silly modified mode [ 'lib/utils.js', 438, 420 ]
+silly extracting entry lib/view.js
+silly modified mode [ 'lib/view.js', 438, 420 ]
+silly extracting entry lib/router/index.js
+silly modified mode [ 'lib/router/index.js', 438, 420 ]
+silly extracting entry lib/router/route.js
+silly modified mode [ 'lib/router/route.js', 438, 420 ]
+verbose caching C:\Users\jplur\AppData\Roaming\npm-cache\express\3.3.5\package\package.json
+verbose loadDefaults express@3.3.5
+silly updated sha bytes 36126
+info shasum bec72e96b9839be8c7ece11ca3f8608b0f409805
+info shasum C:\Users\jplur\AppData\Roaming\npm-cache\express\3.3.5\package.tgz
+verbose from cache C:\Users\jplur\AppData\Roaming\npm-cache\express\3.3.5\package\package.json
+verbose chmod C:\Users\jplur\AppData\Roaming\npm-cache\express\3.3.5\package.tgz 644
+silly skipping chown for windows C:\Users\jplur\AppData\Roaming\npm-cache\express\3.3.5\package.tgz
+silly resolved [ { name: 'express',
+silly resolved     description: 'Sinatra inspired web development framework',
+silly resolved     version: '3.3.5',
+silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+silly resolved     contributors: 
+silly resolved      [ { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+silly resolved        { name: 'Aaron Heckmann',
+silly resolved          email: 'aaron.heckmann+github@gmail.com' },
+silly resolved        { name: 'Ciaran Jessup', email: 'ciaranj@gmail.com' },
+silly resolved        { name: 'Guillermo Rauch', email: 'rauchg@gmail.com' } ],
+silly resolved     dependencies: 
+silly resolved      { connect: '2.8.5',
+silly resolved        commander: '1.2.0',
+silly resolved        'range-parser': '0.0.4',
+silly resolved        mkdirp: '0.3.5',
+silly resolved        cookie: '0.1.0',
+silly resolved        'buffer-crc32': '0.2.1',
+silly resolved        fresh: '0.2.0',
+silly resolved        methods: '0.0.1',
+silly resolved        send: '0.1.4',
+silly resolved        'cookie-signature': '1.0.1',
+silly resolved        debug: '*' },
+silly resolved     devDependencies: 
+silly resolved      { ejs: '*',
+silly resolved        mocha: '*',
+silly resolved        jade: '0.30.0',
+silly resolved        hjs: '*',
+silly resolved        stylus: '*',
+silly resolved        should: '*',
+silly resolved        'connect-redis': '*',
+silly resolved        marked: '*',
+silly resolved        supertest: '0.6.0' },
+silly resolved     keywords: 
+silly resolved      [ 'express',
+silly resolved        'framework',
+silly resolved        'sinatra',
+silly resolved        'web',
+silly resolved        'rest',
+silly resolved        'restful',
+silly resolved        'router',
+silly resolved        'app',
+silly resolved        'api' ],
+silly resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/express.git' },
+silly resolved     main: 'index',
+silly resolved     bin: { express: './bin/express' },
+silly resolved     scripts: { prepublish: 'npm prune', test: 'make test' },
+silly resolved     engines: { node: '*' },
+silly resolved     _id: 'express@3.3.5',
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.16',
+silly resolved     _nodeVersion: 'v0.6.15',
+silly resolved     _defaultsLoaded: true,
+silly resolved     dist: { shasum: 'bec72e96b9839be8c7ece11ca3f8608b0f409805' },
+silly resolved     _from: 'express' } ]
+info into C:\Users\jplur\Desktop\ld\LD27\server express@3.3.5
+info installOne express@3.3.5
+verbose from cache C:\Users\jplur\AppData\Roaming\npm-cache\express\3.3.5\package\package.json
+info unbuild C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express
+verbose unpack C:\Users\jplur\AppData\Roaming\npm-cache\express\3.3.5\package.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly modified mode [ 'package.json', 438, 420 ]
+silly extracting entry .npmignore
+silly modified mode [ '.npmignore', 438, 420 ]
+silly extracting entry LICENSE
+silly modified mode [ 'LICENSE', 438, 420 ]
+silly extracting entry index.js
+silly modified mode [ 'index.js', 438, 420 ]
+silly extracting entry test.js
+silly modified mode [ 'test.js', 438, 420 ]
+silly extracting entry .travis.yml
+silly modified mode [ '.travis.yml', 438, 420 ]
+silly extracting entry History.md
+silly modified mode [ 'History.md', 438, 420 ]
+silly extracting entry Makefile
+silly modified mode [ 'Makefile', 438, 420 ]
+silly extracting entry bin/express
+silly modified mode [ 'bin/express', 438, 420 ]
+silly extracting entry Readme.md
+silly modified mode [ 'Readme.md', 438, 420 ]
+silly extracting entry lib/application.js
+silly modified mode [ 'lib/application.js', 438, 420 ]
+silly extracting entry lib/express.js
+silly modified mode [ 'lib/express.js', 438, 420 ]
+silly extracting entry lib/middleware.js
+silly modified mode [ 'lib/middleware.js', 438, 420 ]
+silly extracting entry lib/request.js
+silly modified mode [ 'lib/request.js', 438, 420 ]
+silly extracting entry lib/response.js
+silly modified mode [ 'lib/response.js', 438, 420 ]
+silly extracting entry lib/utils.js
+silly modified mode [ 'lib/utils.js', 438, 420 ]
+silly extracting entry lib/view.js
+silly modified mode [ 'lib/view.js', 438, 420 ]
+silly extracting entry lib/router/index.js
+silly modified mode [ 'lib/router/index.js', 438, 420 ]
+silly extracting entry lib/router/route.js
+silly modified mode [ 'lib/router/route.js', 438, 420 ]
+verbose caching C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express\package.json
+verbose loadDefaults express@3.3.5
+info preinstall express@3.3.5
+verbose from cache C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express\package.json
+verbose readDependencies: using package.json deps
+verbose from cache C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express\package.json
+verbose readDependencies: using package.json deps
+verbose cache add [ 'commander@1.2.0', null ]
+silly cache add: name, spec, args [ undefined, 'commander@1.2.0', [ 'commander@1.2.0', null ] ]
+verbose parsed url { pathname: 'commander@1.2.0',
+verbose parsed url   path: 'commander@1.2.0',
+verbose parsed url   href: 'commander@1.2.0' }
+silly cache add: name, spec, args [ 'commander', '1.2.0', [ 'commander', '1.2.0' ] ]
+verbose parsed url { pathname: '1.2.0', path: '1.2.0', href: '1.2.0' }
+verbose addNamed [ 'commander', '1.2.0' ]
+verbose addNamed [ '1.2.0', '1.2.0' ]
+verbose cache add [ 'range-parser@0.0.4', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'range-parser@0.0.4',
+silly cache add: name, spec, args   [ 'range-parser@0.0.4', null ] ]
+verbose parsed url { pathname: 'range-parser@0.0.4',
+verbose parsed url   path: 'range-parser@0.0.4',
+verbose parsed url   href: 'range-parser@0.0.4' }
+silly cache add: name, spec, args [ 'range-parser', '0.0.4', [ 'range-parser', '0.0.4' ] ]
+verbose parsed url { pathname: '0.0.4', path: '0.0.4', href: '0.0.4' }
+verbose addNamed [ 'range-parser', '0.0.4' ]
+verbose addNamed [ '0.0.4', '0.0.4' ]
+verbose cache add [ 'mkdirp@0.3.5', null ]
+silly cache add: name, spec, args [ undefined, 'mkdirp@0.3.5', [ 'mkdirp@0.3.5', null ] ]
+verbose parsed url { pathname: 'mkdirp@0.3.5',
+verbose parsed url   path: 'mkdirp@0.3.5',
+verbose parsed url   href: 'mkdirp@0.3.5' }
+silly cache add: name, spec, args [ 'mkdirp', '0.3.5', [ 'mkdirp', '0.3.5' ] ]
+verbose parsed url { pathname: '0.3.5', path: '0.3.5', href: '0.3.5' }
+verbose addNamed [ 'mkdirp', '0.3.5' ]
+verbose addNamed [ '0.3.5', '0.3.5' ]
+verbose cache add [ 'cookie@0.1.0', null ]
+silly cache add: name, spec, args [ undefined, 'cookie@0.1.0', [ 'cookie@0.1.0', null ] ]
+verbose parsed url { pathname: 'cookie@0.1.0',
+verbose parsed url   path: 'cookie@0.1.0',
+verbose parsed url   href: 'cookie@0.1.0' }
+silly cache add: name, spec, args [ 'cookie', '0.1.0', [ 'cookie', '0.1.0' ] ]
+verbose parsed url { pathname: '0.1.0', path: '0.1.0', href: '0.1.0' }
+verbose addNamed [ 'cookie', '0.1.0' ]
+verbose addNamed [ '0.1.0', '0.1.0' ]
+verbose cache add [ 'buffer-crc32@0.2.1', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'buffer-crc32@0.2.1',
+silly cache add: name, spec, args   [ 'buffer-crc32@0.2.1', null ] ]
+verbose parsed url { pathname: 'buffer-crc32@0.2.1',
+verbose parsed url   path: 'buffer-crc32@0.2.1',
+verbose parsed url   href: 'buffer-crc32@0.2.1' }
+silly cache add: name, spec, args [ 'buffer-crc32', '0.2.1', [ 'buffer-crc32', '0.2.1' ] ]
+verbose parsed url { pathname: '0.2.1', path: '0.2.1', href: '0.2.1' }
+verbose addNamed [ 'buffer-crc32', '0.2.1' ]
+verbose addNamed [ '0.2.1', '0.2.1' ]
+verbose cache add [ 'fresh@0.2.0', null ]
+silly cache add: name, spec, args [ undefined, 'fresh@0.2.0', [ 'fresh@0.2.0', null ] ]
+verbose parsed url { pathname: 'fresh@0.2.0',
+verbose parsed url   path: 'fresh@0.2.0',
+verbose parsed url   href: 'fresh@0.2.0' }
+silly cache add: name, spec, args [ 'fresh', '0.2.0', [ 'fresh', '0.2.0' ] ]
+verbose parsed url { pathname: '0.2.0', path: '0.2.0', href: '0.2.0' }
+verbose addNamed [ 'fresh', '0.2.0' ]
+verbose addNamed [ '0.2.0', '0.2.0' ]
+verbose cache add [ 'methods@0.0.1', null ]
+silly cache add: name, spec, args [ undefined, 'methods@0.0.1', [ 'methods@0.0.1', null ] ]
+verbose parsed url { pathname: 'methods@0.0.1',
+verbose parsed url   path: 'methods@0.0.1',
+verbose parsed url   href: 'methods@0.0.1' }
+silly cache add: name, spec, args [ 'methods', '0.0.1', [ 'methods', '0.0.1' ] ]
+verbose parsed url { pathname: '0.0.1', path: '0.0.1', href: '0.0.1' }
+verbose addNamed [ 'methods', '0.0.1' ]
+verbose addNamed [ '0.0.1', '0.0.1' ]
+verbose cache add [ 'send@0.1.4', null ]
+silly cache add: name, spec, args [ undefined, 'send@0.1.4', [ 'send@0.1.4', null ] ]
+verbose parsed url { pathname: 'send@0.1.4',
+verbose parsed url   path: 'send@0.1.4',
+verbose parsed url   href: 'send@0.1.4' }
+silly cache add: name, spec, args [ 'send', '0.1.4', [ 'send', '0.1.4' ] ]
+verbose parsed url { pathname: '0.1.4', path: '0.1.4', href: '0.1.4' }
+verbose addNamed [ 'send', '0.1.4' ]
+verbose addNamed [ '0.1.4', '0.1.4' ]
+verbose cache add [ 'cookie-signature@1.0.1', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'cookie-signature@1.0.1',
+silly cache add: name, spec, args   [ 'cookie-signature@1.0.1', null ] ]
+verbose parsed url { pathname: 'cookie-signature@1.0.1',
+verbose parsed url   path: 'cookie-signature@1.0.1',
+verbose parsed url   href: 'cookie-signature@1.0.1' }
+silly cache add: name, spec, args [ 'cookie-signature', '1.0.1', [ 'cookie-signature', '1.0.1' ] ]
+verbose parsed url { pathname: '1.0.1', path: '1.0.1', href: '1.0.1' }
+verbose addNamed [ 'cookie-signature', '1.0.1' ]
+verbose addNamed [ '1.0.1', '1.0.1' ]
+verbose cache add [ 'debug@*', null ]
+silly cache add: name, spec, args [ undefined, 'debug@*', [ 'debug@*', null ] ]
+verbose parsed url { pathname: 'debug@*', path: 'debug@*', href: 'debug@*' }
+silly cache add: name, spec, args [ 'debug', '*', [ 'debug', '*' ] ]
+verbose parsed url { pathname: '*', path: '*', href: '*' }
+verbose addNamed [ 'debug', '*' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'debug', '', false ]
+verbose raw, before any munging commander/1.2.0
+verbose url resolving [ 'https://registry.npmjs.org/', './commander/1.2.0' ]
+verbose url resolved https://registry.npmjs.org/commander/1.2.0
+http GET https://registry.npmjs.org/commander/1.2.0
+verbose raw, before any munging mkdirp/0.3.5
+verbose url resolving [ 'https://registry.npmjs.org/', './mkdirp/0.3.5' ]
+verbose url resolved https://registry.npmjs.org/mkdirp/0.3.5
+http GET https://registry.npmjs.org/mkdirp/0.3.5
+verbose raw, before any munging cookie/0.1.0
+verbose url resolving [ 'https://registry.npmjs.org/', './cookie/0.1.0' ]
+verbose url resolved https://registry.npmjs.org/cookie/0.1.0
+http GET https://registry.npmjs.org/cookie/0.1.0
+verbose raw, before any munging buffer-crc32/0.2.1
+verbose url resolving [ 'https://registry.npmjs.org/', './buffer-crc32/0.2.1' ]
+verbose url resolved https://registry.npmjs.org/buffer-crc32/0.2.1
+http GET https://registry.npmjs.org/buffer-crc32/0.2.1
+verbose raw, before any munging fresh/0.2.0
+verbose url resolving [ 'https://registry.npmjs.org/', './fresh/0.2.0' ]
+verbose url resolved https://registry.npmjs.org/fresh/0.2.0
+http GET https://registry.npmjs.org/fresh/0.2.0
+verbose raw, before any munging send/0.1.4
+verbose url resolving [ 'https://registry.npmjs.org/', './send/0.1.4' ]
+verbose url resolved https://registry.npmjs.org/send/0.1.4
+http GET https://registry.npmjs.org/send/0.1.4
+verbose raw, before any munging cookie-signature/1.0.1
+verbose url resolving [ 'https://registry.npmjs.org/', './cookie-signature/1.0.1' ]
+verbose url resolved https://registry.npmjs.org/cookie-signature/1.0.1
+http GET https://registry.npmjs.org/cookie-signature/1.0.1
+verbose raw, before any munging methods/0.0.1
+verbose url resolving [ 'https://registry.npmjs.org/', './methods/0.0.1' ]
+verbose url resolved https://registry.npmjs.org/methods/0.0.1
+verbose etag "9WQCTURRUKLOS53F2GVAOU321"
+http GET https://registry.npmjs.org/methods/0.0.1
+verbose raw, before any munging debug
+verbose url resolving [ 'https://registry.npmjs.org/', './debug' ]
+verbose url resolved https://registry.npmjs.org/debug
+verbose etag "1VV6MMVNM344VBG8CYRJFZAZI"
+http GET https://registry.npmjs.org/debug
+verbose raw, before any munging range-parser/0.0.4
+verbose url resolving [ 'https://registry.npmjs.org/', './range-parser/0.0.4' ]
+verbose url resolved https://registry.npmjs.org/range-parser/0.0.4
+verbose etag "AKBE8DZX1QIIFDPDNZED2IPJ9"
+http GET https://registry.npmjs.org/range-parser/0.0.4
+verbose cache add [ 'connect@2.8.5', null ]
+silly cache add: name, spec, args [ undefined, 'connect@2.8.5', [ 'connect@2.8.5', null ] ]
+verbose parsed url { pathname: 'connect@2.8.5',
+verbose parsed url   path: 'connect@2.8.5',
+verbose parsed url   href: 'connect@2.8.5' }
+silly cache add: name, spec, args [ 'connect', '2.8.5', [ 'connect', '2.8.5' ] ]
+verbose parsed url { pathname: '2.8.5', path: '2.8.5', href: '2.8.5' }
+verbose addNamed [ 'connect', '2.8.5' ]
+verbose addNamed [ '2.8.5', '2.8.5' ]
+verbose raw, before any munging connect/2.8.5
+verbose url resolving [ 'https://registry.npmjs.org/', './connect/2.8.5' ]
+verbose url resolved https://registry.npmjs.org/connect/2.8.5
+http GET https://registry.npmjs.org/connect/2.8.5
+http 200 https://registry.npmjs.org/cookie/0.1.0
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+silly get cb     etag: '"F1R4EMW6NEBFUL3OK9Q9DKBJF"',
+silly get cb     date: 'Sat, 24 Aug 2013 14:51:30 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '1921' } ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.24-win32-ia32-6.1.7601',
+verbose bin dist   { shasum: '90eb469ddce905c866de687efc43131d8801f9d0',
+verbose bin dist     tarball: 'http://registry.npmjs.org/cookie/-/cookie-0.1.0.tgz' } ]
+verbose addRemoteTarball [ 'https://registry.npmjs.org/cookie/-/cookie-0.1.0.tgz',
+verbose addRemoteTarball   '90eb469ddce905c866de687efc43131d8801f9d0' ]
+verbose fetch to C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883237-0.3096319166943431\tmp.tgz
+http 200 https://registry.npmjs.org/mkdirp/0.3.5
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+silly get cb     etag: '"A3251S0G3NT2AB7LYIM1NH7UK"',
+silly get cb     date: 'Sat, 24 Aug 2013 14:51:30 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '1946' } ]
+http 200 https://registry.npmjs.org/fresh/0.2.0
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+silly get cb     etag: '"6CDQ014VE8MJLSGJOYMKCVKVG"',
+silly get cb     date: 'Sat, 24 Aug 2013 14:51:30 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '2459' } ]
+http GET https://registry.npmjs.org/cookie/-/cookie-0.1.0.tgz
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.24-win32-ia32-6.1.7601',
+verbose bin dist   { shasum: 'de3e5f8961c88c787ee1368df849ac4413eca8d7',
+verbose bin dist     tarball: 'http://registry.npmjs.org/mkdirp/-/mkdirp-0.3.5.tgz' } ]
+verbose addRemoteTarball [ 'https://registry.npmjs.org/mkdirp/-/mkdirp-0.3.5.tgz',
+verbose addRemoteTarball   'de3e5f8961c88c787ee1368df849ac4413eca8d7' ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.24-win32-ia32-6.1.7601',
+verbose bin dist   { shasum: 'bfd9402cf3df12c4a4c310c79f99a3dde13d34a7',
+verbose bin dist     tarball: 'http://registry.npmjs.org/fresh/-/fresh-0.2.0.tgz' } ]
+verbose addRemoteTarball [ 'https://registry.npmjs.org/fresh/-/fresh-0.2.0.tgz',
+verbose addRemoteTarball   'bfd9402cf3df12c4a4c310c79f99a3dde13d34a7' ]
+verbose fetch to C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883242-0.6030335647519678\tmp.tgz
+verbose fetch to C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883242-0.21704391576349735\tmp.tgz
+http GET https://registry.npmjs.org/mkdirp/-/mkdirp-0.3.5.tgz
+http GET https://registry.npmjs.org/fresh/-/fresh-0.2.0.tgz
+http 200 https://registry.npmjs.org/commander/1.2.0
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+silly get cb     etag: '"963K7TYH6UP7JSFBNMS9L3V8X"',
+silly get cb     date: 'Sat, 24 Aug 2013 14:51:30 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '8095' } ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.24-win32-ia32-6.1.7601',
+verbose bin dist   { shasum: 'fd5713bfa153c7d6cc599378a5ab4c45c535029e',
+verbose bin dist     tarball: 'http://registry.npmjs.org/commander/-/commander-1.2.0.tgz' } ]
+verbose addRemoteTarball [ 'https://registry.npmjs.org/commander/-/commander-1.2.0.tgz',
+verbose addRemoteTarball   'fd5713bfa153c7d6cc599378a5ab4c45c535029e' ]
+verbose fetch to C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883371-0.7404170029330999\tmp.tgz
+http GET https://registry.npmjs.org/commander/-/commander-1.2.0.tgz
+http 200 https://registry.npmjs.org/buffer-crc32/0.2.1
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+silly get cb     etag: '"4JLO8SIQOKXMA94PVFN5E59WV"',
+silly get cb     date: 'Sat, 24 Aug 2013 14:51:30 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '2483' } ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.24-win32-ia32-6.1.7601',
+verbose bin dist   { shasum: 'be3e5382fc02b6d6324956ac1af98aa98b08534c',
+verbose bin dist     tarball: 'http://registry.npmjs.org/buffer-crc32/-/buffer-crc32-0.2.1.tgz' } ]
+verbose addRemoteTarball [ 'https://registry.npmjs.org/buffer-crc32/-/buffer-crc32-0.2.1.tgz',
+verbose addRemoteTarball   'be3e5382fc02b6d6324956ac1af98aa98b08534c' ]
+verbose fetch to C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883400-0.372659815242514\tmp.tgz
+http GET https://registry.npmjs.org/buffer-crc32/-/buffer-crc32-0.2.1.tgz
+http 200 https://registry.npmjs.org/methods/0.0.1
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+silly get cb     etag: '"D7BIME5C6Q45VILIKMWZAC09D"',
+silly get cb     date: 'Sat, 24 Aug 2013 14:51:31 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '496' } ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.24-win32-ia32-6.1.7601',
+verbose bin dist   { shasum: '277c90f8bef39709645a8371c51c3b6c648e068c',
+verbose bin dist     tarball: 'http://registry.npmjs.org/methods/-/methods-0.0.1.tgz' } ]
+verbose addRemoteTarball [ 'https://registry.npmjs.org/methods/-/methods-0.0.1.tgz',
+verbose addRemoteTarball   '277c90f8bef39709645a8371c51c3b6c648e068c' ]
+verbose fetch to C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883465-0.39258220489136875\tmp.tgz
+http GET https://registry.npmjs.org/methods/-/methods-0.0.1.tgz
+http 200 https://registry.npmjs.org/send/0.1.4
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+silly get cb     etag: '"44MEX16XITH6HKKBT0BOK31OO"',
+silly get cb     date: 'Sat, 24 Aug 2013 14:51:31 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '4756' } ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.24-win32-ia32-6.1.7601',
+verbose bin dist   { shasum: 'be70d8d1be01de61821af13780b50345a4f71abd',
+verbose bin dist     tarball: 'http://registry.npmjs.org/send/-/send-0.1.4.tgz' } ]
+verbose addRemoteTarball [ 'https://registry.npmjs.org/send/-/send-0.1.4.tgz',
+verbose addRemoteTarball   'be70d8d1be01de61821af13780b50345a4f71abd' ]
+verbose fetch to C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883533-0.015794185921549797\tmp.tgz
+http GET https://registry.npmjs.org/send/-/send-0.1.4.tgz
+http 200 https://registry.npmjs.org/cookie-signature/1.0.1
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+silly get cb     etag: '"332BQXGWC1DJFGGZJ0ETUQXA6"',
+silly get cb     date: 'Sat, 24 Aug 2013 14:51:31 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '2199' } ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.24-win32-ia32-6.1.7601',
+verbose bin dist   { shasum: '44e072148af01e6e8e24afbf12690d68ae698ecb',
+verbose bin dist     tarball: 'http://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.1.tgz' } ]
+verbose addRemoteTarball [ 'https://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.1.tgz',
+verbose addRemoteTarball   '44e072148af01e6e8e24afbf12690d68ae698ecb' ]
+verbose fetch to C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883543-0.7859803398605436\tmp.tgz
+http GET https://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.1.tgz
+http 200 https://registry.npmjs.org/cookie/-/cookie-0.1.0.tgz
+http 200 https://registry.npmjs.org/debug
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+silly get cb     etag: '"BHGB14WW3U36Q48DRIX4RUQL1"',
+silly get cb     date: 'Sat, 24 Aug 2013 14:51:31 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '21774' } ]
+http 200 https://registry.npmjs.org/connect/2.8.5
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+silly get cb     etag: '"AFMSAUOGCM0SU6HQA5T42BMZH"',
+silly get cb     date: 'Sat, 24 Aug 2013 14:51:31 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '6248' } ]
+silly name, range, hasData 2 [ 'debug', '', true ]
+silly versions [ 'debug',
+silly versions   [ '0.0.1',
+silly versions     '0.1.0',
+silly versions     '0.2.0',
+silly versions     '0.3.0',
+silly versions     '0.4.0',
+silly versions     '0.4.1',
+silly versions     '0.5.0',
+silly versions     '0.6.0',
+silly versions     '0.7.0',
+silly versions     '0.7.1',
+silly versions     '0.7.2' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.24-win32-ia32-6.1.7601',
+verbose bin dist   { shasum: '056692c86670977f115de82917918b8e8b9a10f0',
+verbose bin dist     tarball: 'http://registry.npmjs.org/debug/-/debug-0.7.2.tgz' } ]
+verbose addRemoteTarball [ 'https://registry.npmjs.org/debug/-/debug-0.7.2.tgz',
+verbose addRemoteTarball   '056692c86670977f115de82917918b8e8b9a10f0' ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.24-win32-ia32-6.1.7601',
+verbose bin dist   { shasum: '20572077ba1f626fdb740b0ad7068f9130d701b8',
+verbose bin dist     tarball: 'http://registry.npmjs.org/connect/-/connect-2.8.5.tgz' } ]
+verbose addRemoteTarball [ 'https://registry.npmjs.org/connect/-/connect-2.8.5.tgz',
+verbose addRemoteTarball   '20572077ba1f626fdb740b0ad7068f9130d701b8' ]
+verbose fetch to C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883785-0.19226120132952929\tmp.tgz
+verbose fetch to C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883785-0.2844301413279027\tmp.tgz
+http GET https://registry.npmjs.org/debug/-/debug-0.7.2.tgz
+http GET https://registry.npmjs.org/connect/-/connect-2.8.5.tgz
+http 200 https://registry.npmjs.org/mkdirp/-/mkdirp-0.3.5.tgz
+silly updated sha bytes 3139
+info shasum 90eb469ddce905c866de687efc43131d8801f9d0
+info shasum C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883237-0.3096319166943431\tmp.tgz
+verbose unpack C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883237-0.3096319166943431\tmp.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly extracting entry .npmignore
+silly extracting entry README.md
+silly extracting entry LICENSE
+silly extracting entry index.js
+silly extracting entry .travis.yml
+silly extracting entry test/parse.js
+silly extracting entry test/serialize.js
+silly extracting entry test/mocha.opts
+verbose caching C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883237-0.3096319166943431\package\package.json
+verbose loadDefaults cookie@0.1.0
+verbose from cache C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883237-0.3096319166943431\package\package.json
+verbose tar.pack [ 'C:\\Users\\jplur\\AppData\\Roaming\\npm-cache\\cookie\\0.1.0\\package.tgz',
+verbose tar.pack   'C:\\Users\\jplur\\AppData\\Local\\Temp\\npm-1377355880595\\1377355883237-0.3096319166943431\\package' ]
+verbose tarball C:\Users\jplur\AppData\Roaming\npm-cache\cookie\0.1.0\package.tgz
+verbose folder C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883237-0.3096319166943431\package
+verbose unpack C:\Users\jplur\AppData\Roaming\npm-cache\cookie\0.1.0\package.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly modified mode [ 'package.json', 438, 420 ]
+silly extracting entry .npmignore
+silly modified mode [ '.npmignore', 438, 420 ]
+silly extracting entry README.md
+silly modified mode [ 'README.md', 438, 420 ]
+silly updated sha bytes 4162
+info shasum de3e5f8961c88c787ee1368df849ac4413eca8d7
+info shasum C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883242-0.6030335647519678\tmp.tgz
+verbose unpack C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883242-0.6030335647519678\tmp.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry LICENSE
+silly modified mode [ 'LICENSE', 438, 420 ]
+silly extracting entry index.js
+silly modified mode [ 'index.js', 438, 420 ]
+silly extracting entry package.json
+silly extracting entry .npmignore
+silly extracting entry LICENSE
+silly extracting entry .travis.yml
+silly modified mode [ '.travis.yml', 438, 420 ]
+silly extracting entry test/parse.js
+silly modified mode [ 'test/parse.js', 438, 420 ]
+silly extracting entry test/serialize.js
+silly modified mode [ 'test/serialize.js', 438, 420 ]
+silly extracting entry index.js
+silly extracting entry examples/pow.js
+silly extracting entry test/mocha.opts
+silly modified mode [ 'test/mocha.opts', 438, 420 ]
+silly extracting entry readme.markdown
+silly extracting entry test/perm.js
+silly extracting entry test/perm_sync.js
+silly extracting entry test/race.js
+silly extracting entry test/rel.js
+silly extracting entry test/return.js
+silly extracting entry test/clobber.js
+silly extracting entry test/root.js
+silly extracting entry test/umask.js
+silly extracting entry test/sync.js
+silly extracting entry test/chmod.js
+silly extracting entry test/umask_sync.js
+silly extracting entry test/return_sync.js
+silly extracting entry test/mkdirp.js
+silly extracting entry .travis.yml
+verbose caching C:\Users\jplur\AppData\Roaming\npm-cache\cookie\0.1.0\package\package.json
+verbose loadDefaults cookie@0.1.0
+silly updated sha bytes 3096
+info shasum a1d4c22aafc3252c0d6d4794e4f60e4fc64c74d5
+info shasum C:\Users\jplur\AppData\Roaming\npm-cache\cookie\0.1.0\package.tgz
+verbose from cache C:\Users\jplur\AppData\Roaming\npm-cache\cookie\0.1.0\package\package.json
+verbose chmod C:\Users\jplur\AppData\Roaming\npm-cache\cookie\0.1.0\package.tgz 644
+silly skipping chown for windows C:\Users\jplur\AppData\Roaming\npm-cache\cookie\0.1.0\package.tgz
+verbose caching C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883242-0.6030335647519678\package\package.json
+verbose loadDefaults mkdirp@0.3.5
+verbose from cache C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883242-0.6030335647519678\package\package.json
+verbose tar.pack [ 'C:\\Users\\jplur\\AppData\\Roaming\\npm-cache\\mkdirp\\0.3.5\\package.tgz',
+verbose tar.pack   'C:\\Users\\jplur\\AppData\\Local\\Temp\\npm-1377355880595\\1377355883242-0.6030335647519678\\package' ]
+verbose tarball C:\Users\jplur\AppData\Roaming\npm-cache\mkdirp\0.3.5\package.tgz
+verbose folder C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883242-0.6030335647519678\package
+http 200 https://registry.npmjs.org/commander/-/commander-1.2.0.tgz
+http 200 https://registry.npmjs.org/range-parser/0.0.4
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+silly get cb     etag: '"27HRUXP1C4FYWUHH9AKW9J76C"',
+silly get cb     date: 'Sat, 24 Aug 2013 14:51:31 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '728' } ]
+http 200 https://registry.npmjs.org/fresh/-/fresh-0.2.0.tgz
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.24-win32-ia32-6.1.7601',
+verbose bin dist   { shasum: 'c0427ffef51c10acba0782a46c9602e744ff620b',
+verbose bin dist     tarball: 'http://registry.npmjs.org/range-parser/-/range-parser-0.0.4.tgz' } ]
+verbose addRemoteTarball [ 'https://registry.npmjs.org/range-parser/-/range-parser-0.0.4.tgz',
+verbose addRemoteTarball   'c0427ffef51c10acba0782a46c9602e744ff620b' ]
+verbose fetch to C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883921-0.8621637884061784\tmp.tgz
+http GET https://registry.npmjs.org/range-parser/-/range-parser-0.0.4.tgz
+verbose unpack C:\Users\jplur\AppData\Roaming\npm-cache\mkdirp\0.3.5\package.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly modified mode [ 'package.json', 438, 420 ]
+silly extracting entry .npmignore
+silly modified mode [ '.npmignore', 438, 420 ]
+silly extracting entry LICENSE
+silly modified mode [ 'LICENSE', 438, 420 ]
+silly extracting entry index.js
+silly modified mode [ 'index.js', 438, 420 ]
+silly extracting entry .travis.yml
+silly modified mode [ '.travis.yml', 438, 420 ]
+silly extracting entry examples/pow.js
+silly modified mode [ 'examples/pow.js', 438, 420 ]
+silly extracting entry readme.markdown
+silly modified mode [ 'readme.markdown', 438, 420 ]
+silly extracting entry test/chmod.js
+silly modified mode [ 'test/chmod.js', 438, 420 ]
+silly extracting entry test/perm.js
+silly modified mode [ 'test/perm.js', 438, 420 ]
+silly extracting entry test/perm_sync.js
+silly modified mode [ 'test/perm_sync.js', 438, 420 ]
+silly extracting entry test/race.js
+silly modified mode [ 'test/race.js', 438, 420 ]
+silly extracting entry test/mkdirp.js
+silly modified mode [ 'test/mkdirp.js', 438, 420 ]
+silly extracting entry test/return.js
+silly modified mode [ 'test/return.js', 438, 420 ]
+silly extracting entry test/return_sync.js
+silly modified mode [ 'test/return_sync.js', 438, 420 ]
+silly extracting entry test/root.js
+silly modified mode [ 'test/root.js', 438, 420 ]
+silly extracting entry test/sync.js
+silly modified mode [ 'test/sync.js', 438, 420 ]
+silly extracting entry test/umask.js
+silly modified mode [ 'test/umask.js', 438, 420 ]
+silly extracting entry test/clobber.js
+silly modified mode [ 'test/clobber.js', 438, 420 ]
+silly extracting entry test/umask_sync.js
+silly modified mode [ 'test/umask_sync.js', 438, 420 ]
+silly extracting entry test/rel.js
+silly modified mode [ 'test/rel.js', 438, 420 ]
+verbose caching C:\Users\jplur\AppData\Roaming\npm-cache\mkdirp\0.3.5\package\package.json
+verbose loadDefaults mkdirp@0.3.5
+silly updated sha bytes 4071
+info shasum 89f9ded2050b0026072194e4a23b8cf152be56fb
+info shasum C:\Users\jplur\AppData\Roaming\npm-cache\mkdirp\0.3.5\package.tgz
+verbose from cache C:\Users\jplur\AppData\Roaming\npm-cache\mkdirp\0.3.5\package\package.json
+verbose chmod C:\Users\jplur\AppData\Roaming\npm-cache\mkdirp\0.3.5\package.tgz 644
+silly skipping chown for windows C:\Users\jplur\AppData\Roaming\npm-cache\mkdirp\0.3.5\package.tgz
+silly updated sha bytes 10786
+info shasum fd5713bfa153c7d6cc599378a5ab4c45c535029e
+info shasum C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883371-0.7404170029330999\tmp.tgz
+verbose unpack C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883371-0.7404170029330999\tmp.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly extracting entry index.js
+silly extracting entry History.md
+silly extracting entry Readme.md
+verbose caching C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883371-0.7404170029330999\package\package.json
+verbose loadDefaults commander@1.2.0
+verbose from cache C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883371-0.7404170029330999\package\package.json
+verbose tar.pack [ 'C:\\Users\\jplur\\AppData\\Roaming\\npm-cache\\commander\\1.2.0\\package.tgz',
+verbose tar.pack   'C:\\Users\\jplur\\AppData\\Local\\Temp\\npm-1377355880595\\1377355883371-0.7404170029330999\\package' ]
+verbose tarball C:\Users\jplur\AppData\Roaming\npm-cache\commander\1.2.0\package.tgz
+verbose folder C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883371-0.7404170029330999\package
+silly updated sha bytes 1887
+info shasum bfd9402cf3df12c4a4c310c79f99a3dde13d34a7
+info shasum C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883242-0.21704391576349735\tmp.tgz
+verbose unpack C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883242-0.21704391576349735\tmp.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly extracting entry .npmignore
+silly extracting entry index.js
+silly extracting entry History.md
+silly extracting entry Makefile
+silly extracting entry Readme.md
+verbose unpack C:\Users\jplur\AppData\Roaming\npm-cache\commander\1.2.0\package.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+verbose caching C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883242-0.21704391576349735\package\package.json
+verbose loadDefaults fresh@0.2.0
+verbose from cache C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883242-0.21704391576349735\package\package.json
+silly extracting entry package.json
+silly modified mode [ 'package.json', 438, 420 ]
+verbose tar.pack [ 'C:\\Users\\jplur\\AppData\\Roaming\\npm-cache\\fresh\\0.2.0\\package.tgz',
+verbose tar.pack   'C:\\Users\\jplur\\AppData\\Local\\Temp\\npm-1377355880595\\1377355883242-0.21704391576349735\\package' ]
+verbose tarball C:\Users\jplur\AppData\Roaming\npm-cache\fresh\0.2.0\package.tgz
+verbose folder C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883242-0.21704391576349735\package
+silly extracting entry index.js
+silly modified mode [ 'index.js', 438, 420 ]
+silly extracting entry History.md
+silly modified mode [ 'History.md', 438, 420 ]
+silly extracting entry Readme.md
+silly modified mode [ 'Readme.md', 438, 420 ]
+verbose unpack C:\Users\jplur\AppData\Roaming\npm-cache\fresh\0.2.0\package.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly modified mode [ 'package.json', 438, 420 ]
+silly extracting entry .npmignore
+silly modified mode [ '.npmignore', 438, 420 ]
+silly extracting entry index.js
+silly modified mode [ 'index.js', 438, 420 ]
+silly extracting entry History.md
+silly modified mode [ 'History.md', 438, 420 ]
+silly extracting entry Makefile
+silly modified mode [ 'Makefile', 438, 420 ]
+silly extracting entry Readme.md
+silly modified mode [ 'Readme.md', 438, 420 ]
+verbose caching C:\Users\jplur\AppData\Roaming\npm-cache\commander\1.2.0\package\package.json
+verbose loadDefaults commander@1.2.0
+silly updated sha bytes 10761
+info shasum 47dbb2e6804def8ba5141a50761b0b1b544467b1
+info shasum C:\Users\jplur\AppData\Roaming\npm-cache\commander\1.2.0\package.tgz
+verbose from cache C:\Users\jplur\AppData\Roaming\npm-cache\commander\1.2.0\package\package.json
+verbose chmod C:\Users\jplur\AppData\Roaming\npm-cache\commander\1.2.0\package.tgz 644
+silly skipping chown for windows C:\Users\jplur\AppData\Roaming\npm-cache\commander\1.2.0\package.tgz
+verbose caching C:\Users\jplur\AppData\Roaming\npm-cache\fresh\0.2.0\package\package.json
+verbose loadDefaults fresh@0.2.0
+silly updated sha bytes 1870
+info shasum f38ed2f05318d86db7efff521cd9258a4fcc7386
+info shasum C:\Users\jplur\AppData\Roaming\npm-cache\fresh\0.2.0\package.tgz
+verbose from cache C:\Users\jplur\AppData\Roaming\npm-cache\fresh\0.2.0\package\package.json
+verbose chmod C:\Users\jplur\AppData\Roaming\npm-cache\fresh\0.2.0\package.tgz 644
+silly skipping chown for windows C:\Users\jplur\AppData\Roaming\npm-cache\fresh\0.2.0\package.tgz
+http 200 https://registry.npmjs.org/buffer-crc32/-/buffer-crc32-0.2.1.tgz
+http 200 https://registry.npmjs.org/methods/-/methods-0.0.1.tgz
+http 200 https://registry.npmjs.org/send/-/send-0.1.4.tgz
+silly updated sha bytes 3871
+info shasum be3e5382fc02b6d6324956ac1af98aa98b08534c
+info shasum C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883400-0.372659815242514\tmp.tgz
+verbose unpack C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883400-0.372659815242514\tmp.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly extracting entry .npmignore
+silly extracting entry README.md
+silly extracting entry index.js
+silly extracting entry .travis.yml
+silly extracting entry tests/crc.test.js
+http 200 https://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.1.tgz
+verbose caching C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883400-0.372659815242514\package\package.json
+verbose loadDefaults buffer-crc32@0.2.1
+verbose from cache C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883400-0.372659815242514\package\package.json
+verbose tar.pack [ 'C:\\Users\\jplur\\AppData\\Roaming\\npm-cache\\buffer-crc32\\0.2.1\\package.tgz',
+verbose tar.pack   'C:\\Users\\jplur\\AppData\\Local\\Temp\\npm-1377355880595\\1377355883400-0.372659815242514\\package' ]
+verbose tarball C:\Users\jplur\AppData\Roaming\npm-cache\buffer-crc32\0.2.1\package.tgz
+verbose folder C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883400-0.372659815242514\package
+silly updated sha bytes 5824
+info shasum be70d8d1be01de61821af13780b50345a4f71abd
+info shasum C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883533-0.015794185921549797\tmp.tgz
+verbose unpack C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883533-0.015794185921549797\tmp.tgz
+http 200 https://registry.npmjs.org/debug/-/debug-0.7.2.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+verbose unpack C:\Users\jplur\AppData\Roaming\npm-cache\buffer-crc32\0.2.1\package.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly extracting entry package.json
+silly modified mode [ 'package.json', 438, 420 ]
+silly extracting entry .npmignore
+silly extracting entry index.js
+silly extracting entry .npmignore
+silly modified mode [ '.npmignore', 438, 420 ]
+silly extracting entry README.md
+silly modified mode [ 'README.md', 438, 420 ]
+silly extracting entry History.md
+silly extracting entry Makefile
+silly extracting entry index.js
+silly modified mode [ 'index.js', 438, 420 ]
+silly extracting entry .travis.yml
+silly modified mode [ '.travis.yml', 438, 420 ]
+silly extracting entry Readme.md
+silly extracting entry lib/send.js
+silly extracting entry tests/crc.test.js
+silly modified mode [ 'tests/crc.test.js', 438, 420 ]
+silly extracting entry lib/utils.js
+verbose caching C:\Users\jplur\AppData\Roaming\npm-cache\buffer-crc32\0.2.1\package\package.json
+verbose loadDefaults buffer-crc32@0.2.1
+silly updated sha bytes 3844
+info shasum 18919669532a6d9991f288cf0bae64e6b4b4412d
+info shasum C:\Users\jplur\AppData\Roaming\npm-cache\buffer-crc32\0.2.1\package.tgz
+verbose from cache C:\Users\jplur\AppData\Roaming\npm-cache\buffer-crc32\0.2.1\package\package.json
+verbose chmod C:\Users\jplur\AppData\Roaming\npm-cache\buffer-crc32\0.2.1\package.tgz 644
+silly skipping chown for windows C:\Users\jplur\AppData\Roaming\npm-cache\buffer-crc32\0.2.1\package.tgz
+verbose caching C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883533-0.015794185921549797\package\package.json
+verbose loadDefaults send@0.1.4
+verbose from cache C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883533-0.015794185921549797\package\package.json
+verbose tar.pack [ 'C:\\Users\\jplur\\AppData\\Roaming\\npm-cache\\send\\0.1.4\\package.tgz',
+verbose tar.pack   'C:\\Users\\jplur\\AppData\\Local\\Temp\\npm-1377355880595\\1377355883533-0.015794185921549797\\package' ]
+verbose tarball C:\Users\jplur\AppData\Roaming\npm-cache\send\0.1.4\package.tgz
+verbose folder C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883533-0.015794185921549797\package
+verbose unpack C:\Users\jplur\AppData\Roaming\npm-cache\send\0.1.4\package.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly modified mode [ 'package.json', 438, 420 ]
+silly extracting entry .npmignore
+silly modified mode [ '.npmignore', 438, 420 ]
+silly extracting entry index.js
+silly modified mode [ 'index.js', 438, 420 ]
+silly extracting entry History.md
+silly modified mode [ 'History.md', 438, 420 ]
+silly extracting entry lib/send.js
+silly modified mode [ 'lib/send.js', 438, 420 ]
+silly extracting entry lib/utils.js
+silly modified mode [ 'lib/utils.js', 438, 420 ]
+silly extracting entry Makefile
+silly modified mode [ 'Makefile', 438, 420 ]
+silly extracting entry Readme.md
+silly modified mode [ 'Readme.md', 438, 420 ]
+silly updated sha bytes 1828
+verbose caching C:\Users\jplur\AppData\Roaming\npm-cache\send\0.1.4\package\package.json
+verbose loadDefaults send@0.1.4
+info shasum 44e072148af01e6e8e24afbf12690d68ae698ecb
+info shasum C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883543-0.7859803398605436\tmp.tgz
+verbose unpack C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883543-0.7859803398605436\tmp.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly updated sha bytes 5794
+info shasum 5fcd96f3d6b02e9369e4f2c53c00f680b335d368
+info shasum C:\Users\jplur\AppData\Roaming\npm-cache\send\0.1.4\package.tgz
+verbose from cache C:\Users\jplur\AppData\Roaming\npm-cache\send\0.1.4\package\package.json
+verbose chmod C:\Users\jplur\AppData\Roaming\npm-cache\send\0.1.4\package.tgz 644
+silly skipping chown for windows C:\Users\jplur\AppData\Roaming\npm-cache\send\0.1.4\package.tgz
+silly extracting entry package.json
+silly extracting entry .npmignore
+silly extracting entry index.js
+silly extracting entry History.md
+silly extracting entry Makefile
+silly extracting entry Readme.md
+verbose caching C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883543-0.7859803398605436\package\package.json
+verbose loadDefaults cookie-signature@1.0.1
+verbose from cache C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883543-0.7859803398605436\package\package.json
+verbose tar.pack [ 'C:\\Users\\jplur\\AppData\\Roaming\\npm-cache\\cookie-signature\\1.0.1\\package.tgz',
+verbose tar.pack   'C:\\Users\\jplur\\AppData\\Local\\Temp\\npm-1377355880595\\1377355883543-0.7859803398605436\\package' ]
+verbose tarball C:\Users\jplur\AppData\Roaming\npm-cache\cookie-signature\1.0.1\package.tgz
+verbose folder C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883543-0.7859803398605436\package
+verbose unpack C:\Users\jplur\AppData\Roaming\npm-cache\cookie-signature\1.0.1\package.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly modified mode [ 'package.json', 438, 420 ]
+silly extracting entry .npmignore
+silly modified mode [ '.npmignore', 438, 420 ]
+silly extracting entry index.js
+silly modified mode [ 'index.js', 438, 420 ]
+silly extracting entry History.md
+silly modified mode [ 'History.md', 438, 420 ]
+silly extracting entry Makefile
+silly modified mode [ 'Makefile', 438, 420 ]
+silly extracting entry Readme.md
+silly modified mode [ 'Readme.md', 438, 420 ]
+http 200 https://registry.npmjs.org/connect/-/connect-2.8.5.tgz
+verbose caching C:\Users\jplur\AppData\Roaming\npm-cache\cookie-signature\1.0.1\package\package.json
+verbose loadDefaults cookie-signature@1.0.1
+silly updated sha bytes 1805
+info shasum 954838a1594089a0c4e3ae5745819f6e3c40ba96
+info shasum C:\Users\jplur\AppData\Roaming\npm-cache\cookie-signature\1.0.1\package.tgz
+verbose from cache C:\Users\jplur\AppData\Roaming\npm-cache\cookie-signature\1.0.1\package\package.json
+verbose chmod C:\Users\jplur\AppData\Roaming\npm-cache\cookie-signature\1.0.1\package.tgz 644
+silly skipping chown for windows C:\Users\jplur\AppData\Roaming\npm-cache\cookie-signature\1.0.1\package.tgz
+silly updated sha bytes 5148
+info shasum 056692c86670977f115de82917918b8e8b9a10f0
+info shasum C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883785-0.19226120132952929\tmp.tgz
+verbose unpack C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883785-0.19226120132952929\tmp.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly extracting entry .npmignore
+silly extracting entry debug.js
+silly extracting entry index.js
+silly extracting entry component.json
+silly extracting entry example/app.js
+silly extracting entry example/wildcards.js
+silly extracting entry example/worker.js
+silly extracting entry example/browser.html
+silly extracting entry History.md
+silly extracting entry lib/debug.js
+silly extracting entry Readme.md
+http 200 https://registry.npmjs.org/range-parser/-/range-parser-0.0.4.tgz
+verbose caching C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883785-0.19226120132952929\package\package.json
+verbose loadDefaults debug@0.7.2
+verbose from cache C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883785-0.19226120132952929\package\package.json
+verbose tar.pack [ 'C:\\Users\\jplur\\AppData\\Roaming\\npm-cache\\debug\\0.7.2\\package.tgz',
+verbose tar.pack   'C:\\Users\\jplur\\AppData\\Local\\Temp\\npm-1377355880595\\1377355883785-0.19226120132952929\\package' ]
+verbose tarball C:\Users\jplur\AppData\Roaming\npm-cache\debug\0.7.2\package.tgz
+verbose folder C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883785-0.19226120132952929\package
+verbose unpack C:\Users\jplur\AppData\Roaming\npm-cache\debug\0.7.2\package.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly modified mode [ 'package.json', 438, 420 ]
+silly extracting entry .npmignore
+silly modified mode [ '.npmignore', 438, 420 ]
+silly extracting entry debug.js
+silly modified mode [ 'debug.js', 438, 420 ]
+silly extracting entry index.js
+silly modified mode [ 'index.js', 438, 420 ]
+silly extracting entry component.json
+silly modified mode [ 'component.json', 438, 420 ]
+silly extracting entry example/app.js
+silly modified mode [ 'example/app.js', 438, 420 ]
+silly extracting entry example/wildcards.js
+silly modified mode [ 'example/wildcards.js', 438, 420 ]
+silly extracting entry example/worker.js
+silly modified mode [ 'example/worker.js', 438, 420 ]
+silly extracting entry example/browser.html
+silly modified mode [ 'example/browser.html', 438, 420 ]
+silly extracting entry History.md
+silly modified mode [ 'History.md', 438, 420 ]
+silly extracting entry lib/debug.js
+silly modified mode [ 'lib/debug.js', 438, 420 ]
+silly extracting entry Readme.md
+silly modified mode [ 'Readme.md', 438, 420 ]
+verbose caching C:\Users\jplur\AppData\Roaming\npm-cache\debug\0.7.2\package\package.json
+verbose loadDefaults debug@0.7.2
+silly updated sha bytes 5118
+info shasum 3bcae2c4b03b21ea4b551a64fa2d4c31f556395f
+info shasum C:\Users\jplur\AppData\Roaming\npm-cache\debug\0.7.2\package.tgz
+verbose from cache C:\Users\jplur\AppData\Roaming\npm-cache\debug\0.7.2\package\package.json
+verbose chmod C:\Users\jplur\AppData\Roaming\npm-cache\debug\0.7.2\package.tgz 644
+silly skipping chown for windows C:\Users\jplur\AppData\Roaming\npm-cache\debug\0.7.2\package.tgz
+silly updated sha bytes 469
+info shasum 277c90f8bef39709645a8371c51c3b6c648e068c
+info shasum C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883465-0.39258220489136875\tmp.tgz
+verbose unpack C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883465-0.39258220489136875\tmp.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly extracting entry index.js
+verbose caching C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883465-0.39258220489136875\package\package.json
+verbose loadDefaults methods@0.0.1
+verbose from cache C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883465-0.39258220489136875\package\package.json
+verbose tar.pack [ 'C:\\Users\\jplur\\AppData\\Roaming\\npm-cache\\methods\\0.0.1\\package.tgz',
+verbose tar.pack   'C:\\Users\\jplur\\AppData\\Local\\Temp\\npm-1377355880595\\1377355883465-0.39258220489136875\\package' ]
+verbose tarball C:\Users\jplur\AppData\Roaming\npm-cache\methods\0.0.1\package.tgz
+verbose folder C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883465-0.39258220489136875\package
+verbose unpack C:\Users\jplur\AppData\Roaming\npm-cache\methods\0.0.1\package.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly modified mode [ 'package.json', 438, 420 ]
+silly extracting entry index.js
+silly modified mode [ 'index.js', 438, 420 ]
+verbose caching C:\Users\jplur\AppData\Roaming\npm-cache\methods\0.0.1\package\package.json
+verbose loadDefaults methods@0.0.1
+silly updated sha bytes 459
+info shasum 4903d77af8211e2cd7052497d6b3948ad478db5c
+info shasum C:\Users\jplur\AppData\Roaming\npm-cache\methods\0.0.1\package.tgz
+verbose from cache C:\Users\jplur\AppData\Roaming\npm-cache\methods\0.0.1\package\package.json
+verbose chmod C:\Users\jplur\AppData\Roaming\npm-cache\methods\0.0.1\package.tgz 644
+silly skipping chown for windows C:\Users\jplur\AppData\Roaming\npm-cache\methods\0.0.1\package.tgz
+silly updated sha bytes 40960
+silly updated sha bytes 35094
+info shasum 20572077ba1f626fdb740b0ad7068f9130d701b8
+info shasum C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883785-0.2844301413279027\tmp.tgz
+verbose unpack C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883785-0.2844301413279027\tmp.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly extracting entry .npmignore
+silly extracting entry LICENSE
+silly extracting entry index.js
+silly extracting entry .travis.yml
+silly extracting entry lib/cache.js
+silly extracting entry lib/connect.js
+silly extracting entry lib/index.js
+silly extracting entry lib/patch.js
+silly extracting entry lib/proto.js
+silly extracting entry lib/utils.js
+silly extracting entry lib/middleware/basicAuth.js
+silly extracting entry lib/middleware/errorHandler.js
+silly extracting entry lib/middleware/favicon.js
+silly extracting entry lib/middleware/json.js
+silly extracting entry lib/middleware/limit.js
+silly extracting entry lib/middleware/directory.js
+silly extracting entry lib/middleware/methodOverride.js
+silly extracting entry lib/middleware/multipart.js
+silly updated sha bytes 1283
+info shasum c0427ffef51c10acba0782a46c9602e744ff620b
+info shasum C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883921-0.8621637884061784\tmp.tgz
+verbose unpack C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883921-0.8621637884061784\tmp.tgz
+silly extracting entry lib/middleware/query.js
+silly extracting entry lib/middleware/responseTime.js
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry lib/middleware/urlencoded.js
+silly extracting entry lib/middleware/csrf.js
+silly extracting entry lib/middleware/session.js
+silly extracting entry package.json
+silly extracting entry .npmignore
+silly extracting entry index.js
+silly extracting entry lib/middleware/cookieSession.js
+silly extracting entry lib/middleware/static.js
+silly extracting entry lib/middleware/cookieParser.js
+silly extracting entry lib/middleware/staticCache.js
+silly extracting entry History.md
+silly extracting entry Makefile
+silly extracting entry lib/middleware/compress.js
+silly extracting entry lib/middleware/timeout.js
+silly extracting entry lib/middleware/bodyParser.js
+silly extracting entry lib/middleware/vhost.js
+silly extracting entry Readme.md
+silly extracting entry lib/middleware/logger.js
+silly extracting entry lib/middleware/session/cookie.js
+silly extracting entry lib/middleware/session/memory.js
+silly extracting entry lib/middleware/session/session.js
+silly extracting entry lib/middleware/session/store.js
+silly extracting entry lib/public/directory.html
+silly extracting entry lib/public/error.html
+silly extracting entry lib/public/favicon.ico
+silly extracting entry lib/public/icons/page_white_edit.png
+silly extracting entry lib/public/icons/page.png
+silly extracting entry lib/public/icons/page_attach.png
+silly extracting entry lib/public/icons/page_code.png
+silly extracting entry lib/public/icons/page_copy.png
+silly extracting entry lib/public/icons/page_delete.png
+silly extracting entry lib/public/icons/page_edit.png
+silly extracting entry lib/public/icons/page_error.png
+silly extracting entry lib/public/icons/page_excel.png
+silly extracting entry lib/public/icons/page_find.png
+silly extracting entry lib/public/icons/page_gear.png
+silly extracting entry lib/public/icons/page_go.png
+silly extracting entry lib/public/icons/page_green.png
+silly extracting entry lib/public/icons/page_key.png
+silly extracting entry lib/public/icons/page_lightning.png
+silly extracting entry lib/public/icons/page_link.png
+verbose caching C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883921-0.8621637884061784\package\package.json
+verbose loadDefaults range-parser@0.0.4
+verbose from cache C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883921-0.8621637884061784\package\package.json
+verbose tar.pack [ 'C:\\Users\\jplur\\AppData\\Roaming\\npm-cache\\range-parser\\0.0.4\\package.tgz',
+verbose tar.pack   'C:\\Users\\jplur\\AppData\\Local\\Temp\\npm-1377355880595\\1377355883921-0.8621637884061784\\package' ]
+verbose tarball C:\Users\jplur\AppData\Roaming\npm-cache\range-parser\0.0.4\package.tgz
+verbose folder C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883921-0.8621637884061784\package
+silly extracting entry lib/public/icons/page_paintbrush.png
+silly extracting entry lib/public/icons/page_paste.png
+silly extracting entry lib/public/icons/page_red.png
+silly extracting entry lib/public/icons/page_refresh.png
+silly extracting entry lib/public/icons/page_save.png
+silly extracting entry lib/public/icons/page_white.png
+silly extracting entry lib/public/icons/page_white_acrobat.png
+silly extracting entry lib/public/icons/page_white_actionscript.png
+silly extracting entry lib/public/icons/page_white_add.png
+silly extracting entry lib/public/icons/page_white_c.png
+silly extracting entry lib/public/icons/page_white_camera.png
+silly extracting entry lib/public/icons/page_white_cd.png
+silly extracting entry lib/public/icons/page_white_code.png
+silly extracting entry lib/public/icons/page_white_code_red.png
+silly extracting entry lib/public/icons/page_white_coldfusion.png
+silly extracting entry lib/public/icons/page_white_compressed.png
+silly extracting entry lib/public/icons/page_white_copy.png
+silly extracting entry lib/public/icons/page_white_cplusplus.png
+silly extracting entry lib/public/icons/page_white_csharp.png
+silly extracting entry lib/public/icons/page_white_cup.png
+silly extracting entry lib/public/icons/page_white_database.png
+silly extracting entry lib/public/icons/page_white_delete.png
+silly extracting entry lib/public/icons/page_white_dvd.png
+silly extracting entry lib/public/icons/page_add.png
+silly extracting entry lib/public/icons/page_white_error.png
+silly extracting entry lib/public/icons/page_white_excel.png
+silly extracting entry lib/public/icons/page_white_find.png
+silly extracting entry lib/public/icons/page_white_flash.png
+silly extracting entry lib/public/icons/page_white_freehand.png
+silly extracting entry lib/public/icons/page_white_gear.png
+silly extracting entry lib/public/icons/page_white_get.png
+silly extracting entry lib/public/icons/page_white_go.png
+silly extracting entry lib/public/icons/page_white_h.png
+silly extracting entry lib/public/icons/page_white_horizontal.png
+silly extracting entry lib/public/icons/page_white_key.png
+silly extracting entry lib/public/icons/page_white_lightning.png
+silly extracting entry lib/public/icons/page_white_link.png
+silly extracting entry lib/public/icons/page_white_magnify.png
+silly extracting entry lib/public/icons/page_white_medal.png
+silly extracting entry lib/public/icons/page_white_office.png
+silly extracting entry lib/public/icons/page_white_paint.png
+silly extracting entry lib/public/icons/page_white_paintbrush.png
+silly extracting entry lib/public/icons/page_white_paste.png
+silly extracting entry lib/public/icons/page_white_php.png
+silly extracting entry lib/public/icons/page_white_picture.png
+silly extracting entry lib/public/icons/page_white_powerpoint.png
+silly extracting entry lib/public/icons/page_white_put.png
+silly extracting entry lib/public/icons/page_white_ruby.png
+silly extracting entry lib/public/icons/page_white_stack.png
+verbose unpack C:\Users\jplur\AppData\Roaming\npm-cache\range-parser\0.0.4\package.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry lib/public/icons/page_white_star.png
+silly extracting entry lib/public/icons/page_white_swoosh.png
+silly extracting entry lib/public/icons/page_white_text.png
+silly extracting entry package.json
+silly modified mode [ 'package.json', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_text_width.png
+silly extracting entry .npmignore
+silly modified mode [ '.npmignore', 438, 420 ]
+silly extracting entry index.js
+silly modified mode [ 'index.js', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_tux.png
+silly extracting entry lib/public/icons/page_white_vector.png
+silly extracting entry lib/public/icons/page_white_visualstudio.png
+silly extracting entry lib/public/icons/page_white_width.png
+silly extracting entry History.md
+silly modified mode [ 'History.md', 438, 420 ]
+silly extracting entry Makefile
+silly modified mode [ 'Makefile', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_word.png
+silly extracting entry lib/public/icons/page_white_world.png
+silly extracting entry lib/public/icons/page_white_wrench.png
+silly extracting entry lib/public/icons/page_white_zip.png
+silly extracting entry lib/public/icons/page_word.png
+silly extracting entry lib/public/icons/page_world.png
+silly extracting entry lib/public/style.css
+silly extracting entry Readme.md
+silly extracting entry Readme.md
+silly modified mode [ 'Readme.md', 438, 420 ]
+verbose caching C:\Users\jplur\AppData\Roaming\npm-cache\range-parser\0.0.4\package\package.json
+verbose loadDefaults range-parser@0.0.4
+silly updated sha bytes 1254
+info shasum 621fb037ad12879a501b7c621ba0f4f5d65d81c6
+info shasum C:\Users\jplur\AppData\Roaming\npm-cache\range-parser\0.0.4\package.tgz
+verbose from cache C:\Users\jplur\AppData\Roaming\npm-cache\range-parser\0.0.4\package\package.json
+verbose chmod C:\Users\jplur\AppData\Roaming\npm-cache\range-parser\0.0.4\package.tgz 644
+silly skipping chown for windows C:\Users\jplur\AppData\Roaming\npm-cache\range-parser\0.0.4\package.tgz
+verbose caching C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883785-0.2844301413279027\package\package.json
+verbose loadDefaults connect@2.8.5
+verbose from cache C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883785-0.2844301413279027\package\package.json
+verbose tar.pack [ 'C:\\Users\\jplur\\AppData\\Roaming\\npm-cache\\connect\\2.8.5\\package.tgz',
+verbose tar.pack   'C:\\Users\\jplur\\AppData\\Local\\Temp\\npm-1377355880595\\1377355883785-0.2844301413279027\\package' ]
+verbose tarball C:\Users\jplur\AppData\Roaming\npm-cache\connect\2.8.5\package.tgz
+verbose folder C:\Users\jplur\AppData\Local\Temp\npm-1377355880595\1377355883785-0.2844301413279027\package
+verbose unpack C:\Users\jplur\AppData\Roaming\npm-cache\connect\2.8.5\package.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly modified mode [ 'package.json', 438, 420 ]
+silly extracting entry .npmignore
+silly modified mode [ '.npmignore', 438, 420 ]
+silly extracting entry LICENSE
+silly modified mode [ 'LICENSE', 438, 420 ]
+silly extracting entry index.js
+silly modified mode [ 'index.js', 438, 420 ]
+silly extracting entry .travis.yml
+silly modified mode [ '.travis.yml', 438, 420 ]
+silly extracting entry lib/cache.js
+silly modified mode [ 'lib/cache.js', 438, 420 ]
+silly extracting entry lib/connect.js
+silly modified mode [ 'lib/connect.js', 438, 420 ]
+silly extracting entry lib/index.js
+silly modified mode [ 'lib/index.js', 438, 420 ]
+silly extracting entry lib/patch.js
+silly modified mode [ 'lib/patch.js', 438, 420 ]
+silly extracting entry lib/proto.js
+silly modified mode [ 'lib/proto.js', 438, 420 ]
+silly extracting entry lib/utils.js
+silly modified mode [ 'lib/utils.js', 438, 420 ]
+silly extracting entry lib/middleware/basicAuth.js
+silly modified mode [ 'lib/middleware/basicAuth.js', 438, 420 ]
+silly extracting entry lib/middleware/errorHandler.js
+silly modified mode [ 'lib/middleware/errorHandler.js', 438, 420 ]
+silly extracting entry lib/middleware/favicon.js
+silly modified mode [ 'lib/middleware/favicon.js', 438, 420 ]
+silly extracting entry lib/middleware/json.js
+silly modified mode [ 'lib/middleware/json.js', 438, 420 ]
+silly extracting entry lib/middleware/limit.js
+silly modified mode [ 'lib/middleware/limit.js', 438, 420 ]
+silly extracting entry lib/middleware/directory.js
+silly modified mode [ 'lib/middleware/directory.js', 438, 420 ]
+silly extracting entry lib/middleware/methodOverride.js
+silly modified mode [ 'lib/middleware/methodOverride.js', 438, 420 ]
+silly extracting entry lib/middleware/multipart.js
+silly modified mode [ 'lib/middleware/multipart.js', 438, 420 ]
+silly extracting entry lib/middleware/query.js
+silly modified mode [ 'lib/middleware/query.js', 438, 420 ]
+silly extracting entry lib/middleware/responseTime.js
+silly modified mode [ 'lib/middleware/responseTime.js', 438, 420 ]
+silly extracting entry lib/middleware/urlencoded.js
+silly modified mode [ 'lib/middleware/urlencoded.js', 438, 420 ]
+silly extracting entry lib/middleware/csrf.js
+silly modified mode [ 'lib/middleware/csrf.js', 438, 420 ]
+silly extracting entry lib/middleware/session.js
+silly modified mode [ 'lib/middleware/session.js', 438, 420 ]
+silly extracting entry lib/middleware/cookieSession.js
+silly modified mode [ 'lib/middleware/cookieSession.js', 438, 420 ]
+silly extracting entry lib/middleware/static.js
+silly modified mode [ 'lib/middleware/static.js', 438, 420 ]
+silly extracting entry lib/middleware/cookieParser.js
+silly modified mode [ 'lib/middleware/cookieParser.js', 438, 420 ]
+silly extracting entry lib/middleware/staticCache.js
+silly modified mode [ 'lib/middleware/staticCache.js', 438, 420 ]
+silly extracting entry lib/middleware/compress.js
+silly modified mode [ 'lib/middleware/compress.js', 438, 420 ]
+silly extracting entry lib/middleware/timeout.js
+silly modified mode [ 'lib/middleware/timeout.js', 438, 420 ]
+silly extracting entry lib/middleware/bodyParser.js
+silly modified mode [ 'lib/middleware/bodyParser.js', 438, 420 ]
+silly extracting entry lib/middleware/vhost.js
+silly modified mode [ 'lib/middleware/vhost.js', 438, 420 ]
+silly extracting entry lib/middleware/logger.js
+silly modified mode [ 'lib/middleware/logger.js', 438, 420 ]
+silly extracting entry lib/middleware/session/cookie.js
+silly modified mode [ 'lib/middleware/session/cookie.js', 438, 420 ]
+silly extracting entry lib/middleware/session/memory.js
+silly modified mode [ 'lib/middleware/session/memory.js', 438, 420 ]
+silly extracting entry lib/middleware/session/session.js
+silly modified mode [ 'lib/middleware/session/session.js', 438, 420 ]
+silly extracting entry lib/middleware/session/store.js
+silly modified mode [ 'lib/middleware/session/store.js', 438, 420 ]
+silly extracting entry lib/public/directory.html
+silly modified mode [ 'lib/public/directory.html', 438, 420 ]
+silly extracting entry lib/public/error.html
+silly modified mode [ 'lib/public/error.html', 438, 420 ]
+silly extracting entry lib/public/favicon.ico
+silly modified mode [ 'lib/public/favicon.ico', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_edit.png
+silly modified mode [ 'lib/public/icons/page_white_edit.png', 438, 420 ]
+silly extracting entry lib/public/icons/page.png
+silly modified mode [ 'lib/public/icons/page.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_attach.png
+silly modified mode [ 'lib/public/icons/page_attach.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_code.png
+silly modified mode [ 'lib/public/icons/page_code.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_copy.png
+silly modified mode [ 'lib/public/icons/page_copy.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_delete.png
+silly modified mode [ 'lib/public/icons/page_delete.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_edit.png
+silly modified mode [ 'lib/public/icons/page_edit.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_error.png
+silly modified mode [ 'lib/public/icons/page_error.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_excel.png
+silly modified mode [ 'lib/public/icons/page_excel.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_find.png
+silly modified mode [ 'lib/public/icons/page_find.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_gear.png
+silly modified mode [ 'lib/public/icons/page_gear.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_go.png
+silly modified mode [ 'lib/public/icons/page_go.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_green.png
+silly modified mode [ 'lib/public/icons/page_green.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_key.png
+silly modified mode [ 'lib/public/icons/page_key.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_lightning.png
+silly modified mode [ 'lib/public/icons/page_lightning.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_link.png
+silly modified mode [ 'lib/public/icons/page_link.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_paintbrush.png
+silly modified mode [ 'lib/public/icons/page_paintbrush.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_paste.png
+silly modified mode [ 'lib/public/icons/page_paste.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_red.png
+silly modified mode [ 'lib/public/icons/page_red.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_refresh.png
+silly modified mode [ 'lib/public/icons/page_refresh.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_save.png
+silly modified mode [ 'lib/public/icons/page_save.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white.png
+silly modified mode [ 'lib/public/icons/page_white.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_acrobat.png
+silly modified mode [ 'lib/public/icons/page_white_acrobat.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_actionscript.png
+silly modified mode [ 'lib/public/icons/page_white_actionscript.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_add.png
+silly modified mode [ 'lib/public/icons/page_white_add.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_c.png
+silly modified mode [ 'lib/public/icons/page_white_c.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_camera.png
+silly modified mode [ 'lib/public/icons/page_white_camera.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_cd.png
+silly modified mode [ 'lib/public/icons/page_white_cd.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_code.png
+silly modified mode [ 'lib/public/icons/page_white_code.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_code_red.png
+silly modified mode [ 'lib/public/icons/page_white_code_red.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_coldfusion.png
+silly modified mode [ 'lib/public/icons/page_white_coldfusion.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_compressed.png
+silly modified mode [ 'lib/public/icons/page_white_compressed.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_copy.png
+silly modified mode [ 'lib/public/icons/page_white_copy.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_cplusplus.png
+silly modified mode [ 'lib/public/icons/page_white_cplusplus.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_csharp.png
+silly modified mode [ 'lib/public/icons/page_white_csharp.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_cup.png
+silly modified mode [ 'lib/public/icons/page_white_cup.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_database.png
+silly modified mode [ 'lib/public/icons/page_white_database.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_delete.png
+silly modified mode [ 'lib/public/icons/page_white_delete.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_dvd.png
+silly modified mode [ 'lib/public/icons/page_white_dvd.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_add.png
+silly modified mode [ 'lib/public/icons/page_add.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_error.png
+silly modified mode [ 'lib/public/icons/page_white_error.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_excel.png
+silly modified mode [ 'lib/public/icons/page_white_excel.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_find.png
+silly modified mode [ 'lib/public/icons/page_white_find.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_flash.png
+silly modified mode [ 'lib/public/icons/page_white_flash.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_freehand.png
+silly modified mode [ 'lib/public/icons/page_white_freehand.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_gear.png
+silly modified mode [ 'lib/public/icons/page_white_gear.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_get.png
+silly modified mode [ 'lib/public/icons/page_white_get.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_go.png
+silly modified mode [ 'lib/public/icons/page_white_go.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_h.png
+silly modified mode [ 'lib/public/icons/page_white_h.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_horizontal.png
+silly modified mode [ 'lib/public/icons/page_white_horizontal.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_key.png
+silly modified mode [ 'lib/public/icons/page_white_key.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_lightning.png
+silly modified mode [ 'lib/public/icons/page_white_lightning.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_link.png
+silly modified mode [ 'lib/public/icons/page_white_link.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_magnify.png
+silly modified mode [ 'lib/public/icons/page_white_magnify.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_medal.png
+silly modified mode [ 'lib/public/icons/page_white_medal.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_office.png
+silly modified mode [ 'lib/public/icons/page_white_office.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_paint.png
+silly modified mode [ 'lib/public/icons/page_white_paint.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_paintbrush.png
+silly modified mode [ 'lib/public/icons/page_white_paintbrush.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_paste.png
+silly modified mode [ 'lib/public/icons/page_white_paste.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_php.png
+silly modified mode [ 'lib/public/icons/page_white_php.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_picture.png
+silly modified mode [ 'lib/public/icons/page_white_picture.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_powerpoint.png
+silly modified mode [ 'lib/public/icons/page_white_powerpoint.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_put.png
+silly modified mode [ 'lib/public/icons/page_white_put.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_ruby.png
+silly modified mode [ 'lib/public/icons/page_white_ruby.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_stack.png
+silly modified mode [ 'lib/public/icons/page_white_stack.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_star.png
+silly modified mode [ 'lib/public/icons/page_white_star.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_swoosh.png
+silly modified mode [ 'lib/public/icons/page_white_swoosh.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_text.png
+silly modified mode [ 'lib/public/icons/page_white_text.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_text_width.png
+silly modified mode [ 'lib/public/icons/page_white_text_width.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_tux.png
+silly modified mode [ 'lib/public/icons/page_white_tux.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_vector.png
+silly modified mode [ 'lib/public/icons/page_white_vector.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_visualstudio.png
+silly modified mode [ 'lib/public/icons/page_white_visualstudio.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_width.png
+silly modified mode [ 'lib/public/icons/page_white_width.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_word.png
+silly modified mode [ 'lib/public/icons/page_white_word.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_world.png
+silly modified mode [ 'lib/public/icons/page_white_world.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_wrench.png
+silly modified mode [ 'lib/public/icons/page_white_wrench.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_white_zip.png
+silly modified mode [ 'lib/public/icons/page_white_zip.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_word.png
+silly modified mode [ 'lib/public/icons/page_word.png', 438, 420 ]
+silly extracting entry lib/public/icons/page_world.png
+silly modified mode [ 'lib/public/icons/page_world.png', 438, 420 ]
+silly extracting entry lib/public/style.css
+silly modified mode [ 'lib/public/style.css', 438, 420 ]
+verbose caching C:\Users\jplur\AppData\Roaming\npm-cache\connect\2.8.5\package\package.json
+verbose loadDefaults connect@2.8.5
+silly updated sha bytes 40960
+silly updated sha bytes 33163
+info shasum ea2d568464be48ef451838f28eabbeb851f5bb91
+info shasum C:\Users\jplur\AppData\Roaming\npm-cache\connect\2.8.5\package.tgz
+verbose from cache C:\Users\jplur\AppData\Roaming\npm-cache\connect\2.8.5\package\package.json
+verbose chmod C:\Users\jplur\AppData\Roaming\npm-cache\connect\2.8.5\package.tgz 644
+silly skipping chown for windows C:\Users\jplur\AppData\Roaming\npm-cache\connect\2.8.5\package.tgz
+silly resolved [ { author: { name: 'Roman Shtylman', email: 'shtylman@gmail.com' },
+silly resolved     name: 'cookie',
+silly resolved     description: 'cookie parsing and serialization',
+silly resolved     version: '0.1.0',
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/shtylman/node-cookie.git' },
+silly resolved     keywords: [ 'cookie', 'cookies' ],
+silly resolved     main: 'index.js',
+silly resolved     scripts: { test: 'mocha' },
+silly resolved     dependencies: {},
+silly resolved     devDependencies: { mocha: '1.x.x' },
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _id: 'cookie@0.1.0',
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.16',
+silly resolved     _nodeVersion: 'v0.6.15',
+silly resolved     _defaultsLoaded: true,
+silly resolved     dist: { shasum: 'a1d4c22aafc3252c0d6d4794e4f60e4fc64c74d5' },
+silly resolved     _from: 'cookie@0.1.0' },
+silly resolved   { name: 'mkdirp',
+silly resolved     description: 'Recursively mkdir, like `mkdir -p`',
+silly resolved     version: '0.3.5',
+silly resolved     author: 
+silly resolved      { name: 'James Halliday',
+silly resolved        email: 'mail@substack.net',
+silly resolved        url: 'http://substack.net' },
+silly resolved     main: './index',
+silly resolved     keywords: [ 'mkdir', 'directory' ],
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/substack/node-mkdirp.git' },
+silly resolved     scripts: { test: 'tap test/*.js' },
+silly resolved     devDependencies: { tap: '~0.4.0' },
+silly resolved     license: 'MIT',
+silly resolved     _id: 'mkdirp@0.3.5',
+silly resolved     dependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.16',
+silly resolved     _nodeVersion: 'v0.6.15',
+silly resolved     _defaultsLoaded: true,
+silly resolved     dist: { shasum: '89f9ded2050b0026072194e4a23b8cf152be56fb' },
+silly resolved     _from: 'mkdirp@0.3.5' },
+silly resolved   { name: 'commander',
+silly resolved     version: '1.2.0',
+silly resolved     description: 'the complete solution for node.js command-line programs',
+silly resolved     keywords: [ 'command', 'option', 'parser', 'prompt', 'stdin' ],
+silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/visionmedia/commander.js.git' },
+silly resolved     dependencies: { keypress: '0.1.x' },
+silly resolved     devDependencies: { should: '>= 0.0.1' },
+silly resolved     scripts: { test: 'make test' },
+silly resolved     main: 'index',
+silly resolved     engines: { node: '>= 0.6.x' },
+silly resolved     _id: 'commander@1.2.0',
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.16',
+silly resolved     _nodeVersion: 'v0.6.15',
+silly resolved     _defaultsLoaded: true,
+silly resolved     dist: { shasum: '47dbb2e6804def8ba5141a50761b0b1b544467b1' },
+silly resolved     _from: 'commander@1.2.0' },
+silly resolved   { name: 'fresh',
+silly resolved     author: 
+silly resolved      { name: 'TJ Holowaychuk',
+silly resolved        email: 'tj@vision-media.ca',
+silly resolved        url: 'http://tjholowaychuk.com' },
+silly resolved     description: 'HTTP response freshness testing',
+silly resolved     version: '0.2.0',
+silly resolved     main: 'index.js',
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/visionmedia/node-fresh.git' },
+silly resolved     dependencies: {},
+silly resolved     devDependencies: { mocha: '*', should: '*' },
+silly resolved     _id: 'fresh@0.2.0',
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.16',
+silly resolved     _nodeVersion: 'v0.6.15',
+silly resolved     _defaultsLoaded: true,
+silly resolved     dist: { shasum: 'f38ed2f05318d86db7efff521cd9258a4fcc7386' },
+silly resolved     _from: 'fresh@0.2.0' },
+silly resolved   { author: 
+silly resolved      { name: 'Brian J. Brennan',
+silly resolved        email: 'brianloveswords@gmail.com',
+silly resolved        url: 'http://bjb.io' },
+silly resolved     name: 'buffer-crc32',
+silly resolved     description: 'A pure javascript CRC32 algorithm that plays nice with binary data',
+silly resolved     version: '0.2.1',
+silly resolved     contributors: [ { name: 'Vladimir Kuznetsov' } ],
+silly resolved     homepage: 'https://github.com/brianloveswords/buffer-crc32',
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/brianloveswords/buffer-crc32.git' },
+silly resolved     main: 'index.js',
+silly resolved     scripts: { test: './node_modules/.bin/tap tests/*.test.js' },
+silly resolved     dependencies: {},
+silly resolved     devDependencies: { tap: '~0.2.5' },
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _id: 'buffer-crc32@0.2.1',
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.16',
+silly resolved     _nodeVersion: 'v0.6.15',
+silly resolved     _defaultsLoaded: true,
+silly resolved     dist: { shasum: '18919669532a6d9991f288cf0bae64e6b4b4412d' },
+silly resolved     _from: 'buffer-crc32@0.2.1' },
+silly resolved   { name: 'send',
+silly resolved     version: '0.1.4',
+silly resolved     description: 'Better streaming static file server with Range and conditional-GET support',
+silly resolved     keywords: [ 'static', 'file', 'server' ],
+silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+silly resolved     dependencies: 
+silly resolved      { debug: '*',
+silly resolved        mime: '~1.2.9',
+silly resolved        fresh: '0.2.0',
+silly resolved        'range-parser': '0.0.4' },
+silly resolved     devDependencies: { mocha: '*', should: '*', supertest: '0.0.1', connect: '2.x' },
+silly resolved     scripts: { test: 'make test' },
+silly resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/send.git' },
+silly resolved     main: 'index',
+silly resolved     _id: 'send@0.1.4',
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.16',
+silly resolved     _nodeVersion: 'v0.6.15',
+silly resolved     _defaultsLoaded: true,
+silly resolved     dist: { shasum: '5fcd96f3d6b02e9369e4f2c53c00f680b335d368' },
+silly resolved     _from: 'send@0.1.4' },
+silly resolved   { name: 'cookie-signature',
+silly resolved     version: '1.0.1',
+silly resolved     description: 'Sign and unsign cookies',
+silly resolved     keywords: [ 'cookie', 'sign', 'unsign' ],
+silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@learnboost.com' },
+silly resolved     dependencies: {},
+silly resolved     devDependencies: { mocha: '*', should: '*' },
+silly resolved     main: 'index',
+silly resolved     _id: 'cookie-signature@1.0.1',
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.16',
+silly resolved     _nodeVersion: 'v0.6.15',
+silly resolved     _defaultsLoaded: true,
+silly resolved     dist: { shasum: '954838a1594089a0c4e3ae5745819f6e3c40ba96' },
+silly resolved     _from: 'cookie-signature@1.0.1' },
+silly resolved   { name: 'debug',
+silly resolved     version: '0.7.2',
+silly resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/debug.git' },
+silly resolved     description: 'small debugging utility',
+silly resolved     keywords: [ 'debug', 'log', 'debugger' ],
+silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+silly resolved     dependencies: {},
+silly resolved     devDependencies: { mocha: '*' },
+silly resolved     main: 'lib/debug.js',
+silly resolved     browserify: 'debug.js',
+silly resolved     engines: { node: '*' },
+silly resolved     component: { scripts: { 'debug/index.js': 'index.js', 'debug/debug.js': 'debug.js' } },
+silly resolved     _id: 'debug@0.7.2',
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.16',
+silly resolved     _nodeVersion: 'v0.6.15',
+silly resolved     _defaultsLoaded: true,
+silly resolved     dist: { shasum: '3bcae2c4b03b21ea4b551a64fa2d4c31f556395f' },
+silly resolved     _from: 'debug@*' },
+silly resolved   { name: 'methods',
+silly resolved     version: '0.0.1',
+silly resolved     description: 'HTTP methods that node supports',
+silly resolved     main: 'index.js',
+silly resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+silly resolved     keywords: [ 'http', 'methods' ],
+silly resolved     author: { name: 'TJ Holowaychuk' },
+silly resolved     license: 'MIT',
+silly resolved     _id: 'methods@0.0.1',
+silly resolved     dependencies: {},
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.16',
+silly resolved     _nodeVersion: 'v0.6.15',
+silly resolved     _defaultsLoaded: true,
+silly resolved     dist: { shasum: '4903d77af8211e2cd7052497d6b3948ad478db5c' },
+silly resolved     _from: 'methods@0.0.1' },
+silly resolved   { name: 'range-parser',
+silly resolved     author: 
+silly resolved      { name: 'TJ Holowaychuk',
+silly resolved        email: 'tj@vision-media.ca',
+silly resolved        url: 'http://tjholowaychuk.com' },
+silly resolved     description: 'Range header field string parser',
+silly resolved     version: '0.0.4',
+silly resolved     main: 'index.js',
+silly resolved     dependencies: {},
+silly resolved     devDependencies: { mocha: '*', should: '*' },
+silly resolved     _id: 'range-parser@0.0.4',
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.16',
+silly resolved     _nodeVersion: 'v0.6.15',
+silly resolved     _defaultsLoaded: true,
+silly resolved     dist: { shasum: '621fb037ad12879a501b7c621ba0f4f5d65d81c6' },
+silly resolved     _from: 'range-parser@0.0.4' },
+silly resolved   { name: 'connect',
+silly resolved     version: '2.8.5',
+silly resolved     description: 'High performance middleware framework',
+silly resolved     keywords: [ 'framework', 'web', 'middleware', 'connect', 'rack' ],
+silly resolved     repository: { type: 'git', url: 'git://github.com/senchalabs/connect.git' },
+silly resolved     author: 
+silly resolved      { name: 'TJ Holowaychuk',
+silly resolved        email: 'tj@vision-media.ca',
+silly resolved        url: 'http://tjholowaychuk.com' },
+silly resolved     dependencies: 
+silly resolved      { qs: '0.6.5',
+silly resolved        formidable: '1.0.14',
+silly resolved        'cookie-signature': '1.0.1',
+silly resolved        'buffer-crc32': '0.2.1',
+silly resolved        cookie: '0.1.0',
+silly resolved        send: '0.1.4',
+silly resolved        bytes: '0.2.0',
+silly resolved        fresh: '0.2.0',
+silly resolved        pause: '0.0.1',
+silly resolved        uid2: '0.0.2',
+silly resolved        debug: '*',
+silly resolved        methods: '0.0.1' },
+silly resolved     devDependencies: { should: '*', mocha: '*', jade: '*', dox: '*' },
+silly resolved     main: 'index',
+silly resolved     engines: { node: '>= 0.8.0' },
+silly resolved     scripts: { test: 'make' },
+silly resolved     _id: 'connect@2.8.5',
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: false,
+silly resolved     _npmVersion: '1.1.16',
+silly resolved     _nodeVersion: 'v0.6.15',
+silly resolved     _defaultsLoaded: true,
+silly resolved     dist: { shasum: 'ea2d568464be48ef451838f28eabbeb851f5bb91' },
+silly resolved     _from: 'connect@2.8.5' } ]
+info into C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express cookie@0.1.0
+info into C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express mkdirp@0.3.5
+info into C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express commander@1.2.0
+info into C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express fresh@0.2.0
+info into C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express buffer-crc32@0.2.1
+info into C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express send@0.1.4
+info into C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express cookie-signature@1.0.1
+info into C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express debug@0.7.2
+info into C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express methods@0.0.1
+info into C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express range-parser@0.0.4
+info into C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express connect@2.8.5
+info installOne cookie@0.1.0
+info installOne mkdirp@0.3.5
+info installOne commander@1.2.0
+info installOne fresh@0.2.0
+info installOne buffer-crc32@0.2.1
+info installOne send@0.1.4
+info installOne cookie-signature@1.0.1
+info installOne debug@0.7.2
+info installOne methods@0.0.1
+info installOne range-parser@0.0.4
+info installOne connect@2.8.5
+verbose about to build C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express
+info unbuild C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express
+verbose from cache C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express\package.json
+info preuninstall express@3.3.5
+verbose from cache C:\Users\jplur\AppData\Roaming\npm-cache\cookie\0.1.0\package\package.json
+info unbuild C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express\node_modules\cookie
+verbose from cache C:\Users\jplur\AppData\Roaming\npm-cache\mkdirp\0.3.5\package\package.json
+info unbuild C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express\node_modules\mkdirp
+verbose from cache C:\Users\jplur\AppData\Roaming\npm-cache\commander\1.2.0\package\package.json
+info unbuild C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express\node_modules\commander
+verbose from cache C:\Users\jplur\AppData\Roaming\npm-cache\fresh\0.2.0\package\package.json
+info unbuild C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express\node_modules\fresh
+verbose from cache C:\Users\jplur\AppData\Roaming\npm-cache\buffer-crc32\0.2.1\package\package.json
+info unbuild C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express\node_modules\buffer-crc32
+verbose from cache C:\Users\jplur\AppData\Roaming\npm-cache\send\0.1.4\package\package.json
+info unbuild C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express\node_modules\send
+verbose from cache C:\Users\jplur\AppData\Roaming\npm-cache\cookie-signature\1.0.1\package\package.json
+info unbuild C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express\node_modules\cookie-signature
+verbose from cache C:\Users\jplur\AppData\Roaming\npm-cache\debug\0.7.2\package\package.json
+info unbuild C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express\node_modules\debug
+verbose from cache C:\Users\jplur\AppData\Roaming\npm-cache\methods\0.0.1\package\package.json
+info unbuild C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express\node_modules\methods
+verbose from cache C:\Users\jplur\AppData\Roaming\npm-cache\range-parser\0.0.4\package\package.json
+info unbuild C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express\node_modules\range-parser
+info uninstall express@3.3.5
+verbose unbuild express@3.3.5 [ true,
+verbose unbuild express@3.3.5   'C:\\Users\\jplur\\Desktop\\ld\\LD27\\server\\node_modules',
+verbose unbuild express@3.3.5   'C:\\Users\\jplur\\Desktop\\ld\\LD27\\server\\node_modules' ]
+verbose binRoot [ 'C:\\Users\\jplur\\Desktop\\ld\\LD27\\server\\node_modules\\.bin',
+verbose binRoot   { express: './bin/express' } ]
+verbose unpack C:\Users\jplur\AppData\Roaming\npm-cache\cookie\0.1.0\package.tgz
+verbose unpack C:\Users\jplur\AppData\Roaming\npm-cache\mkdirp\0.3.5\package.tgz
+verbose unpack C:\Users\jplur\AppData\Roaming\npm-cache\commander\1.2.0\package.tgz
+verbose unpack C:\Users\jplur\AppData\Roaming\npm-cache\fresh\0.2.0\package.tgz
+verbose unpack C:\Users\jplur\AppData\Roaming\npm-cache\buffer-crc32\0.2.1\package.tgz
+verbose unpack C:\Users\jplur\AppData\Roaming\npm-cache\send\0.1.4\package.tgz
+verbose unpack C:\Users\jplur\AppData\Roaming\npm-cache\cookie-signature\1.0.1\package.tgz
+verbose unpack C:\Users\jplur\AppData\Roaming\npm-cache\debug\0.7.2\package.tgz
+verbose unpack C:\Users\jplur\AppData\Roaming\npm-cache\methods\0.0.1\package.tgz
+verbose unpack C:\Users\jplur\AppData\Roaming\npm-cache\range-parser\0.0.4\package.tgz
+info postuninstall express@3.3.5
+silly gunzTarPerm modes [ '755', '644' ]
+silly gunzTarPerm modes [ '755', '644' ]
+silly gunzTarPerm modes [ '755', '644' ]
+silly gunzTarPerm modes [ '755', '644' ]
+silly gunzTarPerm modes [ '755', '644' ]
+silly gunzTarPerm modes [ '755', '644' ]
+silly gunzTarPerm modes [ '755', '644' ]
+silly gunzTarPerm modes [ '755', '644' ]
+silly gunzTarPerm modes [ '755', '644' ]
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly modified mode [ 'package.json', 438, 420 ]
+silly extracting entry package.json
+silly modified mode [ 'package.json', 438, 420 ]
+silly extracting entry package.json
+silly modified mode [ 'package.json', 438, 420 ]
+silly extracting entry package.json
+silly modified mode [ 'package.json', 438, 420 ]
+silly extracting entry package.json
+silly modified mode [ 'package.json', 438, 420 ]
+silly extracting entry package.json
+silly modified mode [ 'package.json', 438, 420 ]
+silly extracting entry package.json
+silly modified mode [ 'package.json', 438, 420 ]
+silly extracting entry package.json
+silly modified mode [ 'package.json', 438, 420 ]
+silly extracting entry package.json
+silly modified mode [ 'package.json', 438, 420 ]
+silly extracting entry package.json
+silly modified mode [ 'package.json', 438, 420 ]
+silly extracting entry .npmignore
+silly modified mode [ '.npmignore', 438, 420 ]
+silly extracting entry README.md
+silly modified mode [ 'README.md', 438, 420 ]
+silly extracting entry .npmignore
+silly modified mode [ '.npmignore', 438, 420 ]
+silly extracting entry index.js
+silly modified mode [ 'index.js', 438, 420 ]
+silly extracting entry .npmignore
+silly modified mode [ '.npmignore', 438, 420 ]
+silly extracting entry index.js
+silly modified mode [ 'index.js', 438, 420 ]
+silly extracting entry index.js
+silly modified mode [ 'index.js', 438, 420 ]
+silly extracting entry History.md
+silly modified mode [ 'History.md', 438, 420 ]
+silly extracting entry .npmignore
+silly modified mode [ '.npmignore', 438, 420 ]
+silly extracting entry LICENSE
+silly modified mode [ 'LICENSE', 438, 420 ]
+silly extracting entry .npmignore
+silly modified mode [ '.npmignore', 438, 420 ]
+silly extracting entry debug.js
+silly modified mode [ 'debug.js', 438, 420 ]
+silly extracting entry .npmignore
+silly modified mode [ '.npmignore', 438, 420 ]
+silly extracting entry index.js
+silly modified mode [ 'index.js', 438, 420 ]
+silly extracting entry .npmignore
+silly modified mode [ '.npmignore', 438, 420 ]
+silly extracting entry README.md
+silly modified mode [ 'README.md', 438, 420 ]
+silly extracting entry index.js
+silly modified mode [ 'index.js', 438, 420 ]
+silly extracting entry .npmignore
+silly modified mode [ '.npmignore', 438, 420 ]
+silly extracting entry index.js
+silly modified mode [ 'index.js', 438, 420 ]
+silly extracting entry LICENSE
+silly modified mode [ 'LICENSE', 438, 420 ]
+silly extracting entry index.js
+silly modified mode [ 'index.js', 438, 420 ]
+silly extracting entry History.md
+silly modified mode [ 'History.md', 438, 420 ]
+silly extracting entry Makefile
+silly modified mode [ 'Makefile', 438, 420 ]
+silly extracting entry History.md
+silly modified mode [ 'History.md', 438, 420 ]
+silly extracting entry Makefile
+silly modified mode [ 'Makefile', 438, 420 ]
+silly extracting entry index.js
+silly modified mode [ 'index.js', 438, 420 ]
+silly extracting entry .travis.yml
+silly modified mode [ '.travis.yml', 438, 420 ]
+silly extracting entry Readme.md
+silly modified mode [ 'Readme.md', 438, 420 ]
+silly extracting entry History.md
+silly modified mode [ 'History.md', 438, 420 ]
+silly extracting entry Makefile
+silly modified mode [ 'Makefile', 438, 420 ]
+silly extracting entry index.js
+silly modified mode [ 'index.js', 438, 420 ]
+silly extracting entry component.json
+silly modified mode [ 'component.json', 438, 420 ]
+silly extracting entry index.js
+silly modified mode [ 'index.js', 438, 420 ]
+silly extracting entry .travis.yml
+silly modified mode [ '.travis.yml', 438, 420 ]
+silly extracting entry History.md
+silly modified mode [ 'History.md', 438, 420 ]
+silly extracting entry lib/send.js
+silly modified mode [ 'lib/send.js', 438, 420 ]
+silly extracting entry .travis.yml
+silly modified mode [ '.travis.yml', 438, 420 ]
+silly extracting entry test/parse.js
+silly modified mode [ 'test/parse.js', 438, 420 ]
+silly extracting entry examples/pow.js
+silly modified mode [ 'examples/pow.js', 438, 420 ]
+silly extracting entry readme.markdown
+silly modified mode [ 'readme.markdown', 438, 420 ]
+silly extracting entry Readme.md
+silly modified mode [ 'Readme.md', 438, 420 ]
+verbose caching C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express\node_modules\methods\package.json
+verbose loadDefaults methods@0.0.1
+silly extracting entry test/serialize.js
+silly modified mode [ 'test/serialize.js', 438, 420 ]
+silly extracting entry test/chmod.js
+silly modified mode [ 'test/chmod.js', 438, 420 ]
+info preinstall methods@0.0.1
+verbose from cache C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express\node_modules\methods\package.json
+verbose readDependencies: using package.json deps
+verbose from cache C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express\node_modules\methods\package.json
+verbose readDependencies: using package.json deps
+silly resolved []
+verbose about to build C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express\node_modules\methods
+info build C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express\node_modules\methods
+verbose from cache C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express\node_modules\methods\package.json
+verbose linkStuff [ false,
+verbose linkStuff   false,
+verbose linkStuff   false,
+verbose linkStuff   'C:\\Users\\jplur\\Desktop\\ld\\LD27\\server\\node_modules\\express\\node_modules' ]
+info linkStuff methods@0.0.1
+verbose linkBins methods@0.0.1
+verbose linkMans methods@0.0.1
+verbose rebuildBundles methods@0.0.1
+info install methods@0.0.1
+silly extracting entry Readme.md
+silly modified mode [ 'Readme.md', 438, 420 ]
+info postinstall methods@0.0.1
+silly extracting entry Readme.md
+silly modified mode [ 'Readme.md', 438, 420 ]
+silly extracting entry example/app.js
+silly modified mode [ 'example/app.js', 438, 420 ]
+silly extracting entry example/wildcards.js
+silly modified mode [ 'example/wildcards.js', 438, 420 ]
+silly extracting entry tests/crc.test.js
+silly modified mode [ 'tests/crc.test.js', 438, 420 ]
+silly extracting entry lib/utils.js
+silly modified mode [ 'lib/utils.js', 438, 420 ]
+silly extracting entry Makefile
+silly modified mode [ 'Makefile', 438, 420 ]
+silly extracting entry example/worker.js
+silly modified mode [ 'example/worker.js', 438, 420 ]
+silly extracting entry example/browser.html
+silly modified mode [ 'example/browser.html', 438, 420 ]
+silly extracting entry History.md
+silly modified mode [ 'History.md', 438, 420 ]
+silly extracting entry test/mocha.opts
+silly modified mode [ 'test/mocha.opts', 438, 420 ]
+silly extracting entry test/perm.js
+silly modified mode [ 'test/perm.js', 438, 420 ]
+silly extracting entry test/perm_sync.js
+silly modified mode [ 'test/perm_sync.js', 438, 420 ]
+silly extracting entry test/race.js
+silly modified mode [ 'test/race.js', 438, 420 ]
+silly extracting entry test/mkdirp.js
+silly modified mode [ 'test/mkdirp.js', 438, 420 ]
+silly extracting entry test/return.js
+silly modified mode [ 'test/return.js', 438, 420 ]
+silly extracting entry Readme.md
+silly modified mode [ 'Readme.md', 438, 420 ]
+silly extracting entry lib/debug.js
+silly modified mode [ 'lib/debug.js', 438, 420 ]
+silly extracting entry Readme.md
+silly modified mode [ 'Readme.md', 438, 420 ]
+ERR! error rolling back express@3.3.5 Error: ENOTEMPTY, rmdir 'C:\Users\jplur\Desktop\ld\LD27\server\node_modules\express'
+ERR! Unsupported
+ERR! Not compatible with your version of node/npm: connect@2.8.5
+ERR! Required: {"node":">= 0.8.0"}
+ERR! Actual:   {"npm":"1.1.16","node":"0.6.15"}
+ERR! 
+ERR! System Windows_NT 6.1.7601
+ERR! command "C:\\Program Files (x86)\\nodejs\\\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "express"
+ERR! cwd C:\Users\jplur\Desktop\ld\LD27\server\js
+ERR! node -v v0.6.15
+ERR! npm -v 1.1.16
+ERR! code ENOTSUP
+ERR! message Unsupported
+ERR! errno {}
+verbose exit [ 1, true ]

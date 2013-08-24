@@ -2,7 +2,7 @@
 (function() {
   var ws;
 
-  ws = new WebSocket('ws://localhost:8080');
+  ws = new WebSocket('ws://' + window.location.hostname + ':8080');
 
   ws.onmessage = function(message) {
     var avatar, data, player, _i, _len, _ref;
