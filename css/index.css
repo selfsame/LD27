@@ -1,0 +1,178 @@
+body{
+    background-color:silver;
+    margin: 0px;
+    padding: 0px;
+}
+
+#connected{
+    display:none;
+}
+
+
+#viewport{
+    width:800px;
+    height:800px;
+    position:relative;
+    overflow:hidden;
+    background-color:white;
+}
+label{
+    position:relative;
+    width:700px;
+    margin: 0px auto;
+    display:block;
+}
+#chat{
+    margin-left: 30px;
+    width:600px;
+}
+.bubble{
+    z-index:-1;
+    position:absolute;
+    border-radius: 6px;
+    background-color:white;
+    font-size: 12px;
+    font-family:'courier';
+    padding: 5px;
+    width: auto;
+    height: auto;
+    margin: -40px 0px 0px -20px;
+    
+    min-width: 100px;
+    max-height: 40px;
+    max-width:150px;
+}
+
+.bubble:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+    border-width: 10px 0 0 10px;
+    border-style: solid;
+    border-color: white rgba(0, 0, 0, 0);
+    display: block;
+    width: 0;
+}
+
+.player{
+    z-index: 100;
+}
+
+.player.self{
+    border: 1px solid black;
+}
+
+#game{
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+
+#viewport{
+    border: 1px solid black;
+    margin: 30px auto;
+}
+
+.connectbox {
+    border: 1px solid rgb(178, 178, 178);
+    position: relative;
+    width: 427px;
+    height: 189px;
+    padding: 16px;
+    background-color: rgb(234, 234, 234);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin: 160px auto;
+}
+.color_choice {
+    border: 0px solid black;
+    position: relative;
+    width: 36px;
+    height: 36px;
+    float: left;
+    margin: 11px;
+    cursor:pointer;
+}
+.namelabel {
+    width: 46px;
+    height: 20px;
+    position: relative;
+    top: -11px;
+    left: 3px;
+    cursor: inherit;
+    margin-bottom: -7px;
+    margin-top: -1px;
+}
+.nameouter {
+    border-width: 0px 0px 1px;
+    border-style: solid;
+    border-color: rgb(205, 205, 205);
+    position: relative;
+    width: 100%;
+    height: 24px;
+    margin-bottom: 12px;
+    margin-top: 17px;
+}
+.colorlabel {
+    width: 102px;
+    height: 20px;
+    position: relative;
+    top: -11px;
+    left: 3px;
+    cursor: inherit;
+    margin-bottom: -7px;
+    margin-top: 23px;
+}
+.colorouter {
+    border-width: 0px 0px 1px;
+    border-style: solid;
+    border-color: rgb(205, 205, 205);
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 12px;
+}
+#connect {
+    width: 138px;
+    height: 35px;
+    position: relative;
+    top: 1px;
+    left: 137px;
+    cursor: inherit;
+}
+
+
+.active{
+    border: 2px solid orange;
+}
+
+
+
+
+.playername{
+    font-size:10px;
+    opacity: .6;
+    margin: -14px 0px 0px -6px;
+}
+
+
+
+
+
+/* LEvel stykles */
+.purp{
+  border: 0px solid black;
+ position: absolute;
+ width: 34px;
+ height: 30px;
+ top: 275px;
+ left: 646px;
+ background-color: rgb(205, 90, 240);
+ border-top-left-radius: 5px;
+ border-top-right-radius: 5px;
+ border-bottom-right-radius: 5px;
+ border-bottom-left-radius: 5px;
+}
