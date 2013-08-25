@@ -153,7 +153,7 @@ label{
 
 
 .playername{
-    font-size:10px;
+    font-size:12px;
     opacity: .6;
     margin: -14px 0px 0px -6px;
 }
@@ -175,4 +175,11 @@ label{
  border-top-right-radius: 5px;
  border-bottom-right-radius: 5px;
  border-bottom-left-radius: 5px;
+}
+
+.coin{
+ position: absolute;
+ width: 16px !important;
+ height: 16px !important;
+ background-image: url(http://s3.selfsamegames.com.s3.amazonaws.com/users/jplur/img/coin.png);
 }
