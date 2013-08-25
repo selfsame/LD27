@@ -38,41 +38,38 @@
   });
 
   wss.on("connection", function(ws) {
-    game.new_connection(ws);
     ws.on("message", function(message) {
       message = JSON.parse(message);
       if (typeof message === 'object') {
-        if (message.name != null) {
-          ws.player.name = message.name;
-        }
-        if (message.chat != null) {
-          console.log('chat', message.chat);
-          game.broadcast({
-            'chat': message.chat,
-            'who': ws.player.ID
-          });
-        }
-        if (message.keydown != null) {
-          ws.player.keydown(message.keydown);
-        }
-        if (message.keyup != null) {
-          return ws.player.keyup(message.keyup);
+        if (message.login != null) {
+          return game.new_connection(ws, message.login);
+        } else if (ws.player != null) {
+          if (message.chat != null) {
+            console.log('chat', message.chat);
+            game.broadcast({
+              'chat': message.chat,
+              'who': ws.player.ID
+            });
+          }
+          if (message.keydown != null) {
+            ws.player.keydown(message.keydown);
+          }
+          if (message.keyup != null) {
+            return ws.player.keyup(message.keyup);
+          }
         }
       }
     });
     ws.on("close", function(message) {
       game.players.remove(ws.player);
+      game.world.DestroyBody(ws.player.body);
+      ws.player.body = null;
       return game.broadcast({
         disconnect: ws.player.ID
       });
     });
-    ws.on('error', function(error) {
+    return ws.on('error', function(error) {
       return console.log('Client #%d error: %s', ws.player.ID, error.message);
-    });
-    return ws.player.send({
-      debrief: game.players.map(function(p) {
-        return p.state();
-      })
     });
   });
 

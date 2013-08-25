@@ -22,31 +22,35 @@ console.log Player
 WebSocketServer = require("ws").Server
 wss = new WebSocketServer(port: 8079)
 wss.on "connection", (ws) ->
-	game.new_connection(ws)
+	
 	ws.on "message", (message) ->
 		message = JSON.parse(message)
 		if typeof message is 'object'
-			if message.name?
-				ws.player.name = message.name
-			if message.chat?
-				console.log 'chat', message.chat
-				game.broadcast({'chat':message.chat, 'who':ws.player.ID})
-			if message.keydown?
-				ws.player.keydown(message.keydown)
-			if message.keyup?
-				ws.player.keyup(message.keyup)
+			if message.login?
+				game.new_connection(ws, message.login)
+
+			else if ws.player?
+				if message.chat?
+					console.log 'chat', message.chat
+					game.broadcast({'chat':message.chat, 'who':ws.player.ID})
+				if message.keydown?
+					ws.player.keydown(message.keydown)
+				if message.keyup?
+					ws.player.keyup(message.keyup)
 
 		#console.log "received: %s", message
 
 	ws.on "close", (message) ->
 		game.players.remove ws.player
+		game.world.DestroyBody ws.player.body
+		ws.player.body = null
 		game.broadcast {disconnect:ws.player.ID}
 
 
 	ws.on 'error', (error)->
     	console.log('Client #%d error: %s', ws.player.ID, error.message)
 
-	ws.player.send {debrief:game.players.map (p)->p.state()}
+	
 
 
 #static server
