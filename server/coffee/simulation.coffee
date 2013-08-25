@@ -109,6 +109,7 @@ class Player extends Dynamic
 			@connection.send JSON.stringify(obj)
 		catch error
 			console.log 'ERROR, failure to send player socket'
+			root.game.close_player(@)
 
 	keydown: (code)->
 		@keys.push code
@@ -270,6 +271,12 @@ class Game
 						@spawn = obj
 				else
 					@boxes.push @make_static_box obj
+
+	close_player: (player)->
+		@players.remove player
+		@world.DestroyBody player.body
+		player.body = null
+		game.broadcast {disconnect:player.ID}
 
 	make_dynamic_box: (obj)->
 		new_dynamic = new Dynamic()

@@ -185,7 +185,8 @@
       try {
         return this.connection.send(JSON.stringify(obj));
       } catch (error) {
-        return console.log('ERROR, failure to send player socket');
+        console.log('ERROR, failure to send player socket');
+        return root.game.close_player(this);
       }
     };
 
@@ -410,6 +411,15 @@
         }
         return _results;
       }
+    };
+
+    Game.prototype.close_player = function(player) {
+      this.players.remove(player);
+      this.world.DestroyBody(player.body);
+      player.body = null;
+      return game.broadcast({
+        disconnect: player.ID
+      });
     };
 
     Game.prototype.make_dynamic_box = function(obj) {
