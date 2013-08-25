@@ -417,7 +417,7 @@
       this.players.remove(player);
       this.world.DestroyBody(player.body);
       player.body = null;
-      return game.broadcast({
+      return this.broadcast({
         disconnect: player.ID
       });
     };

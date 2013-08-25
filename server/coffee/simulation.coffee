@@ -276,7 +276,7 @@ class Game
 		@players.remove player
 		@world.DestroyBody player.body
 		player.body = null
-		game.broadcast {disconnect:player.ID}
+		@broadcast {disconnect:player.ID}
 
 	make_dynamic_box: (obj)->
 		new_dynamic = new Dynamic()
