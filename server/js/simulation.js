@@ -5,7 +5,7 @@
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor; child.__super__ = parent.prototype; return child; },
     __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
 
-  levels = ['[{"x":552,"y":358,"w":160,"h":86},{"x":-2,"y":-5,"w":16,"h":790},{"x":100,"y":667,"w":450,"h":40},{"x":786,"y":-22,"w":16,"h":818},{"x":5,"y":-1,"w":795,"h":33},{"x":4,"y":767,"w":795,"h":33},{"x":237,"y":87,"w":318,"h":46},{"x":175,"y":633,"w":34,"h":30,"dynamic":true,"cs":["purp"]},{"x":9,"y":435,"w":143,"h":42},{"x":178,"y":321,"w":126,"h":37},{"x":648,"y":501,"w":143,"h":42},{"x":437,"y":332,"w":281,"h":21,"dynamic":true,"cs":["purp"]},{"x":215,"y":631,"w":34,"h":30,"dynamic":true,"cs":["purp"]},{"x":196,"y":596,"w":34,"h":30,"dynamic":true,"cs":["purp"]},{"x":238,"y":597,"w":34,"h":30,"dynamic":true,"cs":["purp"]},{"x":256,"y":630,"w":34,"h":30,"dynamic":true,"cs":["purp"]},{"x":406,"y":633,"w":34,"h":30,"dynamic":true,"cs":["purp"]},{"x":185,"y":285,"w":34,"h":30,"dynamic":true,"cs":["purp"]},{"x":185,"y":252,"w":34,"h":30,"dynamic":true,"cs":["purp"]},{"x":432,"y":188,"w":145,"h":46}] ', '[]', '[]', '[{"x":341,"y":996,"w":0,"h":0},{"x":-14,"y":187,"w":286,"h":1737},{"x":1044,"y":170,"w":318,"h":1753},{"x":-1,"y":-1,"w":1402,"h":225},{"x":402,"y":305,"w":472,"h":45},{"x":263,"y":397,"w":101,"h":50},{"x":426,"y":514,"w":156,"h":46},{"x":701,"y":401,"w":53,"h":63},{"x":1482,"y":502,"w":20,"h":20},{"x":266,"y":640,"w":99,"h":151},{"x":352,"y":734,"w":504,"h":57},{"x":619,"y":1299,"w":430,"h":41},{"x":933,"y":875,"w":121,"h":274},{"x":730,"y":1008,"w":50,"h":39},{"x":394,"y":1298,"w":40,"h":39},{"x":814,"y":607,"w":161,"h":56},{"x":576,"y":992,"w":346,"h":10,"dynamic":true,"cs":["purp"]},{"x":263,"y":898,"w":168,"h":41},{"x":257,"y":1732,"w":795,"h":192},{"x":439,"y":494,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_77"],"type":"collect"},{"x":404,"y":239,"w":468,"h":37,"type":"spawn"},{"x":454,"y":494,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":485,"y":494,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":728,"y":383,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":713,"y":383,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":815,"y":587,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":830,"y":587,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":1017,"y":252,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":277,"y":877,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":292,"y":877,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":323,"y":877,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":293,"y":836,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":324,"y":836,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":278,"y":836,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":285,"y":1282,"w":258,"h":8,"dynamic":true,"cs":["purp"]},{"x":529,"y":1477,"w":10,"h":251,"dynamic":true,"cs":["purp"]},{"x":585,"y":1474,"w":10,"h":251,"dynamic":true,"cs":["purp"]},{"x":643,"y":1475,"w":10,"h":251,"dynamic":true,"cs":["purp"]},{"x":712,"y":1472,"w":10,"h":251,"dynamic":true,"cs":["purp"]},{"x":789,"y":1425,"w":160,"h":299},{"x":980,"y":1484,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_45","break__fullsize_128","break__fullsize_211"],"type":"collect"},{"x":965,"y":1484,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_47","break__fullsize_130","break__fullsize_213"],"type":"collect"},{"x":1012,"y":1483,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_49","break__fullsize_132","break__fullsize_215"],"type":"collect"},{"x":1027,"y":1483,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_51","break__fullsize_134","break__fullsize_217"],"type":"collect"},{"x":978,"y":1527,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_53","break__fullsize_136","break__fullsize_219"],"type":"collect"},{"x":963,"y":1527,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_55","break__fullsize_138","break__fullsize_221"],"type":"collect"},{"x":1010,"y":1526,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_57","break__fullsize_140","break__fullsize_223"],"type":"collect"},{"x":1025,"y":1526,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_59","break__fullsize_142","break__fullsize_225"],"type":"collect"},{"x":1010,"y":1575,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_61","break__fullsize_144","break__fullsize_227"],"type":"collect"},{"x":978,"y":1576,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_63","break__fullsize_146","break__fullsize_229"],"type":"collect"},{"x":963,"y":1576,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_65","break__fullsize_148","break__fullsize_231"],"type":"collect"},{"x":1025,"y":1575,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_67","break__fullsize_150","break__fullsize_233"],"type":"collect"},{"x":1019,"y":1279,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_69","break__fullsize_152","break__fullsize_235"],"type":"collect"},{"x":1004,"y":1279,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_71","break__fullsize_154","break__fullsize_237"],"type":"collect"},{"x":313,"y":1657,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_73","break__fullsize_156","break__fullsize_239"],"type":"collect"},{"x":298,"y":1657,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_75","break__fullsize_158","break__fullsize_241"],"type":"collect"},{"x":294,"y":1250,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_77","break__fullsize_160","break__fullsize_243"],"type":"collect"},{"x":329,"y":1229,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_79","break__fullsize_162","break__fullsize_245"],"type":"collect"},{"x":862,"y":843,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_81","break__fullsize_164","break__fullsize_247"],"type":"collect"},{"x":827,"y":864,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_83","break__fullsize_166","break__fullsize_249"],"type":"collect"},{"x":268,"y":1434,"w":91,"h":39},{"x":423,"y":1512,"w":79,"h":39},{"x":394,"y":1655,"w":40,"h":39},{"x":731,"y":1126,"w":105,"h":39}] ', '[]'];
+  levels = ['[{"x":341,"y":996,"w":0,"h":0},{"x":-14,"y":187,"w":286,"h":1737},{"x":1044,"y":170,"w":318,"h":1753},{"x":-1,"y":-1,"w":1402,"h":225},{"x":402,"y":305,"w":472,"h":45},{"x":263,"y":397,"w":101,"h":50},{"x":426,"y":514,"w":156,"h":46},{"x":701,"y":401,"w":53,"h":63},{"x":1482,"y":502,"w":20,"h":20},{"x":266,"y":640,"w":99,"h":151},{"x":352,"y":734,"w":504,"h":57},{"x":619,"y":1299,"w":430,"h":41},{"x":933,"y":875,"w":121,"h":274},{"x":730,"y":1008,"w":50,"h":39},{"x":394,"y":1298,"w":40,"h":39},{"x":814,"y":607,"w":161,"h":56},{"x":576,"y":992,"w":346,"h":10,"dynamic":true,"cs":["purp"]},{"x":263,"y":898,"w":168,"h":41},{"x":257,"y":1732,"w":795,"h":192},{"x":439,"y":494,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_77"],"type":"collect"},{"x":404,"y":239,"w":468,"h":37,"type":"spawn"},{"x":454,"y":494,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":485,"y":494,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":728,"y":383,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":713,"y":383,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":815,"y":587,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":830,"y":587,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":1017,"y":252,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":277,"y":877,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":292,"y":877,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":323,"y":877,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":293,"y":836,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":324,"y":836,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":278,"y":836,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":285,"y":1282,"w":258,"h":8,"dynamic":true,"cs":["purp"]},{"x":529,"y":1477,"w":10,"h":251,"dynamic":true,"cs":["purp"]},{"x":585,"y":1474,"w":10,"h":251,"dynamic":true,"cs":["purp"]},{"x":643,"y":1475,"w":10,"h":251,"dynamic":true,"cs":["purp"]},{"x":712,"y":1472,"w":10,"h":251,"dynamic":true,"cs":["purp"]},{"x":789,"y":1425,"w":160,"h":299},{"x":980,"y":1484,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_45","break__fullsize_128","break__fullsize_211"],"type":"collect"},{"x":965,"y":1484,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_47","break__fullsize_130","break__fullsize_213"],"type":"collect"},{"x":1012,"y":1483,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_49","break__fullsize_132","break__fullsize_215"],"type":"collect"},{"x":1027,"y":1483,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_51","break__fullsize_134","break__fullsize_217"],"type":"collect"},{"x":978,"y":1527,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_53","break__fullsize_136","break__fullsize_219"],"type":"collect"},{"x":963,"y":1527,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_55","break__fullsize_138","break__fullsize_221"],"type":"collect"},{"x":1010,"y":1526,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_57","break__fullsize_140","break__fullsize_223"],"type":"collect"},{"x":1025,"y":1526,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_59","break__fullsize_142","break__fullsize_225"],"type":"collect"},{"x":1010,"y":1575,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_61","break__fullsize_144","break__fullsize_227"],"type":"collect"},{"x":978,"y":1576,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_63","break__fullsize_146","break__fullsize_229"],"type":"collect"},{"x":963,"y":1576,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_65","break__fullsize_148","break__fullsize_231"],"type":"collect"},{"x":1025,"y":1575,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_67","break__fullsize_150","break__fullsize_233"],"type":"collect"},{"x":1019,"y":1279,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_69","break__fullsize_152","break__fullsize_235"],"type":"collect"},{"x":1004,"y":1279,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_71","break__fullsize_154","break__fullsize_237"],"type":"collect"},{"x":313,"y":1657,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_73","break__fullsize_156","break__fullsize_239"],"type":"collect"},{"x":298,"y":1657,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_75","break__fullsize_158","break__fullsize_241"],"type":"collect"},{"x":294,"y":1250,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_77","break__fullsize_160","break__fullsize_243"],"type":"collect"},{"x":329,"y":1229,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_79","break__fullsize_162","break__fullsize_245"],"type":"collect"},{"x":862,"y":843,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_81","break__fullsize_164","break__fullsize_247"],"type":"collect"},{"x":827,"y":864,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_83","break__fullsize_166","break__fullsize_249"],"type":"collect"},{"x":268,"y":1434,"w":91,"h":39},{"x":423,"y":1512,"w":79,"h":39},{"x":394,"y":1655,"w":40,"h":39},{"x":731,"y":1126,"w":105,"h":39}] ', '[{"x":274,"y":198,"w":63,"h":396},{"x":943,"y":195,"w":63,"h":396},{"x":777,"y":239,"w":34,"h":34,"dynamic":true,"cs":["light","volleyball","circle"]},{"x":274,"y":167,"w":731,"h":45},{"x":357,"y":486,"w":575,"h":47,"type":"spawn"},{"x":339,"y":545,"w":604,"h":30},{"x":646,"y":419,"w":8,"h":129}]'];
 
   B = require('./libs/Box2dWeb-2.1.a.3.js');
 
@@ -15,6 +15,13 @@
     if (indx !== -1) {
       return this.splice(indx, 1);
     }
+  };
+
+  Array.prototype.random = function() {
+    if (this.length === 0) {
+      return;
+    }
+    return this[Math.floor(Math.random() * this.length)];
   };
 
   root = typeof exports !== "undefined" && exports !== null ? exports : this;
@@ -59,16 +66,17 @@
       result = {};
       if (Math.abs(this.x - this.cache.x) >= 1.0) {
         this.cache.x = this.x;
-        result.x = this.x;
+        result.x = parseInt(this.x);
       }
       if (Math.abs(this.y - this.cache.y) >= 1.0) {
         this.cache.y = this.y;
-        result.y = this.y;
+        result.y = parseInt(this.y);
       }
-      if (Math.abs(this.d - this.cache.d) >= 1.0) {
-        this.cache.d = this.d;
-        return result.d = this.d;
+      if (Math.abs(this.degrees - this.cache.d) >= 1.0) {
+        this.cache.d = this.degrees;
+        result.d = parseInt(this.degrees);
       }
+      return result;
     };
 
     Dynamic.prototype.state = function() {
@@ -100,16 +108,11 @@
       for (key in delta) {
         jj += 1;
       }
-      return {
-        ID: this.ID,
-        t: this.dynamic,
-        x: this.x,
-        y: this.y,
-        w: this.w,
-        h: this.h,
-        cs: this.cs,
-        d: this.degrees
-      };
+      if (jj > 0) {
+        delta.ID = this.ID;
+        return delta;
+      }
+      return false;
     };
 
     return Dynamic;
@@ -141,25 +144,42 @@
       this.max_velocity = 3.0;
       this.max_jump = 5.5;
       this.speed = .2;
+      this.cache = {
+        x: -9999,
+        y: -9999,
+        d: 0
+      };
+      this.coins = 0;
     }
 
+    Player.prototype.set_position = function(x, y) {
+      return this.body.SetXForm(new B.b2Vec2((x + this.w / 2) / root.game.scale, -1 * (y + this.h / 2) / root.game.scale), this.body.GetAngle());
+    };
+
+    Player.prototype.spawn = function() {
+      var sp;
+      sp = root.game.spawn;
+      this.x = (root.randint(sp.w)) + sp.x;
+      this.y = (root.randint(sp.h)) + sp.y;
+      return this.set_position(this.x, this.y);
+    };
+
     Player.prototype.delta_state = function() {
-      var pos;
+      var delta, jj, key, pos;
       this.degrees = this.body.GetAngle() * (180 / Math.PI);
       pos = this.body.GetPosition();
       this.x = pos.x * root.game.scale - this.w / 2;
       this.y = -pos.y * root.game.scale - this.h / 2;
-      return {
-        ID: this.ID,
-        t: this.dynamic,
-        x: this.x,
-        y: this.y,
-        w: this.w,
-        h: this.h,
-        name: this.name,
-        color: this.color,
-        d: this.degrees
-      };
+      delta = this.get_delta();
+      jj = 0;
+      for (key in delta) {
+        jj += 1;
+      }
+      if (jj > 0) {
+        delta.ID = this.ID;
+        return delta;
+      }
+      return false;
     };
 
     Player.prototype.state = function() {
@@ -275,7 +295,16 @@
 
     Player.prototype.contact_add = function(entity, point) {};
 
-    Player.prototype.contact_begin = function(entity, point) {};
+    Player.prototype.contact_begin = function(entity, point) {
+      if ((entity.type != null) && entity.type === 'collect') {
+        this.coins += 1;
+        console.log('coins: ', this.coins);
+        root.game.dynamics_to_destroy.push(entity);
+        return root.game.broadcast({
+          'collect': this.ID
+        });
+      }
+    };
 
     Player.prototype.contact_persist = function(entity, point) {
       if (point.normal != null) {
@@ -299,7 +328,8 @@
       var gravity, worldAABB;
       this.scale = 100.0;
       this.mode = 'lobby';
-      this.level = 3;
+      this.level = 1;
+      this.timer = 11;
       this.players = [];
       this.dynamics = [];
       this.spawn = {
@@ -308,13 +338,13 @@
         w: 700,
         h: 100
       };
+      this.dynamics_to_destroy = [];
       worldAABB = new B.b2AABB();
       worldAABB.lowerBound.Set(-60.0, -60.0);
       worldAABB.upperBound.Set(60.0, 60.0);
       gravity = new B.b2Vec2(0.0, -10.0);
       this.world = new B.b2World(worldAABB, gravity, true);
       this.boxes = [];
-      this.load_level(this.level);
       console.log(new B.b2ContactListener());
       this.ContactListener = new B.b2ContactListener();
       this.ContactListener.Add = this.contact_begin;
@@ -333,10 +363,10 @@
     Game.prototype.contact_add = function(point) {
       var ab;
       ab = root.game.get_contact_entities(point);
-      if (ab[0]) {
+      if (ab[0] && (ab[0].contact_add != null)) {
         ab[0].contact_add(ab[1], point);
       }
-      if (ab[1]) {
+      if (ab[1] && (ab[1].contact_add != null)) {
         return ab[1].contact_add(ab[0], point);
       }
     };
@@ -344,10 +374,10 @@
     Game.prototype.contact_begin = function(point) {
       var ab;
       ab = root.game.get_contact_entities(point);
-      if (ab[0]) {
+      if (ab[0] && (ab[0].contact_begin != null)) {
         ab[0].contact_begin(ab[1], point);
       }
-      if (ab[1]) {
+      if (ab[1] && (ab[1].contact_begin != null)) {
         return ab[1].contact_begin(ab[0], point);
       }
     };
@@ -355,10 +385,10 @@
     Game.prototype.contact_persist = function(point) {
       var ab;
       ab = root.game.get_contact_entities(point);
-      if (ab[0]) {
+      if (ab[0] && (ab[0].contact_persist != null)) {
         ab[0].contact_persist(ab[1], point);
       }
-      if (ab[1]) {
+      if (ab[1] && (ab[1].contact_persist != null)) {
         return ab[1].contact_persist(ab[0], point);
       }
     };
@@ -366,10 +396,10 @@
     Game.prototype.contact_remove = function(point) {
       var ab;
       ab = root.game.get_contact_entities(point);
-      if (ab[0]) {
+      if (ab[0] && (ab[0].contact_remove != null)) {
         ab[0].contact_remove(ab[1], point);
       }
-      if (ab[1]) {
+      if (ab[1] && (ab[1].contact_remove != null)) {
         return ab[1].contact_remove(ab[0], point);
       }
     };
@@ -389,28 +419,46 @@
     };
 
     Game.prototype.load_level = function(n) {
-      var data, obj, _i, _len, _results;
+      var d, data, ddd, obj, p, ppp, _i, _j, _k, _len, _len1, _len2, _ref, _ref1;
       this.debug = [];
-      if (n < levels.length) {
-        data = JSON.parse(levels[n]);
-        _results = [];
-        for (_i = 0, _len = data.length; _i < _len; _i++) {
-          obj = data[_i];
-          if (obj.dynamic != null) {
-            console.log(obj.type, obj.cs);
-            _results.push(this.boxes.push(this.make_dynamic_box(obj)));
-          } else if (obj.type != null) {
-            if (obj.type === 'spawn') {
-              _results.push(this.spawn = obj);
-            } else {
-              _results.push(void 0);
-            }
-          } else {
-            _results.push(this.boxes.push(this.make_static_box(obj)));
-          }
-        }
-        return _results;
+      _ref = this.boxes;
+      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+        d = _ref[_i];
+        this.world.DestroyBody(d);
       }
+      _ref1 = this.players;
+      for (_j = 0, _len1 = _ref1.length; _j < _len1; _j++) {
+        p = _ref1[_j];
+        p.spawn();
+      }
+      this.dynamics = [];
+      this.boxes = [];
+      data = JSON.parse(levels[this.level]);
+      for (_k = 0, _len2 = data.length; _k < _len2; _k++) {
+        obj = data[_k];
+        if (obj.dynamic != null) {
+          console.log(obj.type, obj.cs);
+          this.boxes.push(this.make_dynamic_box(obj));
+        } else if (obj.type != null) {
+          if (obj.type === 'spawn') {
+            this.spawn = obj;
+          }
+        } else {
+          this.boxes.push(this.make_static_box(obj));
+        }
+      }
+      this.broadcast({
+        load: this.level
+      });
+      ppp = this.players.map(function(p) {
+        return p.state();
+      });
+      ddd = this.dynamics.map(function(p) {
+        return p.state();
+      });
+      return this.broadcast({
+        debrief: ddd.concat(ppp)
+      });
     };
 
     Game.prototype.close_player = function(player) {
@@ -420,6 +468,19 @@
       return this.broadcast({
         disconnect: player.ID
       });
+    };
+
+    Game.prototype.remove_dynamic = function(dynamic) {
+      var _ref;
+      this.dynamics.remove(dynamic);
+      this.broadcast({
+        'remove': dynamic.ID
+      });
+      if (_ref = dynamic.body, __indexOf.call(this.boxes, _ref) >= 0) {
+        this.boxes.remove(dynamic.body);
+      }
+      this.world.DestroyBody(dynamic.body);
+      return dynamic = null;
     };
 
     Game.prototype.make_dynamic_box = function(obj) {
@@ -440,15 +501,28 @@
       bodyDef.type = B.b2Body.b2_dynamicBody;
       bodyDef.position.Set((obj.x + obj.w / 2) / this.scale, -1 * (obj.y + obj.h / 2) / this.scale);
       body = this.world.CreateBody(bodyDef);
-      shapeDef = new B.b2PolygonDef();
-      shapeDef.SetAsBox(obj.w / 2 / this.scale, obj.h / 2 / this.scale);
+      if ((obj.cs != null) && __indexOf.call(obj.cs, 'circle') >= 0) {
+        shapeDef = new B.b2CircleDef();
+        shapeDef.radius = (obj.w / 2) / this.scale;
+      } else {
+        shapeDef = new B.b2PolygonDef();
+        shapeDef.SetAsBox(obj.w / 2 / this.scale, obj.h / 2 / this.scale);
+      }
       shapeDef.density = 1.0;
       shapeDef.friction = 0.6;
       shapeDef.restitution = .2;
+      if ((obj.cs != null) && __indexOf.call(obj.cs, 'light') >= 0) {
+        shapeDef.density = 0.16;
+        shapeDef.restitution = .95;
+      }
       body.CreateShape(shapeDef);
       body.SetMassFromShapes();
-      new_dynamic.body = body;
       console.log(body.GetAngle());
+      if ((obj.type != null) && obj.type === 'collect') {
+        new_dynamic.type = obj.type;
+        body.SetUserData(new_dynamic);
+      }
+      new_dynamic.body = body;
       return body;
     };
 
@@ -466,32 +540,79 @@
     };
 
     Game.prototype.update = function() {
-      root.game.world.Step(1.0 / 60.0, 5);
-      root.game.update_players();
+      var diff, limit, p, _i, _len, _ref;
+      diff = root.game.time() - root.game.mode_time;
+      if (root.game.mode === 'game') {
+        limit = 20000;
+      } else {
+        limit = 6000;
+      }
+      if (root.game.timer !== parseInt(diff / (limit / 10))) {
+        root.game.timer = parseInt(diff / (limit / 10));
+        root.game.broadcast({
+          'time': parseInt(diff / (limit / 10))
+        });
+      }
+      if (diff > limit) {
+        root.game.mode_time = root.game.time();
+        if (root.game.mode === 'lobby') {
+          root.game.mode = 'game';
+          root.game.level = parseInt(Math.random() * levels.length);
+          root.game.load_level(root.game.level);
+        } else {
+          root.game.mode = 'lobby';
+          root.game.broadcast({
+            'lobby': true
+          });
+          _ref = root.game.players;
+          for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+            p = _ref[_i];
+            p.set_position(Math.random() * 700 + 50, 350 + Math.random() * 100);
+          }
+          root.game.update_players();
+        }
+        console.log(root.game.mode);
+      }
+      if (root.game.mode === 'game') {
+        root.game.world.Step(1.0 / 60.0, 5);
+        root.game.update_players();
+      }
       return root.requestAnimFrame(root.game.update);
     };
 
     Game.prototype.update_players = function() {
-      var d, dset, p, set, _i, _j, _k, _len, _len1, _len2, _ref, _ref1, _ref2, _results;
+      var d, delta, dset, p, set, _i, _j, _k, _l, _len, _len1, _len2, _len3, _ref, _ref1, _ref2, _ref3, _results;
+      _ref = this.dynamics_to_destroy;
+      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+        d = _ref[_i];
+        this.remove_dynamic(d);
+      }
+      this.dynamics_to_destroy = [];
       set = [];
       dset = [];
-      _ref = this.players;
-      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-        p = _ref[_i];
-        set.push(p.delta_state());
-      }
-      _ref1 = this.dynamics;
+      _ref1 = this.players;
       for (_j = 0, _len1 = _ref1.length; _j < _len1; _j++) {
-        d = _ref1[_j];
-        set.push(d.delta_state());
+        p = _ref1[_j];
+        delta = p.delta_state();
+        if (delta) {
+          set.push(delta);
+        }
+      }
+      _ref2 = this.dynamics;
+      for (_k = 0, _len2 = _ref2.length; _k < _len2; _k++) {
+        d = _ref2[_k];
+        delta = d.delta_state();
+        if (delta) {
+          set.push(delta);
+        }
       }
       this.broadcast({
         debrief: set
       });
-      _ref2 = this.players;
+      _ref3 = this.players;
       _results = [];
-      for (_k = 0, _len2 = _ref2.length; _k < _len2; _k++) {
-        p = _ref2[_k];
+      for (_l = 0, _len3 = _ref3.length; _l < _len3; _l++) {
+        p = _ref3[_l];
         _results.push(p.update());
       }
       return _results;
@@ -518,11 +639,18 @@
       body.SetMassFromShapes();
       new_player.body = body;
       body.SetUserData(new_player);
+      if (this.mode === 'lobby') {
+        new_player.set_position(Math.random() * 700 + 50, 350 + Math.random() * 100);
+        new_player.send({
+          'lobby': true
+        });
+      } else {
+        new_player.send({
+          load: this.level
+        });
+      }
       this.broadcast({
         connect: [new_player.state()]
-      });
-      new_player.send({
-        load: this.level
       });
       new_player.send({
         self: new_player.ID
@@ -556,6 +684,8 @@
   root.Player = Player;
 
   root.game = new Game();
+
+  root.game.load_level(root.game.level);
 
   root.game.update();
 

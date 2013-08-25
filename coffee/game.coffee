@@ -1,3 +1,8 @@
+window.requestAnimFrame = (->
+  window.requestAnimationFrame or window.webkitRequestAnimationFrame or window.mozRequestAnimationFrame or (callback) ->
+    window.setTimeout callback, 1000 / 60
+)()
+
 Array::remove = (item)->
 	indx = @indexOf(item)
 	if indx != -1
@@ -6,9 +11,42 @@ Array::remove = (item)->
 
 window.v_w = 800
 window.v_h = 600
+
+window.entities = {}
+window.players = {}
+window.dynamics = {}
+
+short1 = new Audio("audio/short1.mp3")
+coinwav = new Audio("audio/coin.wav")
+coinlost = new Audio("audio/coinlost.wav")
+
 $('#viewport').css
 	width: window.v_w
 	height: window.v_h
+
+window.update_entities = ()->
+
+	for key of window.entities
+		e = window.entities[key]
+		if e.avatar?
+
+
+			if 'x' in e.to_update
+				e.avatar.css
+					left: parseInt(e.x)
+			if 'y' in e.to_update
+				e.avatar.css
+					top: parseInt(e.y)
+			if 'd' in e.to_update
+				e.avatar.css
+					transform: 'rotate(' + String(e.d * -1 ) + 'deg)'
+			e.to_update = []
+			if e.ID is window.me
+				e.avatar.addClass 'self'
+
+	window.requestAnimFrame( update_entities )
+	
+
 
 connect_to_socket = (_name, _color)->
 	ws = new WebSocket('ws://'+window.location.hostname+':8079') 
@@ -17,13 +55,30 @@ connect_to_socket = (_name, _color)->
 		ws.send(JSON.stringify({'login':{name:_name, color:_color}}))
 	ws.onmessage = (message)->
 		data = JSON.parse(message.data)	
-
+		if data.time?
+			$('.time').html(" " + (10 - parseInt(data.time)) )
 		if data.self?
 			window.me = data.self
 		if data.disconnect?
 			if $('#'+data.disconnect)[0]?
 				$('#'+data.disconnect).detach()
-	
+		if data.remove?
+			if $('#'+data.remove)[0]?
+				$('#'+data.remove).detach()
+		if data.collect?
+			if data.collect is window.me
+				coinwav.play()
+			else
+				coinlost.play()
+		else if data.lobby?
+			#$('#viewport').css('display', 'none')
+			$('#actors').html('')
+			$('#level').html('')
+			$('#game').css
+				'left':0
+				'top':0
+			$('#viewport > .time').hide()
+			$('#lobby').css('display', 'block')
 		else if data.chat?
 			if $('#'+data.who)[0]?
 				bubble = $('<p class="bubble" >'+data.chat+'</p>')
@@ -32,88 +87,88 @@ connect_to_socket = (_name, _color)->
 				bubble.delay(2000).animate {opacity:0.0}, 300, ()->
 					bubble.detach()
 		else if data.load?
+			short1.play()
+			$('#lobby').css('display', 'none')
+			$('#viewport > .time').show()
+			$('#viewport').css('display', 'block')
 			console.log 'load'
 			n = data.load
-
+			$('#dynamics').html('')
+			$('#actors').html('')
+			window.entities = {}
+			$('#game').css
+				'left':0
+				'top':0
 			$.get './levels/level'+n+'.html', (data)->
-				$('#game').html data
-				$('#game').find('.dynamic').detach()
+				$('#level').html data
+				$('#level').find('.dynamic').detach()
+
 		else if data.debrief? or data.connect?
 			if not $('body').children('#debug')[0]?
 				$('body').append('<div id="debug"></div>')
 
 			set = data.debrief or data.connect
-			#$('#debug').html '<p>'+JSON.stringify(set)+'</p>'
-			for player in set
+			$('#debug').html '<p>'+JSON.stringify(set).length+'  '+'</p>'
+			for entity in set
+				if entity.ID
+					if not window.entities[entity.ID]
 
-				if not $('#'+player.ID)[0]?
-					console.log 'new ', player
-					if player.t? and player.t is true
-						avatar = $('<div class="player dynamic", id="'+player.ID+'">
-							</div>')
+						window.entities[entity.ID] = entity
+						if entity.t? and entity.t is true
+							avatar = $('<div class="player dynamic", id="'+entity.ID+'">
+								</div>')
+						else
+							avatar = $('<div class="player", id="'+entity.ID+'">
+								<div class="chat"></div><div class="playername"></div></div>')
+						window.entities[entity.ID].avatar = avatar
+						avatar.css
+							width: entity.w
+							height: entity.h
+							left: entity.x
+							top: entity.y
+							transform: 'rotate(' + String(entity.d * -1 ) + 'deg)'
+						if entity.color
+							avatar.css('background-color', entity.color)
+						if entity.cs
+							for c in entity.cs
+								avatar.addClass c
+						entity.to_update = []
+						if entity.t is true
+							$('#actors').append avatar
+						else
+							$('#dynamics').append avatar
+						console.log 'creating ', entity.ID, avatar
 					else
-						avatar = $('<div class="player", id="'+player.ID+'">
-							<div class="chat"></div><div class="playername"></div></div>')
-					if player.ID is window.me
-						avatar.addClass 'self'
-					if player.cs
-						for c in player.cs
-							avatar.addClass c
-					avatar.css 
-						width: player.w
-						height:player.h
-						position:'absolute'
-						left:player.x+10
-						top:player.y+10
 
-					if player.color
-						avatar.css
-							'background-color':player.color
-					if player.name
-						avatar.children('.playername').html player.name
-					$('#game').append avatar
-				else
-					avatar = $('#'+player.ID)
-					if player.ID is window.me
-						avatar.addClass 'self'
-					if player.cs
-						for c in player.cs
-							avatar.addClass c
-					if player.color
-						avatar.css
-							'background-color':player.color
-					if player.name
-						avatar.children('.playername').html player.name
-					if player.x
-						avatar.css 
-							left: player.x
-					if player.y
-						avatar.css 
-							top: player.y
-					if player.d?
-						deg = player.d * -1
-						avatar.css('transform', 'rotate('+deg+'deg)')
-			o = 
-				top: parseInt($('.player.self').css('top'))
-				left: parseInt($('.player.self').css('left'))
+						for prop of entity
+							if prop isnt 'ID'
+								if prop not in window.entities[entity.ID].to_update
+									window.entities[entity.ID].to_update.push prop
+							window.entities[entity.ID][prop] = entity[prop]
+			if $('.player.self').length > 0
+				o = 
+					top: parseInt($('.player.self').css('top'))
+					left: parseInt($('.player.self').css('left'))
 
-			relative = o.top + parseInt($('#game').css('top'))
+				relative = o.top + parseInt($('#game').css('top'))
 
-			if relative > window.v_h*.6
-				diff = window.v_h*.6 - relative
-				$('#game').css('top', parseInt($('#game').css('top'))+diff+'px' )
-			else if relative < window.v_h*.4
-				diff = window.v_h*.4 - relative
-				$('#game').css('top', parseInt($('#game').css('top'))+diff+'px' )
+				if relative > window.v_h*.6
+					diff = window.v_h*.6 - relative
+					$('#game').css('top', parseInt($('#game').css('top'))+diff+'px' )
+				else if relative < window.v_h*.4
+					diff = window.v_h*.4 - relative
+					$('#game').css('top', parseInt($('#game').css('top'))+diff+'px' )
 
-			relative = o.left + parseInt($('#game').css('left'))
+				relative = o.left + parseInt($('#game').css('left'))
 
-			if relative > window.v_w*.6
-				diff = window.v_w*.6 - relative
-				$('#game').css('left', parseInt($('#game').css('left'))+diff+'px' )
-			else if relative < window.v_w*.4
-				diff = window.v_w*.4 - relative
-				$('#game').css('left', parseInt($('#game').css('left'))+diff+'px' )
+				if relative > window.v_w*.6
+					diff = window.v_w*.6 - relative
+					$('#game').css('left', parseInt($('#game').css('left'))+diff+'px' )
+				else if relative < window.v_w*.4
+					diff = window.v_w*.4 - relative
+					$('#game').css('left', parseInt($('#game').css('left'))+diff+'px' )
+
+	window.update_entities()
 
 
 

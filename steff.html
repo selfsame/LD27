@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+
+
+<script  src="js/libs/jquery.js"></script>
+<style>
+	.container{
+		border: 1px solid black;
+		width: 300px;
+		height: 300px;
+	}
+	.piece{
+		position: absolute;
+		width:10px;
+		height:10px;
+		margin:1px;
+		background-color:silver;
+		padding: 10px;
+		cursor:pointer;
+	}
+</style>
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="piece">A0</div>
+		<div class="piece">B0</div>
+		<div class="piece">C0</div>
+		<div class="piece">A1</div>
+		<div class="piece">B1</div>
+		<div class="piece">C1</div>
+		<div class="piece">A2</div>
+		<div class="piece">B2</div>
+		<div class="piece">C2</div>
+	</div>
+
+<script>
+
+grid = 3
+
+pieces = $('.container .piece')
+
+model = [
+			[0,0,0],
+			[0,0,0],
+			[0,0,0]
+		];
+
+
+for (var i = 0; i < pieces.length; i++){
+	console.log( pieces[i]);
+	$(pieces[i]).css('left', i % grid * 32) ;
+	$(pieces[i]).css('top', parseInt(i/grid)  *32);
+
+	model[ parseInt(i/grid) ][ i % grid ] = $(pieces[i]).html();
+}
+
+console.log( model);
+
+var swap = function( x1, y1, x2, y2 ){
+	temp = model[y1][x1];
+	model[y1][x1] = model[y2][x2];
+	model[y2][x2] = temp;
+}
+
+el_to_index = function(el){
+	el = $(el);
+	x = el.css('left');
+	y = el.css('top');
+	x = parseInt(parseInt(x)/32);
+	y = parseInt(parseInt(y)/32);
+	return [x,y]
+}
+
+swapee = false;
+
+
+pieces.click( function(e){
+	console.log( el_to_index(this) );
+	if (swapee == false){
+		swapee = el_to_index(this);
+		old_this = this;
+	} else {
+		swap( swapee[0], swapee[1], el_to_index(this)[0], el_to_index(this)[1]);
+		swapee = false;
+
+	}
+});
+
+</script>
+</body>
