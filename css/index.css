@@ -191,8 +191,22 @@ label{
     margin: -14px 0px 0px -6px;
 }
 
+.playerscore{
+    display:none;
+    font-size:18px;
+    font-weight:bold;
+    font-family: 'Comic Sans MS';
+    color:orange;
+    opacity: .6;
+    margin: 26px 0px 0px 0px;
+    background-color:black;
+    position:absolute;
+}
 
 
+.lobify .playerscore{
+    display:block;
+}
 
 
 /* LEvel stykles */
@@ -222,4 +236,24 @@ label{
     height:32px;
     position:absolute;
     background-image: url(../img/volleyball.png);
+}
+
+
+.b1, .b2, .b3{
+  border: 1px solid black;
+ position: absolute;
+
+ border-top-left-radius: 100px;
+ border-top-right-radius: 100px;
+ border-bottom-right-radius: 100px;
+ border-bottom-left-radius: 100px;
+ background-color: rgb(200, 151, 224);
+}
+
+.b2{
+  background-color: rgb(100, 251, 124);
+}
+
+.b3{
+  background-color: rgb(200, 81, 50);
 }

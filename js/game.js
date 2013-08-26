@@ -100,10 +100,12 @@
       }
       if (data.collect != null) {
         if (data.collect === window.me) {
-          return coinwav.play();
+          coinwav.play();
         } else {
-          return coinlost.play();
+          coinlost.play();
         }
+        window.entities[data.collect].coin += 1;
+        return window.entities[data.collect].avatar.find('.playerscore').html(window.entities[data.collect].coin);
       } else if (data.lobby != null) {
         $('#actors').html('');
         $('#level').html('');
@@ -112,6 +114,7 @@
           'top': 0
         });
         $('#viewport > .time').hide();
+        $('#viewport').addClass('lobify');
         return $('#lobby').css('display', 'block');
       } else if (data.chat != null) {
         if ($('#' + data.who)[0] != null) {
@@ -127,6 +130,7 @@
       } else if (data.load != null) {
         short1.play();
         $('#lobby').css('display', 'none');
+        $('#viewport').removeClass('lobify');
         $('#viewport > .time').show();
         $('#viewport').css('display', 'block');
         console.log('load');
@@ -158,7 +162,7 @@
 								</div>');
               } else {
                 avatar = $('<div class="player", id="' + entity.ID + '">\
-								<div class="chat"></div><div class="playername"></div></div>');
+								<div class="chat"></div><div class="playername"></div><div class="playerscore">0</div></div>');
               }
               window.entities[entity.ID].avatar = avatar;
               avatar.css({
@@ -168,6 +172,9 @@
                 top: entity.y,
                 transform: 'rotate(' + String(entity.d * -1) + 'deg)'
               });
+              if (entity.coin) {
+                avatar.find('.playerscore').html(entity.coin);
+              }
               if (entity.color) {
                 avatar.css('background-color', entity.color);
               }
@@ -240,6 +247,7 @@
       }
     });
     $(window).keyup(function(e) {
+      window.keys.remove(e.keyCode);
       window.keys.remove(e.keyCode);
       return ws.send(JSON.stringify({
         'keyup': e.keyCode

@@ -70,6 +70,8 @@ connect_to_socket = (_name, _color)->
 				coinwav.play()
 			else
 				coinlost.play()
+			window.entities[data.collect].coin += 1
+			window.entities[data.collect].avatar.find('.playerscore').html window.entities[data.collect].coin
 		else if data.lobby?
 			#$('#viewport').css('display', 'none')
 			$('#actors').html('')
@@ -78,6 +80,7 @@ connect_to_socket = (_name, _color)->
 				'left':0
 				'top':0
 			$('#viewport > .time').hide()
+			$('#viewport').addClass 'lobify'
 			$('#lobby').css('display', 'block')
 		else if data.chat?
 			if $('#'+data.who)[0]?
@@ -89,6 +92,7 @@ connect_to_socket = (_name, _color)->
 		else if data.load?
 			short1.play()
 			$('#lobby').css('display', 'none')
+			$('#viewport').removeClass 'lobify'
 			$('#viewport > .time').show()
 			$('#viewport').css('display', 'block')
 			console.log 'load'
@@ -119,7 +123,7 @@ connect_to_socket = (_name, _color)->
 								</div>')
 						else
 							avatar = $('<div class="player", id="'+entity.ID+'">
-								<div class="chat"></div><div class="playername"></div></div>')
+								<div class="chat"></div><div class="playername"></div><div class="playerscore">0</div></div>')
 						window.entities[entity.ID].avatar = avatar
 						avatar.css
 							width: entity.w
@@ -127,6 +131,8 @@ connect_to_socket = (_name, _color)->
 							left: entity.x
 							top: entity.y
 							transform: 'rotate(' + String(entity.d * -1 ) + 'deg)'
+						if entity.coin
+							avatar.find('.playerscore').html entity.coin
 						if entity.color
 							avatar.css('background-color', entity.color)
 						if entity.cs
@@ -185,6 +191,7 @@ connect_to_socket = (_name, _color)->
 			window.keys.push e.keyCode
 			ws.send(JSON.stringify({'keydown':e.keyCode}))
 	$(window).keyup (e)->
+		window.keys.remove e.keyCode
 		window.keys.remove e.keyCode
 		ws.send(JSON.stringify({'keyup':e.keyCode}))
 
