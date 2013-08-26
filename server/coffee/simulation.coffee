@@ -505,8 +505,8 @@ class Game
 
 		shapeDef = new B.b2CircleDef()
 		shapeDef.radius = (new_player.w * 2 / 2) / @scale
-		console.log shapeDef
-		shapeDef.localPosition.y = -.9
+		#console.log shapeDef
+		shapeDef.localPosition.y = -.1
 		body.CreateShape shapeDef
 
 		body.SetMassFromShapes()

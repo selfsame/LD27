@@ -650,8 +650,7 @@
       body.CreateShape(shapeDef);
       shapeDef = new B.b2CircleDef();
       shapeDef.radius = (new_player.w * 2 / 2) / this.scale;
-      console.log(shapeDef);
-      shapeDef.localPosition.y = -.9;
+      shapeDef.localPosition.y = -.1;
       body.CreateShape(shapeDef);
       body.SetMassFromShapes();
       new_player.body = body;
