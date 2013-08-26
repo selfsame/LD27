@@ -490,7 +490,7 @@ class Game
 		shapeDef = new B.b2PolygonDef()
 		shapeDef.SetAsBox new_player.w / 2 / @scale, new_player.h / 2 / @scale
 		shapeDef.density = 1.3
-		shapeDef.friction = 0.5
+		shapeDef.friction = 0.9
 		shapeDef.restitution = .2
 		body.CreateShape shapeDef
 		body.SetMassFromShapes()
