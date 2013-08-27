@@ -623,6 +623,9 @@
       var body, bodyDef, ddd, new_player, ppp, shapeDef;
       winston.info('+CONNECT  TOTAL(' + this.players.length + ')');
       new_player = new Player(ws);
+      if (login.name.length > 24) {
+        login.name = login.name.slice(0, 23);
+      }
       new_player.name = login.name;
       new_player.color = login.color;
       ws.player = new_player;

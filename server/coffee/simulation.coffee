@@ -480,6 +480,8 @@ class Game
 	new_connection: (ws, login)->
 		winston.info '+CONNECT  TOTAL('+@players.length+')'
 		new_player = new Player(ws)
+		if login.name.length > 24
+			login.name = login.name.slice(0,23)
 		new_player.name = login.name
 		new_player.color = login.color
 		ws.player = new_player

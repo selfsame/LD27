@@ -46,7 +46,9 @@ window.update_entities = ()->
 			if not $('.player.self').length > 0
 				if e.ID is window.me
 					e.avatar.addClass 'self'
-					e.avatar.find('.playername').html e.name
+
+			if e.name
+				e.avatar.find('.playername').html e.name
 
 	window.requestAnimFrame( update_entities )
 	
@@ -156,6 +158,8 @@ connect_to_socket = (_name, _color)->
 							left: entity.x
 							top: entity.y
 							transform: 'rotate(' + String(entity.d * -1 ) + 'deg)'
+						if entity.name
+							avatar.find('.playername').html entity.name
 						if entity.coin
 							avatar.find('.playerscore').html entity.coin
 						if entity.color

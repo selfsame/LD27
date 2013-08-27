@@ -64,8 +64,10 @@
         if (!$('.player.self').length > 0) {
           if (e.ID === window.me) {
             e.avatar.addClass('self');
-            e.avatar.find('.playername').html(e.name);
           }
+        }
+        if (e.name) {
+          e.avatar.find('.playername').html(e.name);
         }
       }
     }
@@ -197,6 +199,9 @@
                 top: entity.y,
                 transform: 'rotate(' + String(entity.d * -1) + 'deg)'
               });
+              if (entity.name) {
+                avatar.find('.playername').html(entity.name);
+              }
               if (entity.coin) {
                 avatar.find('.playerscore').html(entity.coin);
               }
