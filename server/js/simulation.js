@@ -676,20 +676,21 @@
     };
 
     Game.prototype.broadcast = function(message) {
-      var p, _i, _len, _ref, _results;
+      var clean, p, _i, _len, _ref;
+      clean = false;
       _ref = this.players;
-      _results = [];
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         p = _ref[_i];
         if (p === void 0) {
-          _results.push(this.players.remove(p));
-        } else if (p.send != null) {
-          _results.push(p.send(message));
-        } else {
-          _results.push(void 0);
+          clean = true;
+        }
+        if ((p != null ? p.send : void 0) != null) {
+          p.send(message);
         }
       }
-      return _results;
+      if (clean) {
+        return this.players.remove(void 0);
+      }
     };
 
     return Game;

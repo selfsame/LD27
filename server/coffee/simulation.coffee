@@ -526,11 +526,14 @@ class Game
 
 
 	broadcast: (message)->
+		clean = false
 		for p in @players
 			if p is undefined
-				@players.remove p
-			else if p.send?
+				clean = true
+			if p?.send?
 				p.send message
+		if clean
+			@players.remove undefined
 
 root.Player = Player
 

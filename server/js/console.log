@@ -22,3 +22,8 @@
 {"level":"info","message":"+CONNECT  TOTAL(1)","timestamp":"2013-08-27T03:10:12.373Z"}
 {"level":"info","message":"-CONNECT","timestamp":"2013-08-27T03:10:35.075Z"}
 {"level":"info","message":"-CONNECT","timestamp":"2013-08-27T03:15:21.389Z"}
+{"level":"info","message":"start winston logs","timestamp":"2013-08-27T03:29:27.283Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T03:29:35.497Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T03:29:40.838Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T03:29:56.458Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T03:29:58.619Z"}
