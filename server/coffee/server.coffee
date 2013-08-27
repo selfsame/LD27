@@ -35,6 +35,7 @@ game = Sim.game
 Player = Sim.Player
 
 
+
 WebSocketServer = require("ws").Server
 wss = new WebSocketServer(port: 8079)
 wss.on "connection", (ws) ->
@@ -42,16 +43,19 @@ wss.on "connection", (ws) ->
 		message = JSON.parse(message)
 		if typeof message is 'object'
 			if message.login?
-				game.new_connection(ws, message.login)
+				Sim.game.new_connection(ws, message.login)
 
 			else if ws.player?
 				if message.ping?
 					ws.player.send('pong': new Date().getTime())
 				if message.chat?
-					d = new Date()
-					stamp = d.getHours()+':'+d.getMinutes()+':'+d.getSeconds()
-					winston.info '['+stamp+'] '+ws.player.name+':', message.chat
-					game.broadcast({'chat':message.chat, 'who':ws.player.ID})
+					if message.chat.slice(0,7) is "&admin:"
+						Sim.game.admin message.chat.split("&admin:")[1]
+					else
+						d = new Date()
+						stamp = d.getHours()+':'+d.getMinutes()+':'+d.getSeconds()
+						winston.info '['+stamp+'] '+ws.player.name+':', message.chat
+						Sim.game.broadcast({'chat':message.chat, 'who':ws.player.ID})
 				if message.keydown?
 					ws.player.keydown(message.keydown)
 				if message.keyup?
@@ -60,10 +64,10 @@ wss.on "connection", (ws) ->
 		#console.log "received: %s", message
 
 	ws.on "close", (message) ->
-		game.players.remove ws.player
-		game.world.DestroyBody ws.player.body
+		Sim.game.players.remove ws.player
+		Sim.game.world.DestroyBody ws.player.body
 		ws.player.body = null
-		game.broadcast {disconnect:ws.player.ID}
+		Sim.game.broadcast {disconnect:ws.player.ID}
 		winston.info '-CONNECT'
 
 
@@ -71,6 +75,7 @@ wss.on "connection", (ws) ->
     	console.log('Client #%d error: %s', ws.player.ID, error.message)
 
 	
+
 
 
 

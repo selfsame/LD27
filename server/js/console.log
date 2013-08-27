@@ -1,29 +1,39 @@
-{"level":"info","message":"start winston logs","timestamp":"2013-08-27T02:49:49.779Z"}
-{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T02:49:58.673Z"}
-{"level":"info","message":"+CONNECT  TOTAL(1)","timestamp":"2013-08-27T02:50:24.750Z"}
-{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T02:51:06.824Z"}
-{"level":"info","message":"+CONNECT  TOTAL(1)","timestamp":"2013-08-27T02:51:09.685Z"}
-{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T02:51:17.005Z"}
-{"level":"info","message":"+CONNECT  TOTAL(1)","timestamp":"2013-08-27T02:51:21.893Z"}
-{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T02:52:19.331Z"}
-{"level":"info","message":"+CONNECT  TOTAL(1)","timestamp":"2013-08-27T02:52:22.910Z"}
-{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T02:53:12.468Z"}
-{"level":"info","message":"+CONNECT  TOTAL(1)","timestamp":"2013-08-27T02:53:17.122Z"}
-{"level":"info","message":"[22:53:57]                               : <div id=\"header\"> \t<div id=\"headerimg\"> \t\t<h1 style=\"text-align:left; font-size:70px\"><a href=\"http://www.ludumdare.com/compo/\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></h1> \t\t<!--<div class=\"description\">A tri-annual 48 hour solo game development competition.</div>--> \t</div> </div> <hr />  <div id='compo-status'><p><center><a href=\"http://www.ludumdare.com/\"><strong>Home</strong></a> | <a href=\"http://www.ludumdare.com/compo/rules/\"><strong>Rules and Guide</strong></a> | <a href=\"http://www.ludumdare.com/compo/wp-admin/\"><strong>Sign In/Create Account</strong></a> | <a href=\"http://www.ludumdare.com/compo/wp-admin/post-new.php\"><strong>Write a Post</strong></a> | <a href=\"http://www.reddit.com/r/ludumdare/\"><img src=\"/web/20130508125219im_/http://www.ludumdare.com/compo/wp-content/uploads/2011/11/reddit.ico\" width=\"16\"> <strong>Reddit</strong></a> | <strong>#ludumdare</strong> on <strong>irc.afternet.org (<a href=\"http://www.ludumdare.com/compo/irc/\">Info</a>)</strong></p> <p> <div style=\"border: 2px solid #000000; background: #ffeeaa; margin: 10px; padding: 10px; text-align: center;\"><span style=\"font-size: 18px;\"><strong>Ludum Dare 27</strong> &#8212; <strong>August 23rd-26th</strong> &#8212; Theme: <strong><a href=\"http://www.ludumdare.com/compo/ld27-theme-voting-round-5-of-5/\">10 Seconds</a></strong></div> <li class = 'fergcorp_countdownTimer_event_li'><span class = 'fergcorp_countdownTimer_event_title'>Judging Ends</span>: <span id = 'x7f528e370803aae0c81a1fff30bb69ad' class='fergcorp_countdownTimer_event_time'>in <span class=\"fergcorp_countdownTimer_day fergcorp_countdownTimer_timeUnit\">20 days,</span> <span class=\"fergcorp_countdownTimer_hour fergcorp_countdownTimer_timeUnit\">22 hours,</span> <span class=\"fergcorp_countdownTimer_minute fergcorp_countdownTimer_timeUnit\">6 minutes,</span> <span class=\"fergcorp_countdownTimer_second fergcorp_countdownTimer_timeUnit\">35 seconds</span></span></li>  <p><font size=\"+0\">[ <strong><a href=\"http://www.ludumdare.com/compo/2013/08/22/welcome-to-ludum-dare-27/\">Keynote</a></strong> | <a href=\"http://www.ludumdare.com/compo/2013/08/05/real-world-ludum-dare-27-gatherings/\">Real World Gatherings</a> | <a href=\"http://www.ludumdare.com/compo/2013/08/15/warmup-weekend-ludum-dare-27/\">Warmup Weekend (August 17th)</a> | <a href=\"http://www.ludumdare.com/compo/2013/08/05/ludum-deals-for-ld27/\"><strong>Ludum Deals</strong></a> ]</font></p> <p><font size=\"+1\">[ <a href=\"http://www.ludumdare.com/compo/ludum-dare-27/\"><strong>Play and Rate Games</strong></a> | <a href=\"http://www.ludumdare.com/compo/ludum-dare-27/?action=edit\"><strong>Submit/Edit Entry</strong></a> | <a href=\"http://www.ludumdare.com/compo/ludum-dare-27/?action=preview\">View All Results</a> | <a href=\"http://www.ludumdare.com/compo/ludum-dare-27/?action=me\"><strong>View My Entry</strong></a> ]</font></center></p> </div>","timestamp":"2013-08-27T02:53:57.810Z"}
-{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T02:54:00.909Z"}
-{"level":"info","message":"+CONNECT  TOTAL(1)","timestamp":"2013-08-27T02:54:04.639Z"}
-{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T02:54:26.468Z"}
-{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T02:54:31.693Z"}
-{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T03:07:38.706Z"}
-{"level":"info","message":"+CONNECT  TOTAL(1)","timestamp":"2013-08-27T03:07:48.841Z"}
-{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T03:09:49.969Z"}
-{"level":"info","message":"+CONNECT  TOTAL(1)","timestamp":"2013-08-27T03:09:52.774Z"}
-{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T03:10:09.269Z"}
-{"level":"info","message":"+CONNECT  TOTAL(1)","timestamp":"2013-08-27T03:10:12.373Z"}
-{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T03:10:35.075Z"}
-{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T03:15:21.389Z"}
-{"level":"info","message":"start winston logs","timestamp":"2013-08-27T03:29:27.283Z"}
-{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T03:29:35.497Z"}
-{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T03:29:40.838Z"}
-{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T03:29:56.458Z"}
-{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T03:29:58.619Z"}
+{"level":"info","message":"start winston logs","timestamp":"2013-08-27T23:21:57.466Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T23:22:02.115Z"}
+{"level":"warn","message":"rebooting game","timestamp":"2013-08-27T23:22:33.202Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T23:22:35.141Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T23:22:38.855Z"}
+{"level":"info","message":"start winston logs","timestamp":"2013-08-27T23:23:22.235Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T23:23:26.266Z"}
+{"level":"warn","message":"rebooting game","timestamp":"2013-08-27T23:23:32.585Z"}
+{"level":"warn","message":"rebooting websocket server","timestamp":"2013-08-27T23:23:32.612Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T23:23:32.617Z"}
+{"level":"info","message":"start winston logs","timestamp":"2013-08-27T23:25:56.092Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T23:26:00.250Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T23:27:16.992Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T23:27:19.248Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T23:27:38.404Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T23:27:40.759Z"}
+{"level":"warn","message":"rebooting game","timestamp":"2013-08-27T23:27:46.217Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T23:27:48.827Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T23:27:51.478Z"}
+{"level":"info","message":"+CONNECT  TOTAL(1)","timestamp":"2013-08-27T23:28:01.315Z"}
+{"level":"warn","message":"rebooting game","timestamp":"2013-08-27T23:28:07.737Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T23:28:17.415Z"}
+{"level":"info","message":"+CONNECT  TOTAL(1)","timestamp":"2013-08-27T23:28:19.946Z"}
+{"level":"info","message":"[19:28:28] anon: adsfasdf","timestamp":"2013-08-27T23:28:28.865Z"}
+{"level":"info","message":"[19:28:32] anon: asdfasdf","timestamp":"2013-08-27T23:28:32.960Z"}
+{"level":"info","message":"start winston logs","timestamp":"2013-08-27T23:31:01.081Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T23:31:05.743Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T23:31:16.783Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T23:31:19.303Z"}
+{"level":"info","message":"[19:31:23] anon: asdfasdf","timestamp":"2013-08-27T23:31:23.377Z"}
+{"level":"info","message":"[19:31:25] anon: sdf","timestamp":"2013-08-27T23:31:25.705Z"}
+{"level":"warn","message":"rebooting game","timestamp":"2013-08-27T23:31:40.985Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T23:31:48.364Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T23:31:50.734Z"}
+{"level":"info","message":"+CONNECT  TOTAL(1)","timestamp":"2013-08-27T23:31:59.697Z"}
+{"level":"warn","message":"rebooting game","timestamp":"2013-08-27T23:32:05.193Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T23:32:13.223Z"}
+{"level":"info","message":"+CONNECT  TOTAL(1)","timestamp":"2013-08-27T23:32:15.701Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T23:33:02.461Z"}

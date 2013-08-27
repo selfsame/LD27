@@ -2,14 +2,66 @@
 (function() {
 
   $(window).ready(function() {
-    return $.get('./server/js/stderr.log', function(data) {
-      var entries, entry, _i, _len;
+    var do_group;
+    do_group = function(stamp) {
+      var $h, $m, $s, atime, h, m, s, time;
+      time = stamp.split('T')[1].split('.')[0];
+      atime = time.split(':');
+      h = atime[0];
+      m = atime[1];
+      s = atime[2];
+      if ($('body').children('.h' + h).length > 0) {
+        $h = $('body').children('.h' + h);
+      } else {
+        $h = $('<div class="' + 'h' + h + ' hour"></div>');
+        $('body').append($h);
+      }
+      if ($h.children('.m' + m).length > 0) {
+        $m = $h.children('.m' + m);
+      } else {
+        $m = $('<div class="' + 'm' + m + ' minute"></div>');
+        $h.append($m);
+      }
+      if ($m.children('.s' + s).length > 0) {
+        $s = $m.children('.s' + s);
+      } else {
+        $s = $('<div class="' + 's' + s + ' second "></div>');
+        $m.append($s);
+      }
+      return atime;
+    };
+    $.get('./server/js/stderr.log', function(data) {
+      var entries, entry, obj, time, _i, _len;
       console.log("got report..");
-      data = data.split("\n");
+      data = data.split('{"date":');
       entries = [];
       for (_i = 0, _len = data.length; _i < _len; _i++) {
         entry = data[_i];
-        entries.push(JSON.parse(entry));
+        if (entry !== '') {
+          entry = '{"date":' + entry;
+          obj = JSON.parse(entry);
+          entries.push(obj);
+          time = do_group(obj.timestamp);
+          console.log(time);
+          console.log($('.h' + time[0]).children('.m' + time[1]).children('.s' + time[2]));
+          $('.h' + time[0]).children('.m' + time[1]).children('.s' + time[2]).append($('<p class="err"><span class="time">' + time + '  </span>' + obj.message + '</p>'));
+        }
+      }
+      return console.log(entries);
+    });
+    return $.get('./server/js/console.log', function(data) {
+      var entries, entry, obj, time, _i, _len;
+      data = data.split('{"level":');
+      entries = [];
+      for (_i = 0, _len = data.length; _i < _len; _i++) {
+        entry = data[_i];
+        if (entry !== '') {
+          entry = '{"level":' + entry;
+          obj = JSON.parse(entry);
+          entries.push(obj);
+          time = do_group(obj.timestamp);
+          $('.h' + time[0]).children('.m' + time[1]).children('.s' + time[2]).append($('<p class="log"><span class="time">' + time + '  </span>' + obj.message + '</p>'));
+        }
       }
       return console.log(entries);
     });

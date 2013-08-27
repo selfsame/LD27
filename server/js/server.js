@@ -59,7 +59,7 @@
       message = JSON.parse(message);
       if (typeof message === 'object') {
         if (message.login != null) {
-          return game.new_connection(ws, message.login);
+          return Sim.game.new_connection(ws, message.login);
         } else if (ws.player != null) {
           if (message.ping != null) {
             ws.player.send({
@@ -67,13 +67,17 @@
             });
           }
           if (message.chat != null) {
-            d = new Date();
-            stamp = d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
-            winston.info('[' + stamp + '] ' + ws.player.name + ':', message.chat);
-            game.broadcast({
-              'chat': message.chat,
-              'who': ws.player.ID
-            });
+            if (message.chat.slice(0, 7) === "&admin:") {
+              Sim.game.admin(message.chat.split("&admin:")[1]);
+            } else {
+              d = new Date();
+              stamp = d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
+              winston.info('[' + stamp + '] ' + ws.player.name + ':', message.chat);
+              Sim.game.broadcast({
+                'chat': message.chat,
+                'who': ws.player.ID
+              });
+            }
           }
           if (message.keydown != null) {
             ws.player.keydown(message.keydown);
@@ -85,10 +89,10 @@
       }
     });
     ws.on("close", function(message) {
-      game.players.remove(ws.player);
-      game.world.DestroyBody(ws.player.body);
+      Sim.game.players.remove(ws.player);
+      Sim.game.world.DestroyBody(ws.player.body);
       ws.player.body = null;
-      game.broadcast({
+      Sim.game.broadcast({
         disconnect: ws.player.ID
       });
       return winston.info('-CONNECT');

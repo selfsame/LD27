@@ -333,6 +333,9 @@
 
     function Game() {
       var gravity, worldAABB;
+      this.reboot_hook = function() {
+        return false;
+      };
       this.scale = 100.0;
       this.mode = 'lobby';
       this.level = 0;
@@ -358,6 +361,7 @@
       this.ContactListener.Remove = this.contact_remove;
       this.world.SetContactListener(this.ContactListener);
       this.mode_time = this.time();
+      winston.info("Simulation started..");
     }
 
     Game.prototype.time = function() {
@@ -541,8 +545,25 @@
       return groundBody;
     };
 
+    Game.prototype.admin = function(code) {
+      var command;
+      code = code.split(':');
+      command = code[0];
+      if (command === "level") {
+        this.level = parseInt(command[1]);
+        this.load_level(parseInt(command[1]));
+      }
+      if (command === "reboot") {
+        return this.reboot();
+      }
+    };
+
     Game.prototype.update = function() {
-      var diff, limit, p, player, _i, _j, _len, _len1, _ref, _ref1;
+      var diff, limit, p, _i, _len, _ref;
+      if (root.game.players.length === 0) {
+        root.requestAnimFrame(root.game.update);
+        return;
+      }
       diff = root.game.time() - root.game.mode_time;
       if (root.game.mode === 'game') {
         limit = 20000;
@@ -578,19 +599,25 @@
         try {
           root.game.world.Step(1.0 / 60.0, 5);
         } catch (error) {
-          winston.warn("box2d step failed, rebooting game..");
-          winston.error(error);
-          _ref1 = this.players;
-          for (_j = 0, _len1 = _ref1.length; _j < _len1; _j++) {
-            player = _ref1[_j];
-            this.close_player(player);
-          }
-          root.game = new Game();
+          winston.error("box2d step failed");
+          this.reboot();
           return;
         }
         root.game.update_players();
       }
       return root.requestAnimFrame(root.game.update);
+    };
+
+    Game.prototype.reboot = function() {
+      var player, _i, _len, _ref;
+      winston.warn("rebooting game");
+      _ref = this.players;
+      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+        player = _ref[_i];
+        this.close_player(player);
+      }
+      root.game = new Game();
+      return root.game.update();
     };
 
     Game.prototype.update_players = function() {
