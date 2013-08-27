@@ -33,7 +33,7 @@ root.getID = ()->
 
 root.requestAnimFrame = ( ()->
 	return (callback)->
-		setTimeout(callback, 1000/60)
+		setTimeout(callback, 1000/50)
 )()
 
 class Dynamic

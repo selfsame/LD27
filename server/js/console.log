@@ -86,3 +86,5 @@
 {"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T01:11:13.632Z"}
 {"level":"info","message":"-CONNECT","timestamp":"2013-08-27T01:12:35.228Z"}
 {"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T01:12:38.128Z"}
+{"level":"info","message":"start winston logs","timestamp":"2013-08-27T01:36:58.480Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T01:37:08.276Z"}
