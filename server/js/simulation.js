@@ -542,7 +542,7 @@
     };
 
     Game.prototype.update = function() {
-      var diff, limit, p, _i, _len, _ref;
+      var diff, limit, p, player, _i, _j, _len, _len1, _ref, _ref1;
       diff = root.game.time() - root.game.mode_time;
       if (root.game.mode === 'game') {
         limit = 20000;
@@ -575,7 +575,19 @@
         }
       }
       if (root.game.mode === 'game') {
-        root.game.world.Step(1.0 / 60.0, 5);
+        try {
+          root.game.world.Step(1.0 / 60.0, 5);
+        } catch (error) {
+          winston.warn("box2d step failed, rebooting game..");
+          winston.error(error);
+          _ref1 = this.players;
+          for (_j = 0, _len1 = _ref1.length; _j < _len1; _j++) {
+            player = _ref1[_j];
+            this.close_player(player);
+          }
+          root.game = new Game();
+          return;
+        }
         root.game.update_players();
       }
       return root.requestAnimFrame(root.game.update);

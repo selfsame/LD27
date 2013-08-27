@@ -452,9 +452,15 @@ class Game
 				root.game.broadcast({'lobby':true})
 
 		if root.game.mode is 'game'
-
-			root.game.world.Step(1.0/60.0, 5)
-
+			try
+				root.game.world.Step(1.0/60.0, 5)
+			catch error
+				winston.warn "box2d step failed, rebooting game.."
+				winston.error error
+				for player in @players
+					@close_player player
+				root.game = new Game()
+				return
 			root.game.update_players()
 		root.requestAnimFrame root.game.update
 	update_players:()->
