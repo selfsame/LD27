@@ -529,7 +529,7 @@ class Game
 		for p in @players
 			if p is undefined
 				@players.remove p
-			if p.send?
+			else if p.send?
 				p.send message
 
 root.Player = Player

@@ -682,9 +682,8 @@
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         p = _ref[_i];
         if (p === void 0) {
-          this.players.remove(p);
-        }
-        if (p.send != null) {
+          _results.push(this.players.remove(p));
+        } else if (p.send != null) {
           _results.push(p.send(message));
         } else {
           _results.push(void 0);
