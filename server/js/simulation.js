@@ -469,7 +469,6 @@
     Game.prototype.close_player = function(player) {
       this.players.remove(player);
       this.world.DestroyBody(player.body);
-      player.body = null;
       return this.broadcast({
         disconnect: player.ID
       });
@@ -484,8 +483,7 @@
       if (_ref = dynamic.body, __indexOf.call(this.boxes, _ref) >= 0) {
         this.boxes.remove(dynamic.body);
       }
-      this.world.DestroyBody(dynamic.body);
-      return dynamic = null;
+      return this.world.DestroyBody(dynamic.body);
     };
 
     Game.prototype.make_dynamic_box = function(obj) {
@@ -680,6 +678,9 @@
       _results = [];
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         p = _ref[_i];
+        if (p === void 0) {
+          this.players.remove(p);
+        }
         if (p.send != null) {
           _results.push(p.send(message));
         } else {

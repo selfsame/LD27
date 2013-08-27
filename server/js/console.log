@@ -88,3 +88,12 @@
 {"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T01:12:38.128Z"}
 {"level":"info","message":"start winston logs","timestamp":"2013-08-27T01:36:58.480Z"}
 {"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T01:37:08.276Z"}
+{"level":"info","message":"start winston logs","timestamp":"2013-08-27T02:21:37.377Z"}
+{"level":"info","message":"start winston logs","timestamp":"2013-08-27T02:21:56.338Z"}
+{"level":"info","message":"start winston logs","timestamp":"2013-08-27T02:22:49.957Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T02:23:00.977Z"}
+{"level":"info","message":"+CONNECT  TOTAL(1)","timestamp":"2013-08-27T02:23:26.733Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T02:23:33.350Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T02:24:25.012Z"}
+{"level":"info","message":"start winston logs","timestamp":"2013-08-27T02:24:34.484Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T02:24:47.293Z"}

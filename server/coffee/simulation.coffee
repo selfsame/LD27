@@ -360,7 +360,6 @@ class Game
 	close_player: (player)->
 		@players.remove player
 		@world.DestroyBody player.body
-		player.body = null
 		@broadcast {disconnect:player.ID}
 
 	remove_dynamic: (dynamic)->
@@ -371,7 +370,6 @@ class Game
 			@boxes.remove dynamic.body
 		@world.DestroyBody dynamic.body
 
-		dynamic = null
 
 
 	make_dynamic_box: (obj)->
@@ -527,6 +525,8 @@ class Game
 
 	broadcast: (message)->
 		for p in @players
+			if p is undefined
+				@players.remove p
 			if p.send?
 				p.send message
 
@@ -535,3 +535,5 @@ root.Player = Player
 root.game = new Game()
 root.game.load_level(root.game.level)
 root.game.update()
+
+
