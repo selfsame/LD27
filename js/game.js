@@ -27,6 +27,8 @@
 
   window.dynamics = {};
 
+  window.me = false;
+
   short1 = new Audio("audio/short1.mp3");
 
   coinwav = new Audio("audio/coin.wav");
@@ -59,8 +61,11 @@
           });
         }
         e.to_update = [];
-        if (e.ID === window.me) {
-          e.avatar.addClass('self');
+        if (!$('.player.self').length > 0) {
+          if (e.ID === window.me) {
+            e.avatar.addClass('self');
+            e.avatar.find('.playername').html(e.name);
+          }
         }
       }
     }
@@ -70,18 +75,42 @@
   connect_to_socket = function(_name, _color) {
     var ws;
     ws = new WebSocket('ws://' + window.location.hostname + ':8079');
-    console.dir(ws);
+    console.log(ws);
+    ws.onclose = function() {
+      $('#socketstatus').removeClass('socketon');
+      $('#socketstatus').addClass('socketoff');
+      return $('#socketstatus').html("disconnected");
+    };
     ws.onopen = function() {
-      return ws.send(JSON.stringify({
+      ws.onclose = function() {};
+      $('#socketstatus').removeClass('socketoff');
+      $('#socketstatus').addClass('socketon');
+      $('#socketstatus').html("connected");
+      $('.connectbox').css('display', 'none');
+      $('#connected').css('display', 'block');
+      ws.send(JSON.stringify({
         'login': {
           name: _name,
           color: _color
         }
       }));
+      $('#ping').css('display', 'block');
+      return $('#ping').click(function(e) {
+        $('#ping').attr("disabled", "disabled");
+        window.ping = new Date().getTime();
+        return ws.send(JSON.stringify({
+          'ping': window.ping
+        }));
+      });
     };
     ws.onmessage = function(message) {
       var avatar, bubble, c, data, diff, entity, n, o, prop, relative, set, _i, _j, _len, _len1, _ref;
       data = JSON.parse(message.data);
+      if (data.pong != null) {
+        diff = new Date().getTime() - window.ping;
+        $('#pingresult').html(diff + 'ms');
+        $('#ping').removeAttr("disabled");
+      }
       if (data.time != null) {
         $('.time').html(" " + (10 - parseInt(data.time)));
       }
@@ -133,7 +162,6 @@
         $('#viewport').removeClass('lobify');
         $('#viewport > .time').show();
         $('#viewport').css('display', 'block');
-        console.log('load');
         n = data.load;
         $('#dynamics').html('');
         $('#actors').html('');
@@ -147,11 +175,8 @@
           return $('#level').find('.dynamic').detach();
         });
       } else if ((data.debrief != null) || (data.connect != null)) {
-        if (!($('body').children('#debug')[0] != null)) {
-          $('body').append('<div id="debug"></div>');
-        }
         set = data.debrief || data.connect;
-        $('#debug').html('<p>' + JSON.stringify(set).length + '  ' + '</p>');
+        $('#debug').html('<p>packet length: ' + JSON.stringify(set).length + '  ' + '</p>');
         for (_i = 0, _len = set.length; _i < _len; _i++) {
           entity = set[_i];
           if (entity.ID) {
@@ -191,7 +216,6 @@
               } else {
                 $('#dynamics').append(avatar);
               }
-              console.log('creating ', entity.ID, avatar);
             } else {
               for (prop in entity) {
                 if (prop !== 'ID') {
@@ -237,7 +261,8 @@
           ws.send(JSON.stringify({
             'chat': $('#chat').val()
           }));
-          return $('#chat').val('');
+          $('#chat').val('');
+          return $('#chat').blur();
         }
       } else if (_ref = e.keyCode, __indexOf.call(window.keys, _ref) < 0) {
         window.keys.push(e.keyCode);
@@ -315,8 +340,7 @@
     name = $('#username').val();
     color = $('.color_choice.active').first().css('background-color');
     connect_to_socket(name, color);
-    $('.connectbox').css('display', 'none');
-    return $('#connected').css('display', 'block');
+    return $('.connectbox').html('<p><marquee direction="left">Trying to connect, but if you can read this the server is probably down..</marquee></p>');
   });
 
   $('.color_choice').click(function(e) {

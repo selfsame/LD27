@@ -16,6 +16,8 @@ window.entities = {}
 window.players = {}
 window.dynamics = {}
 
+window.me = false
+
 short1 = new Audio("audio/short1.mp3")
 coinwav = new Audio("audio/coin.wav")
 coinlost = new Audio("audio/coinlost.wav")
@@ -41,8 +43,10 @@ window.update_entities = ()->
 				e.avatar.css
 					transform: 'rotate(' + String(e.d * -1 ) + 'deg)'
 			e.to_update = []
-			if e.ID is window.me
-				e.avatar.addClass 'self'
+			if not $('.player.self').length > 0
+				if e.ID is window.me
+					e.avatar.addClass 'self'
+					e.avatar.find('.playername').html e.name
 
 	window.requestAnimFrame( update_entities )
 	
@@ -50,15 +54,39 @@ window.update_entities = ()->
 
 connect_to_socket = (_name, _color)->
 	ws = new WebSocket('ws://'+window.location.hostname+':8079') 
-	console.dir ws
+	console.log ws
+	ws.onclose = ()->
+		$('#socketstatus').removeClass 'socketon'
+		$('#socketstatus').addClass 'socketoff'
+		$('#socketstatus').html "disconnected"
+
 	ws.onopen = ()->
+		ws.onclose = ()->
+		$('#socketstatus').removeClass 'socketoff'
+		$('#socketstatus').addClass 'socketon'
+		$('#socketstatus').html "connected"
+
+		$('.connectbox').css('display','none')
+		$('#connected').css('display', 'block')
+
 		ws.send(JSON.stringify({'login':{name:_name, color:_color}}))
+
+		$('#ping').css('display','block')
+		$('#ping').click (e)->
+			$('#ping').attr("disabled", "disabled")
+			window.ping = new Date().getTime()
+			ws.send(JSON.stringify({'ping':window.ping}))
 	ws.onmessage = (message)->
 		data = JSON.parse(message.data)	
+		if data.pong?
+			diff = new Date().getTime() - window.ping
+			$('#pingresult').html diff+'ms'
+			$('#ping').removeAttr("disabled")
 		if data.time?
 			$('.time').html(" " + (10 - parseInt(data.time)) )
 		if data.self?
 			window.me = data.self
+
 		if data.disconnect?
 			if $('#'+data.disconnect)[0]?
 				$('#'+data.disconnect).detach()
@@ -95,7 +123,7 @@ connect_to_socket = (_name, _color)->
 			$('#viewport').removeClass 'lobify'
 			$('#viewport > .time').show()
 			$('#viewport').css('display', 'block')
-			console.log 'load'
+
 			n = data.load
 			$('#dynamics').html('')
 			$('#actors').html('')
@@ -108,11 +136,8 @@ connect_to_socket = (_name, _color)->
 				$('#level').find('.dynamic').detach()
 
 		else if data.debrief? or data.connect?
-			if not $('body').children('#debug')[0]?
-				$('body').append('<div id="debug"></div>')
-
 			set = data.debrief or data.connect
-			$('#debug').html '<p>'+JSON.stringify(set).length+'  '+'</p>'
+			$('#debug').html '<p>packet length: '+JSON.stringify(set).length+'  '+'</p>'
 			for entity in set
 				if entity.ID
 					if not window.entities[entity.ID]
@@ -143,7 +168,7 @@ connect_to_socket = (_name, _color)->
 							$('#actors').append avatar
 						else
 							$('#dynamics').append avatar
-						console.log 'creating ', entity.ID, avatar
+
 					else
 
 						for prop of entity
@@ -187,6 +212,7 @@ connect_to_socket = (_name, _color)->
 			
 				ws.send(JSON.stringify({'chat':$('#chat').val()}))
 				$('#chat').val('')
+				$('#chat').blur()
 		else if e.keyCode not in window.keys
 			window.keys.push e.keyCode
 			ws.send(JSON.stringify({'keydown':e.keyCode}))
@@ -231,9 +257,10 @@ $('#connect').click (e)->
 	name = $('#username').val()
 	color = $('.color_choice.active').first().css('background-color')
 	connect_to_socket(name, color)
-	$('.connectbox').css('display','none')
-	$('#connected').css('display', 'block')
+	$('.connectbox').html '<p><marquee direction="left">Trying to connect, but if you can read this the server is probably down..</marquee></p>'
+	
 
 $('.color_choice').click (e)->
 	$('.color_choice').removeClass 'active'
 	$(this).addClass 'active'
+

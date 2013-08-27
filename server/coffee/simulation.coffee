@@ -1,3 +1,5 @@
+winston = require 'winston'
+
 levels = ['[{"x":341,"y":996,"w":0,"h":0},{"x":-14,"y":187,"w":286,"h":1737},{"x":1044,"y":170,"w":318,"h":1753},{"x":-1,"y":-1,"w":1402,"h":225},{"x":402,"y":305,"w":472,"h":45},{"x":263,"y":397,"w":101,"h":50},{"x":426,"y":514,"w":156,"h":46},{"x":701,"y":401,"w":53,"h":63},{"x":1482,"y":502,"w":20,"h":20},{"x":266,"y":640,"w":99,"h":151},{"x":352,"y":734,"w":504,"h":57},{"x":619,"y":1299,"w":430,"h":41},{"x":933,"y":875,"w":121,"h":274},{"x":730,"y":1008,"w":50,"h":39},{"x":394,"y":1298,"w":40,"h":39},{"x":814,"y":607,"w":161,"h":56},{"x":576,"y":992,"w":346,"h":10,"dynamic":true,"cs":["purp"]},{"x":263,"y":898,"w":168,"h":41},{"x":257,"y":1732,"w":795,"h":192},{"x":439,"y":494,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_77"],"type":"collect"},{"x":404,"y":239,"w":468,"h":37,"type":"spawn"},{"x":454,"y":494,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":485,"y":494,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":728,"y":383,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":713,"y":383,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":815,"y":587,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":830,"y":587,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":1017,"y":252,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":277,"y":877,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":292,"y":877,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":323,"y":877,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":293,"y":836,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":324,"y":836,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":278,"y":836,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38"],"type":"collect"},{"x":285,"y":1282,"w":258,"h":8,"dynamic":true,"cs":["purp"]},{"x":529,"y":1477,"w":10,"h":251,"dynamic":true,"cs":["purp"]},{"x":585,"y":1474,"w":10,"h":251,"dynamic":true,"cs":["purp"]},{"x":643,"y":1475,"w":10,"h":251,"dynamic":true,"cs":["purp"]},{"x":712,"y":1472,"w":10,"h":251,"dynamic":true,"cs":["purp"]},{"x":789,"y":1425,"w":160,"h":299},{"x":980,"y":1484,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_45","break__fullsize_128","break__fullsize_211"],"type":"collect"},{"x":965,"y":1484,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_47","break__fullsize_130","break__fullsize_213"],"type":"collect"},{"x":1012,"y":1483,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_49","break__fullsize_132","break__fullsize_215"],"type":"collect"},{"x":1027,"y":1483,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_51","break__fullsize_134","break__fullsize_217"],"type":"collect"},{"x":978,"y":1527,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_53","break__fullsize_136","break__fullsize_219"],"type":"collect"},{"x":963,"y":1527,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_55","break__fullsize_138","break__fullsize_221"],"type":"collect"},{"x":1010,"y":1526,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_57","break__fullsize_140","break__fullsize_223"],"type":"collect"},{"x":1025,"y":1526,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_59","break__fullsize_142","break__fullsize_225"],"type":"collect"},{"x":1010,"y":1575,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_61","break__fullsize_144","break__fullsize_227"],"type":"collect"},{"x":978,"y":1576,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_63","break__fullsize_146","break__fullsize_229"],"type":"collect"},{"x":963,"y":1576,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_65","break__fullsize_148","break__fullsize_231"],"type":"collect"},{"x":1025,"y":1575,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_67","break__fullsize_150","break__fullsize_233"],"type":"collect"},{"x":1019,"y":1279,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_69","break__fullsize_152","break__fullsize_235"],"type":"collect"},{"x":1004,"y":1279,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_71","break__fullsize_154","break__fullsize_237"],"type":"collect"},{"x":313,"y":1657,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_73","break__fullsize_156","break__fullsize_239"],"type":"collect"},{"x":298,"y":1657,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_75","break__fullsize_158","break__fullsize_241"],"type":"collect"},{"x":294,"y":1250,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_77","break__fullsize_160","break__fullsize_243"],"type":"collect"},{"x":329,"y":1229,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_79","break__fullsize_162","break__fullsize_245"],"type":"collect"},{"x":862,"y":843,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_81","break__fullsize_164","break__fullsize_247"],"type":"collect"},{"x":827,"y":864,"w":0,"h":0,"dynamic":true,"cs":["collect","coin","break__fullsize_38","break__fullsize_83","break__fullsize_166","break__fullsize_249"],"type":"collect"},{"x":268,"y":1434,"w":91,"h":39},{"x":423,"y":1512,"w":79,"h":39},{"x":394,"y":1655,"w":40,"h":39},{"x":731,"y":1126,"w":105,"h":39}] ',
 '[{"x":274,"y":198,"w":63,"h":396},{"x":943,"y":195,"w":63,"h":396},{"x":777,"y":239,"w":34,"h":34,"dynamic":true,"cs":["light","volleyball","circle"]},{"x":274,"y":167,"w":731,"h":45},{"x":357,"y":486,"w":575,"h":47,"type":"spawn"},{"x":339,"y":545,"w":604,"h":30},{"x":646,"y":419,"w":8,"h":129}]',
 '[{"x":153,"y":64,"w":761,"h":97},{"x":317,"y":178,"w":431,"h":39,"type":"spawn"},{"x":326,"y":499,"w":32,"h":32,"dynamic":true,"cs":["b1","circle","light","break__fullsize_6"]},{"x":150,"y":139,"w":136,"h":485},{"x":139,"y":618,"w":783,"h":131},{"x":791,"y":139,"w":141,"h":485},{"x":351,"y":326,"w":32,"h":32,"dynamic":true,"cs":["b2","circle","light"]},{"x":476,"y":337,"w":19,"h":19,"dynamic":true,"cs":["b3","circle","light","break__fullsize_12"]},{"x":728,"y":251,"w":32,"h":32,"dynamic":true,"cs":["b3","circle","light","break__fullsize_14"]},{"x":665,"y":388,"w":32,"h":32,"dynamic":true,"cs":["b1","circle","light"]},{"x":405,"y":446,"w":18,"h":18,"dynamic":true,"cs":["b2","circle","light"]},{"x":538,"y":322,"w":36,"h":36,"dynamic":true,"cs":["b1","circle","light","break__fullsize_18"]},{"x":327,"y":264,"w":32,"h":32,"dynamic":true,"cs":["b3","circle","light","break__fullsize_20"]},{"x":666,"y":295,"w":32,"h":32,"dynamic":true,"cs":["b2","circle","light","break__fullsize_22"]},{"x":317,"y":387,"w":22,"h":22,"dynamic":true,"cs":["b1","break__fullsize_24"]},{"x":575,"y":408,"w":19,"h":19,"dynamic":true,"cs":["b3","circle","light","break__fullsize_26"]},{"x":673,"y":458,"w":32,"h":32,"dynamic":true,"cs":["b1","circle","light","break__fullsize_28"]},{"x":612,"y":500,"w":32,"h":32,"dynamic":true,"cs":["b3","circle","light","break__fullsize_30"]},{"x":636,"y":562,"w":32,"h":32,"dynamic":true,"cs":["b2","circle","light","break__fullsize_32"]},{"x":761,"y":573,"w":19,"h":19,"dynamic":true,"cs":["b3","circle","light","break__fullsize_34"]},{"x":504,"y":427,"w":32,"h":32,"dynamic":true,"cs":["b2","circle","light","break__fullsize_36"]},{"x":470,"y":488,"w":51,"h":51,"dynamic":true,"cs":["b1","circle","light","break__fullsize_38"]},{"x":558,"y":547,"w":32,"h":32,"dynamic":true,"cs":["b2","circle","light","break__fullsize_40"]},{"x":445,"y":218,"w":19,"h":19,"dynamic":true,"cs":["circle","light","break__fullsize_26","coin","collect"],"type":"collect"},{"x":481,"y":147,"w":19,"h":19,"dynamic":true,"cs":["circle","light","break__fullsize_26","coin","collect"],"type":"collect"},{"x":378,"y":181,"w":19,"h":19,"dynamic":true,"cs":["circle","light","break__fullsize_26","coin","collect"],"type":"collect"},{"x":646,"y":189,"w":19,"h":19,"dynamic":true,"cs":["circle","light","break__fullsize_26","coin","collect"],"type":"collect"},{"x":355,"y":366,"w":19,"h":19,"dynamic":true,"cs":["circle","light","break__fullsize_26","coin","collect"],"type":"collect"},{"x":731,"y":273,"w":19,"h":19,"dynamic":true,"cs":["circle","light","break__fullsize_26","coin","collect"],"type":"collect"},{"x":378,"y":181,"w":19,"h":19,"dynamic":true,"cs":["circle","light","break__fullsize_26","coin","collect"],"type":"collect"},{"x":445,"y":218,"w":19,"h":19,"dynamic":true,"cs":["circle","light","break__fullsize_26","coin","collect"],"type":"collect"}] ',
@@ -51,7 +53,7 @@ class Dynamic
 		if Math.abs(@y-@cache.y) >= 1.0
 			@cache.y = @y
 			result.y = parseInt(@y)
-		if Math.abs(@degrees-@cache.d) >= 1.0
+		if Math.abs(@degrees-@cache.d) >= .4
 			@cache.d = @degrees
 			result.d = parseInt(@degrees)
 		return result
@@ -134,16 +136,14 @@ class Player extends Dynamic
 		try
 			@connection.send JSON.stringify(obj)
 		catch error
-			console.log 'ERROR, failure to send player socket'
+			winston.warn 'failure to send player socket, removing player'
 			root.game.close_player(@)
 
 	keydown: (code)->
 
 		@keys.push code
 		if code is 32 
-			console.log 'on ground', @on_ground
 			if @on_ground
-				console.log 'key', code
 				@apply_velocity(0, @max_jump*.9, true)
 
 	keyup: (code)->
@@ -168,7 +168,7 @@ class Player extends Dynamic
 			v = new B.b2Vec2(x,y)
 			@body.SetLinearVelocity( v )
 		catch error
-			console.log 'ERROR: ', B
+			winston.error 'player.body.SetLinearVelocity failed'
 
 	apply_force: (x, y)->
 		vel = @body.GetLinearVelocity()
@@ -203,10 +203,8 @@ class Player extends Dynamic
 
 	contact_add: (entity, point)->
 	contact_begin: (entity, point)->
-		console.log entity.type
 		if entity.type? and entity.type is 'collect'
 			@coins += 1
-			console.log 'coins: ', @coins
 			root.game.dynamics_to_destroy.push entity
 			root.game.broadcast({'collect':@ID})
 		
@@ -263,13 +261,12 @@ class Game
 		@spawn = {x:50, y:500, w:700, h:100}
 		@dynamics_to_destroy = []
 		worldAABB = new B.b2AABB()
-		worldAABB.lowerBound.Set(-60.0, -60.0)
-		worldAABB.upperBound.Set(60.0, 60.0)
+		worldAABB.lowerBound.Set(-120.0, -120.0)
+		worldAABB.upperBound.Set(120.0, 120.0)
 		gravity = new B.b2Vec2(0.0, -10.0)
 		@world = new B.b2World(worldAABB, gravity, true)
 		@boxes = []
 		
-		console.log new B.b2ContactListener()
 		@ContactListener = new B.b2ContactListener()
 
 
@@ -413,7 +410,6 @@ class Game
 		body.CreateShape shapeDef
 		body.SetMassFromShapes()
 		
-		console.log body.GetAngle()
 		if obj.type? and obj.type is 'collect'
 			new_dynamic.type = obj.type
 			body.SetUserData(new_dynamic)
@@ -456,12 +452,11 @@ class Game
 					p.set_position(Math.random()*700 + 50, 350 + Math.random()*30)
 				root.game.update_players()
 				root.game.broadcast({'lobby':true})
-			console.log root.game.mode
+
 		if root.game.mode is 'game'
-			try
-				root.game.world.Step(1.0/60.0, 5)
-			catch error
-				console.log "ERROR,", error
+
+			root.game.world.Step(1.0/60.0, 5)
+
 			root.game.update_players()
 		root.requestAnimFrame root.game.update
 	update_players:()->
@@ -485,6 +480,7 @@ class Game
 			p.update()
 
 	new_connection: (ws, login)->
+		winston.info '+CONNECT  TOTAL('+@players.length+')'
 		new_player = new Player(ws)
 		new_player.name = login.name
 		new_player.color = login.color
@@ -531,7 +527,8 @@ class Game
 
 	broadcast: (message)->
 		for p in @players
-			p.send message
+			if p.send?
+				p.send message
 
 root.Player = Player
 

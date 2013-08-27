@@ -1,0 +1,88 @@
+{"level":"info","message":"start winston logs","timestamp":"2013-08-26T23:52:47.934Z"}
+{"level":"info","message":"start winston logs","timestamp":"2013-08-26T23:53:28.815Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-26T23:53:44.069Z"}
+{"level":"info","message":"[19:53:47] anon: HERRO","timestamp":"2013-08-26T23:53:47.572Z"}
+{"level":"info","message":"[19:53:50] anon: I'm chatting","timestamp":"2013-08-26T23:53:50.167Z"}
+{"level":"info","message":"start winston logs","timestamp":"2013-08-26T23:56:48.859Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-26T23:56:53.130Z"}
+{"level":"info","message":"start winston logs","timestamp":"2013-08-26T23:58:20.410Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-26T23:58:24.964Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-26T23:58:48.620Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-26T23:58:50.983Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T00:00:44.729Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:00:46.776Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T00:00:53.679Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:01:29.375Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T00:04:43.434Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:04:47.118Z"}
+{"level":"info","message":"[20:6:20] anon: ;ldfs;ldfgk","timestamp":"2013-08-27T00:06:20.760Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T00:07:02.090Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:07:04.588Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T00:07:11.030Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:07:12.845Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T00:07:52.298Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:07:54.785Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T00:08:02.423Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:08:04.476Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T00:08:32.580Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:08:34.480Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T00:08:37.595Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:08:39.425Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T00:08:55.289Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:08:57.304Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T00:12:23.143Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:12:24.905Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T00:12:36.579Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:12:38.473Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T00:13:35.351Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:13:37.208Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T00:15:17.473Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:15:19.560Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T00:16:07.538Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:16:09.633Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T00:17:21.579Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:17:24.103Z"}
+{"level":"info","message":"[20:17:29] anon: ladfjlasdf","timestamp":"2013-08-27T00:17:29.023Z"}
+{"level":"info","message":"[20:17:32] anon: lasdfjsdaf","timestamp":"2013-08-27T00:17:32.255Z"}
+{"level":"info","message":"[20:17:36] anon: asdkfljasdf","timestamp":"2013-08-27T00:17:36.656Z"}
+{"level":"info","message":"[20:17:41] anon: sldfkj","timestamp":"2013-08-27T00:17:41.359Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T00:31:43.868Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:31:45.681Z"}
+{"level":"info","message":"start winston logs","timestamp":"2013-08-27T00:37:58.233Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:38:05.754Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T00:38:45.579Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:38:48.360Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T00:40:09.335Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:40:12.200Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T00:40:40.190Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:40:42.859Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T00:41:08.184Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:41:10.861Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T00:41:36.218Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:41:38.259Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T00:44:54.793Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:44:57.696Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T00:45:53.309Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:45:55.271Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T00:46:18.847Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:46:20.736Z"}
+{"level":"info","message":"start winston logs","timestamp":"2013-08-27T00:47:39.895Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:47:44.261Z"}
+{"level":"info","message":"start winston logs","timestamp":"2013-08-27T00:48:06.976Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:48:13.293Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T00:56:29.147Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:56:32.383Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T00:57:21.596Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:57:23.878Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T00:57:29.109Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:59:11.762Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T00:59:31.073Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T00:59:34.008Z"}
+{"level":"info","message":"start winston logs","timestamp":"2013-08-27T01:01:13.330Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T01:01:17.005Z"}
+{"level":"info","message":"start winston logs","timestamp":"2013-08-27T01:04:58.377Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T01:05:03.072Z"}
+{"level":"info","message":"start winston logs","timestamp":"2013-08-27T01:11:09.669Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T01:11:13.632Z"}
+{"level":"info","message":"-CONNECT","timestamp":"2013-08-27T01:12:35.228Z"}
+{"level":"info","message":"+CONNECT  TOTAL(0)","timestamp":"2013-08-27T01:12:38.128Z"}

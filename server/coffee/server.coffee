@@ -1,5 +1,20 @@
+util = require("util")
+
 Box2D = require './libs/Box2dWeb-2.1.a.3.js'
 Sim = require './simulation.js'
+fs = require 'fs'
+winston = require 'winston'
+
+winston.add(winston.transports.File, { filename: 'console.log' })
+winston.handleExceptions(new winston.transports.File({ filename: 'stderr.log' }))
+winston.exitOnError = false
+winston.info 'start winston logs'
+
+
+
+
+
+
 
 Array::remove = (item)->
   indx = @indexOf(item)
@@ -17,12 +32,11 @@ getID = ()->
 
 game = Sim.game
 Player = Sim.Player
-console.log Player
+
 
 WebSocketServer = require("ws").Server
 wss = new WebSocketServer(port: 8079)
 wss.on "connection", (ws) ->
-	
 	ws.on "message", (message) ->
 		message = JSON.parse(message)
 		if typeof message is 'object'
@@ -30,8 +44,12 @@ wss.on "connection", (ws) ->
 				game.new_connection(ws, message.login)
 
 			else if ws.player?
+				if message.ping?
+					ws.player.send('pong': new Date().getTime())
 				if message.chat?
-					console.log 'chat', message.chat
+					d = new Date()
+					stamp = d.getHours()+':'+d.getMinutes()+':'+d.getSeconds()
+					winston.info '['+stamp+'] '+ws.player.name+':', message.chat
 					game.broadcast({'chat':message.chat, 'who':ws.player.ID})
 				if message.keydown?
 					ws.player.keydown(message.keydown)
@@ -45,6 +63,7 @@ wss.on "connection", (ws) ->
 		game.world.DestroyBody ws.player.body
 		ws.player.body = null
 		game.broadcast {disconnect:ws.player.ID}
+		winston.info '-CONNECT'
 
 
 	ws.on 'error', (error)->
@@ -53,32 +72,6 @@ wss.on "connection", (ws) ->
 	
 
 
-#static server
-static_ = require("node-static")
-http = require("http")
-util = require("util")
-webroot = "../../"
-port = 8075
-file = new (static_.Server)(webroot,
-  cache: 600
-  headers:
-    "X-Powered-By": "node-static"
-)
-http.createServer((req, res) ->
-  req.addListener "end", ->
-    file.serve req, res, (err, result) ->
-      if err
-        console.error "Error serving %s - %s", req.url, err.message
-        if err.status is 404 or err.status is 500
-          file.serveFile util.format("/%d.html", err.status), err.status, {}, req, res
-        else
-          res.writeHead err.status, err.headers
-          res.end()
-      else
-        console.log "%s - %s", req.url, res.message
 
-
-).listen port
-console.log "node-static running at http://localhost:%d", port
 
 

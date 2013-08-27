@@ -1,6 +1,6 @@
 static_ = require("node-static")
 http = require("http")
-fs = require 'fs'
+fs = require('fs')
 
 
 
@@ -28,5 +28,5 @@ http.createServer((req, res) ->
 	
 
 
-).listen port
-console.log "node-static running at http://localhost:%d", port
+).listen( port)
+console.log( "node-static running at http://localhost:%d", port)
