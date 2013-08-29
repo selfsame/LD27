@@ -333,9 +333,6 @@
 
     function Game() {
       var gravity, worldAABB;
-      this.reboot_hook = function() {
-        return false;
-      };
       this.scale = 100.0;
       this.mode = 'lobby';
       this.level = 0;
@@ -551,10 +548,7 @@
       command = code[0];
       if (command === "level") {
         this.level = parseInt(command[1]);
-        this.load_level(parseInt(command[1]));
-      }
-      if (command === "reboot") {
-        return this.reboot();
+        return this.load_level(parseInt(command[1]));
       }
     };
 
@@ -596,28 +590,10 @@
         }
       }
       if (root.game.mode === 'game') {
-        try {
-          root.game.world.Step(1.0 / 60.0, 5);
-        } catch (error) {
-          winston.error("box2d step failed");
-          this.reboot();
-          return;
-        }
+        root.game.world.Step(1.0 / 60.0, 5);
         root.game.update_players();
       }
       return root.requestAnimFrame(root.game.update);
-    };
-
-    Game.prototype.reboot = function() {
-      var player, _i, _len, _ref;
-      winston.warn("rebooting game");
-      _ref = this.players;
-      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-        player = _ref[_i];
-        this.close_player(player);
-      }
-      root.game = new Game();
-      return root.game.update();
     };
 
     Game.prototype.update_players = function() {

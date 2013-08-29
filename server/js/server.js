@@ -20,7 +20,7 @@
     filename: 'stderr.log'
   }));
 
-  winston.exitOnError = false;
+  winston.exitOnError = true;
 
   winston.info('start winston logs');
 

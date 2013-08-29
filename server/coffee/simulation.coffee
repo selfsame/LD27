@@ -252,7 +252,6 @@ class Player extends Dynamic
 
 class Game
 	constructor: ()->
-		@reboot_hook = ()-> return false
 		@scale = 100.0
 		@mode = 'lobby'
 		@level = 0
@@ -432,8 +431,7 @@ class Game
 		if command is "level"
 			@level = parseInt(command[1])
 			@load_level(parseInt(command[1]))
-		if command is "reboot"
-			@reboot()
+
 	update: ()->
 		if root.game.players.length is 0
 			root.requestAnimFrame root.game.update
@@ -463,22 +461,12 @@ class Game
 				root.game.broadcast({'lobby':true})
 
 		if root.game.mode is 'game'
-			try
-				root.game.world.Step(1.0/60.0, 5)
-			catch error
-				winston.error "box2d step failed"
 
-				@reboot()
-				return
+			root.game.world.Step(1.0/60.0, 5)
 			root.game.update_players()
 		root.requestAnimFrame root.game.update
 
-	reboot: ()->
-		winston.warn "rebooting game"
-		for player in @players
-			@close_player player
-		root.game = new Game()
-		root.game.update()
+
 
 	update_players:()->
 		for d in @dynamics_to_destroy

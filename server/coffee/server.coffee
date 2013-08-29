@@ -7,7 +7,7 @@ winston = require 'winston'
 
 winston.add(winston.transports.File, { filename: 'console.log' })
 winston.handleExceptions(new winston.transports.File({ filename: 'stderr.log' }))
-winston.exitOnError = false
+winston.exitOnError = true
 winston.info 'start winston logs'
 
 
